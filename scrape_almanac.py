@@ -1,6 +1,6 @@
-from time import sleep
 import json
-import requests
+import shutil
+from time import sleep
 from pprint import pprint
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -12,7 +12,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from webdriver_manager.chrome import ChromeDriverManager
 
-import shutil
+
 
 # Local Imports
 from config import *
@@ -74,7 +74,11 @@ def scrape_all_systems_page(url, driver):
         main_div = soup.select_one("body > div > main > div > div.flex-grow.m-2")
 
         # Extract all <a> tags and store their hrefs
-        links = [a["href"] for a in main_div.find_all("a", href=True)]
+        if main_div:
+            links = [a["href"] for a in main_div.find_all("a", href=True)]
+        else: 
+            raise ValueError("No Main Div found when scraping systems page")
+        
         all_links.extend(links)
 
         # Find the "Next" button
@@ -207,7 +211,12 @@ def scrape_planet_page(base_url, planet_link, driver):
             "div.flex-grow.align-top > div.border.border-saBorder > div > div"
         )
         for section in resource_sections:
-            title = section.select_one("p").text.strip()
+            p_tag = section.select_one("p")
+            if p_tag is not None:
+                title = p_tag.text.strip()
+            else: 
+                continue
+            
             items = [item.text.strip() for item in section.select("ul li")]
 
             # Categorize based on title
@@ -246,20 +255,20 @@ if __name__ == "__main__":
     systems_url = f"{base_url}/system"
 
     UPDATE_DATA = False
-    SYSTEM_LINKS_PATH = "data/almanac_system_links.json"
-    PLANET_LINKS_PATH = "data/almanac_planet_links.json"
+    ALMANAC_SYSTEM_LINKS_PATH = "data_systems/almanac_system_links.json"
+    ALMANAC_PLANET_LINKS_PATH = "data_systems/almanac_planet_links.json"
 
     # Load existing links or fetch if not available
     if not UPDATE_DATA:
-        all_system_links = load_link_data(SYSTEM_LINKS_PATH)
-        all_planet_links = load_link_data(PLANET_LINKS_PATH)
+        all_system_links = load_link_data(ALMANAC_SYSTEM_LINKS_PATH)
+        all_planet_links = load_link_data(ALMANAC_PLANET_LINKS_PATH)
         all_system_data = load_system_data(ALMANAC_SYSTEM_DATA_PATH)
 
     driver = initialize_driver()
 
     if all_system_links is None:
         all_system_links = scrape_all_systems_page(systems_url, driver)
-        save_link_data(SYSTEM_LINKS_PATH, all_system_links)
+        save_link_data(ALMANAC_SYSTEM_LINKS_PATH, all_system_links)
 
     if all_planet_links is None or all_system_data is None:
         all_planet_links = [] if all_planet_links is None else all_planet_links
@@ -278,7 +287,7 @@ if __name__ == "__main__":
                 all_system_data.append(system_data)
 
         save_link_data(
-            PLANET_LINKS_PATH,
+            ALMANAC_PLANET_LINKS_PATH,
             all_planet_links,
         )
         save_system_data(ALMANAC_SYSTEM_DATA_PATH, all_system_data)

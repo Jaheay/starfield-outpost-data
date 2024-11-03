@@ -125,16 +125,16 @@ def get_grouped_inorganics(resources, resource_groups, full_chain=False):
 
 
 def get_grouped_organics(resources, flora, fauna, resource_groups):
-    group_counts = {'flora': 0, 'fauna': 0}
+    group_counts = {'flora': 0.0, 'fauna': 0.0}
 
     for resource in resources:
         # Check flora grouping
         if resource in flora:
-            group_counts['flora'] += 1 if resource in resource_groups['flora'] else 0.25
+            group_counts['flora'] += 1.0 if resource in resource_groups['flora'] else 0.25
 
         # Check fauna grouping
         elif resource in fauna:
-            group_counts['fauna'] += 1 if resource in resource_groups['fauna'] else 0.25
+            group_counts['fauna'] += 1.0 if resource in resource_groups['fauna'] else 0.25
 
     return {group: count for group, count in group_counts.items()}
 

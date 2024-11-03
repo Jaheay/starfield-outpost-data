@@ -84,7 +84,7 @@ def plot_bar_graph(combo_data, attribute1, attribute2):
         plt.text(
             bar.get_x() + bar.get_width() / 2,
             yval,
-            int(yval),
+            str(int(yval)),
             ha='center',
             va='bottom',
             fontsize=9
@@ -239,10 +239,10 @@ def calculate_statistical_significance(frequency_data, expected_biome_distributi
         # Store results, including observed vs expected data
         significance_results[resource] = {
             'p_value': p_value,
-            'significant': p_value < 0.05,
+            'significant': float(p_value) < 0.05, # type: ignore
             'observed_distribution': biomes,
             'observed_vs_expected': observed_vs_expected
-        }
+        } 
 
     return significance_results
 

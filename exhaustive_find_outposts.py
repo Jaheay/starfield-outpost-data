@@ -1,9 +1,10 @@
+import itertools
 from tqdm import tqdm
 from collections import defaultdict
 from rich.live import Live
 from rich.table import Table
 from rich import box
-import itertools
+from pprint import pprint
 
 # Local Imports
 from config import *
@@ -254,7 +255,7 @@ def find_best_systems(system_data, unique_resources, resources_by_rarity, groups
     print(f"Total combinations to process: {len(all_combinations)}")
 
     # For each combination, process and find the best ones
-    best_combinations, min_planet_count = find_best_combinations(
+    best_combinations, min_planet_count, planet_count_occurrences = find_best_combinations(
         all_combinations,
         initial_final_planets,
         initial_processed_systems,
@@ -266,6 +267,9 @@ def find_best_systems(system_data, unique_resources, resources_by_rarity, groups
 
     print(f"\nMinimal total planets: {min_planet_count}")
     print(f"Number of combinations with minimal planets: {len(best_combinations)}")
+
+    print("Planet Count Occurrences: ")
+    pprint(planet_count_occurrences, width=80)
 
     if min_planet_count < 23:
         # For each best combination, print the planet names and detailed results

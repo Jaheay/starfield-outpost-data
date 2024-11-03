@@ -144,7 +144,7 @@ def scrape_star_system(url):
             if biomes_container:
                 biomes_tags = biomes_container.find_all("span", class_="tag minor")
                 biomes = [clean_output(biome.text.strip()) for biome in biomes_tags]
-                planet['biomes'] = [re.split(r'\s\d', biome, 1)[0].strip() for biome in biomes]
+                planet['biomes'] = [re.split(r'\s\d', str(biome), maxsplit=1)[0].strip() for biome in biomes]
 
         # Flora and Fauna Sections
         # Initialize flora and fauna dictionaries with counts

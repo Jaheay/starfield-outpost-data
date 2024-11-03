@@ -372,7 +372,8 @@ def capture_full_chain_systems(
         )
 
         # Select the best planet(s)
-        best_planet_name = max(scored_planets, key=scored_planets.get)
+        best_planet_name = max(scored_planets, key=lambda planet: scored_planets.get(planet, -float('inf')))
+
 
         # Find the system name for the best planet
         best_system_name = next(
@@ -461,7 +462,7 @@ def apply_highlander_rules(
                     desired_inorganics=[],
                     desired_organics=[],
                 )
-            best_planet_name = max(scored_planets, key=scored_planets.get)
+            best_planet_name = max(scored_planets, key=lambda planet: scored_planets.get(planet, -float('inf')))
             best_planet = next(p for p in planets if p["name"] == best_planet_name)
             unique_resource_planets.append(best_planet)
             full_resource_chain = tuple(
@@ -495,7 +496,7 @@ def apply_highlander_rules(
             desired_organics=all_organics,
         )
         # Find the planet with the highest score
-        best_planet_name = max(scored_planets, key=scored_planets.get)
+        best_planet_name = max(scored_planets, key=lambda planet: scored_planets.get(planet, -float('inf')))
         best_planet = next(
             planet for planet in candidates if planet["name"] == best_planet_name
         )
@@ -851,9 +852,10 @@ def print_final_results(final_planets, uncaptured_resources):
     print(f"\nNumber of Planets: {len(final_planets)}")
 
     if len(uncaptured_resources['inorganic']) > 0:
-        print(f"Uncaptured Inorganics: {'\n' + sorted(uncaptured_resources['inorganic'])}")
+        print(f"Uncaptured Inorganics:\n{'\n'.join(sorted(uncaptured_resources['inorganic']))}")
     if len(uncaptured_resources['organic']) > 0:
-        print(f"Uncaptured Organics: {'\n' + sorted(uncaptured_resources['organic'])}")
+        print(f"Uncaptured Organics:\n{'\n'.join(sorted(uncaptured_resources['organic']))}")
+
 
 
 if __name__ == "__main__":
