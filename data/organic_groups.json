@@ -1,0 +1,35 @@
+{
+    "flora": [
+        "Sedative",
+        "Structural Material",
+        "Toxin",
+        "Membrane",
+        "High-Tensile Spidroin",
+        "Spice",
+        "Stimulant",
+        "Polymer",
+        "Ornamental Material",
+        "Pigment",
+        "Cosmetic",
+        "Metabolic Agent",
+        "Fiber",
+        "Biosuppressant",
+        "Adhesive",
+        "Solvent",
+        "Analgesic",
+        "Lubricant",
+        "Nutrient",
+        "Antimicrobial",
+        "Sealant",
+        "Amino Acids",
+        "Hallucinogen",
+        "Aromatic",
+        "Hypercatalyst",
+        "Immunostimulant"
+    ],
+    "fauna": [
+        "Luxury Textile",
+        "Gastronomic Delight",
+        "Memory Substrate"
+    ]
+}

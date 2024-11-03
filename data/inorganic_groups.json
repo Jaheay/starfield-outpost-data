@@ -1,0 +1,22 @@
+{
+    "Argon": ["Argon", "Benzene", "Carboxylic Acids", "Neon", "Veryl"],
+    "Iron": ["Iron", "Alkanes", "Tantalum", "Ytterbium", "Rothicite"],
+    "Aluminum": ["Aluminum", "Beryllium", "Neodymium", "Europium", "Indicite"],
+    "Uranium": ["Uranium", "Iridium", "Vanadium", "Plutonium", "Vytinium"],
+    "Nickel": ["Nickel", "Cobalt", "Platinum", "Palladium", "Tasine"],
+    "Chlorine": {
+        "Main": ["Chlorine", "Chlorosilanes", "Lithium"],
+        "Chlorine-Xenon": ["Xenon", "Aldumite"],
+        "Chlorine-Caesium": ["Caesium"]
+    },
+    "Lead": {
+        "Main": ["Lead"],
+        "Lead-Tungsten": ["Tungsten", "Titanium", "Dysprosium"],
+        "Lead-Silver": ["Silver", "Mercury"]
+    },
+    "Copper": {
+        "Main": ["Copper", "Fluorine"],
+        "Copper-Tetrafluorides": ["Tetrafluorides", "Ionic Liquids"],
+        "Copper-Gold": ["Gold", "Antimony"]
+    }
+}
