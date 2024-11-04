@@ -1,11 +1,18 @@
 import itertools
-from tqdm import tqdm
+import warnings
+from tqdm.rich import tqdm as rich_tqdm
+from tqdm.std import TqdmExperimentalWarning
 from collections import defaultdict
 from rich.live import Live
 from rich.table import Table
+from rich.console import Console, Group
+from rich.text import Text
 from rich import box
 from pprint import pprint
 from copy import deepcopy, copy
+
+# Suppress the experimental warning for rich tqdm
+warnings.filterwarnings("ignore", category=TqdmExperimentalWarning)
 
 # Local Imports
 from config import *
@@ -158,68 +165,75 @@ def find_best_combinations(
     resources_by_rarity,
     groups,
 ):
-    """
-    Processes all combinations and finds the ones with the minimal total number of planets.
-    Returns a list of best combinations, the minimal planet count, and a count of each planet count occurrence.
-    """
     combination_results = []
     min_planet_count = float("inf")
     planet_count_occurrences = defaultdict(int)
 
     total_combinations = len(all_combinations)
 
-    # Function to generate a table with planet count distribution
-    def generate_distribution_table():
+    # Function to generate a table with planet count distribution and a blank line
+    def generate_distribution_table_with_spacing():
         table = Table(title="Planet Count Distribution", box=box.MINIMAL_HEAVY_HEAD)
         table.add_column("Planet Count", justify="right")
         table.add_column("Occurrences", justify="right")
         for count, occurrences in sorted(planet_count_occurrences.items()):
             table.add_row(str(count), str(occurrences))
-        return table
+        
+        # Group the table with a blank line
+        return Group(table, Text(""))
+    
+    console = Console()
 
-    # Initialize progress bar and live table update
-    with tqdm(total=total_combinations, desc="Processing combinations") as pbar:
-        with Live(generate_distribution_table(), refresh_per_second=2) as live:
-            for idx, combination in enumerate(all_combinations):
-                # Process the combination
-                final_planets, planet_count, uncaptured_resources = process_combination(
-                    combination,
-                    initial_final_planets,
-                    initial_processed_systems,
-                    initial_captured_resources,
-                    system_data,
-                    resources_by_rarity,
-                    groups,
-                )
+    # Initialize the Live display
+    with Live(generate_distribution_table_with_spacing(), refresh_per_second=1, console=console) as live:
+        # Initialize tqdm using tqdm.rich
+        pbar = rich_tqdm(total=total_combinations, desc="Processing combinations", smoothing=0.1, mininterval=0.25, miniters=100)
 
-                combination_results.append(
-                    {
-                        "combination": combination,
-                        "final_planets": final_planets,
-                        "planet_count": planet_count,
-                        "uncaptured_resources": uncaptured_resources,
-                    }
-                )
+        for idx, combination in enumerate(all_combinations):
+            # Process the combination
+            final_planets, planet_count, uncaptured_resources = process_combination(
+                combination,
+                initial_final_planets,
+                initial_processed_systems,
+                initial_captured_resources,
+                system_data,
+                resources_by_rarity,
+                groups,
+            )
 
-                # Update the count for this planet count
-                planet_count_occurrences[planet_count] += 1
+            if planet_count < min_planet_count:
+                min_planet_count = planet_count
+                best_combinations = [{
+                    "combination": None, 
+                    "final_planets": final_planets,
+                    "planet_count": planet_count,
+                    "uncaptured_resources": uncaptured_resources,
+                }]
+            elif planet_count == min_planet_count:
+                best_combinations.append({
+                    "combination": None,  
+                    "final_planets": final_planets,
+                    "planet_count": planet_count,
+                    "uncaptured_resources": uncaptured_resources,
+                })
 
-                # Update the minimal planet count if necessary
-                if planet_count < min_planet_count:
-                    min_planet_count = planet_count
+            # Update the count for this planet count
+            planet_count_occurrences[planet_count] += 1
 
-                # Update the progress bar description
+            # Update the minimal planet count if necessary
+            if planet_count < min_planet_count:
+                min_planet_count = planet_count
+
+            # Manually update tqdm's progress
+            if idx % 10 == 0:
+                pbar.update(100)  # Update by 100 steps at once
                 pbar.set_postfix({"Min planets": min_planet_count})
 
-                # Refresh the live table display
-                live.update(generate_distribution_table())
+            # Refresh the live table display
+            live.update(generate_distribution_table_with_spacing())
 
-                # Update the progress bar
-                pbar.update(1)
-            print()
-
-    # Find all combinations with the minimal planet count
-    best_combinations = [result for result in combination_results if result["planet_count"] == min_planet_count]
+        # Ensure tqdm progress is complete
+        pbar.close()
 
     return best_combinations, min_planet_count, dict(planet_count_occurrences)
 
