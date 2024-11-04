@@ -5,6 +5,7 @@ from rich.live import Live
 from rich.table import Table
 from rich import box
 from pprint import pprint
+from copy import deepcopy, copy
 
 # Local Imports
 from config import *
@@ -26,7 +27,6 @@ from find_outposts import (
     find_unique_resources,
     print_final_results,
     score_by_desired,
-
 )
 
 
@@ -46,12 +46,8 @@ def collect_full_chain_planets(system_data, groups, processed_systems, final_pla
             for planet in system["planets"]:
                 if planet in final_planets:
                     continue
-                if group_name in planet.get("outpost_candidacy", {}).get(
-                    "full_resource_chain", []
-                ):
-                    planet["system_name"] = system[
-                        "name"
-                    ]  # Store system name for later use
+                if group_name in planet.get("outpost_candidacy", {}).get("full_resource_chain", []):
+                    planet["system_name"] = system["name"]  # Store system name for later use
                     candidate_planets.append(planet)
         if candidate_planets:
             fullchain_by_group[group_name] = candidate_planets
@@ -78,7 +74,7 @@ def process_combination(
     initial_final_planets,
     initial_processed_systems,
     initial_captured_resources,
-    system_data,
+    initial_system_data,
     resources_by_rarity,
     groups,
 ):
@@ -86,20 +82,26 @@ def process_combination(
     Processes a single combination of planets.
     Returns the final planets, the total number of planets, and uncaptured resources.
     """
-    import copy
+
 
     # Deep copy the initial data structures to avoid modifying the originals
-    final_planets = copy.deepcopy(initial_final_planets)
-    processed_systems = copy.deepcopy(initial_processed_systems)
-    captured_resources = copy.deepcopy(initial_captured_resources)
+    final_planets = initial_final_planets[:]
+    processed_systems = deepcopy(initial_processed_systems)
+    captured_resources = deepcopy(initial_captured_resources)
+    system_data_copy = [
+        {
+            **data,
+            'outpost_candidacy': deepcopy(data['outpost_candidacy'])
+        } if 'outpost_candidacy' in data else data
+        for data in initial_system_data
+    ]
+
 
     # Add planets from the combination to final_planets
     for planet in combination:
         if planet not in final_planets:
             final_planets.append(planet)
-            captured_resources["inorganic"].update(
-                planet["resources"].get("inorganic", [])
-            )
+            captured_resources["inorganic"].update(planet["resources"].get("inorganic", []))
             captured_resources["organic"].update(planet["resources"].get("organic", []))
             # Mark the system as processed
             planet_system_name = planet.get("system_name")
@@ -107,9 +109,7 @@ def process_combination(
 
     # Proceed with the rest of the steps
     # Step 3: Apply Highlander Rules
-    final_planets = apply_highlander_rules(
-        final_planets, captured_resources, resources_by_rarity, groups
-    )
+    final_planets = apply_highlander_rules(final_planets, captured_resources, resources_by_rarity, groups)
 
     # Calculate uncaptured resources for next step
     uncaptured_resources = calculate_uncaptured_resources(
@@ -120,7 +120,7 @@ def process_combination(
     while len(uncaptured_resources["organic"]) > 0:
         # Step 4: Capture remaining organics
         final_planets, captured_resources = capture_remaining_organics(
-            system_data,
+            system_data_copy,
             final_planets,
             captured_resources,
             groups,
@@ -130,9 +130,7 @@ def process_combination(
         # Step 5: Elimination
         final_planets = eliminate_redundant_planets(final_planets, groups)
 
-        captured_resources = recalculate_captured_resources(
-            final_planets, captured_resources
-        )
+        captured_resources = recalculate_captured_resources(final_planets, captured_resources)
         uncaptured_resources = calculate_uncaptured_resources(
             captured_resources, resources_by_rarity, groups["gatherable_only"]
         )
@@ -142,9 +140,7 @@ def process_combination(
     captured_resources = capture_helium_and_water(final_planets, captured_resources)
 
     # Recalculate captured resources
-    captured_resources = recalculate_captured_resources(
-        final_planets, captured_resources
-    )
+    captured_resources = recalculate_captured_resources(final_planets, captured_resources)
     uncaptured_resources = calculate_uncaptured_resources(
         captured_resources, resources_by_rarity, groups["gatherable_only"]
     )
@@ -223,11 +219,7 @@ def find_best_combinations(
             print()
 
     # Find all combinations with the minimal planet count
-    best_combinations = [
-        result
-        for result in combination_results
-        if result["planet_count"] == min_planet_count
-    ]
+    best_combinations = [result for result in combination_results if result["planet_count"] == min_planet_count]
 
     return best_combinations, min_planet_count, dict(planet_count_occurrences)
 
@@ -238,8 +230,8 @@ def find_best_systems(system_data, unique_resources, resources_by_rarity, groups
     Returns the final list of planets for outpost placement.
     """
     # Step 1: Capture unique resource systems
-    initial_final_planets, initial_processed_systems, initial_captured_resources = (
-        capture_unique_resource_systems(system_data, unique_resources, groups)
+    initial_final_planets, initial_processed_systems, initial_captured_resources = capture_unique_resource_systems(
+        system_data, unique_resources, groups
     )
 
     # Collect planets for each resource group
@@ -292,7 +284,8 @@ def find_best_systems(system_data, unique_resources, resources_by_rarity, groups
 
     return best_combinations
 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     inorganic_rarity = load_resources(INORGANIC_DATA_PATH, shortname=False)
     organic_rarity = load_resources(ORGANIC_DATA_PATH, shortname=False)
     gatherable_only = load_resource_groups(GATHERABLE_ONLY_PATH)
@@ -300,9 +293,7 @@ if __name__ == "__main__":
     rarity = {"inorganic": inorganic_rarity, "organic": organic_rarity}
 
     unique = {
-        category: {
-            key: value for key, value in items.items() if value == "Unique" and key
-        }
+        category: {key: value for key, value in items.items() if value == "Unique" and key}
         for category, items in rarity.items()
     }
 
@@ -316,8 +307,6 @@ if __name__ == "__main__":
 
     all_systems = load_system_data(SCORED_SYSTEM_DATA_PATH)
 
-    fullchain_inorganic_planets = find_fullchain_planets(
-        all_systems, groups["inorganic"]
-    )
-    unique_resource_planets = find_unique_resources(all_systems, unique)
-    selected_systems = find_best_systems(all_systems, unique, rarity, groups)
+    find_fullchain_planets(all_systems, groups["inorganic"])
+    find_unique_resources(all_systems, unique)
+    find_best_systems(all_systems, unique, rarity, groups)

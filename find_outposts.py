@@ -26,9 +26,7 @@ def find_fullchain_planets(system_data, inorganic_groups):
             full_chain = any(is_complete for is_complete in grouped_resources.values())
             if full_chain:
                 planet.setdefault("outpost_candidacy", {})
-                planet["outpost_candidacy"]["full_resource_chain"] = list(
-                    grouped_resources.keys()
-                )
+                planet["outpost_candidacy"]["full_resource_chain"] = list(grouped_resources.keys())
 
 
 def find_unique_resources(system_data, unique_resources):
@@ -45,24 +43,18 @@ def find_unique_resources(system_data, unique_resources):
                         + list(planet["flora"]["gatherable"].keys())
                         + list(planet["fauna"]["gatherable"].keys())
                     )
-                    unique_resources_found.extend(
-                        resource for resource in resources if resource in unique_list
-                    )
+                    unique_resources_found.extend(resource for resource in resources if resource in unique_list)
                 else:
                     # Process non-organic resources as usual
                     unique_resources_found.extend(
-                        resource
-                        for resource in planet["resources"].get(resource_type, [])
-                        if resource in unique_list
+                        resource for resource in planet["resources"].get(resource_type, []) if resource in unique_list
                     )
 
             # Check if 'Caelumite' is found separately
             if "Caelumite" in unique_resources_found:
                 planet.setdefault("outpost_candidacy", {})
                 planet["outpost_candidacy"]["caelumite"] = True
-                unique_resources_found.remove(
-                    "Caelumite"
-                )  # Remove Caelumite from unique_resources_found
+                unique_resources_found.remove("Caelumite")  # Remove Caelumite from unique_resources_found
 
             # If any unique resources are found, update outpost_candidacy
             if unique_resources_found:
@@ -95,39 +87,26 @@ def score_by_desired(
                 fauna=planet["fauna"]["domesticable"],
                 resource_groups=groups["organic"],
             )
-            planet_flora = [
-                resource
-                for resource in planet["flora"]["domesticable"]
-                if resource in desired_organics
-            ]
-            planet_fauna = [
-                resource
-                for resource in planet["flora"]["domesticable"]
-                if resource in desired_organics
-            ]
+            planet_flora = [resource for resource in planet["flora"]["domesticable"] if resource in desired_organics]
+            planet_fauna = [resource for resource in planet["flora"]["domesticable"] if resource in desired_organics]
             resource_score_organic = score_organics(
-                planet_flora, planet_fauna, organic_group_counts, resources_by_rarity["organic"]
+                planet_flora,
+                planet_fauna,
+                organic_group_counts,
+                resources_by_rarity["organic"],
             )
         if len(desired_inorganics) > 0:
             planet_inorganics = [
-                resource
-                for resource in planet["resources"]["inorganic"]
-                if resource in desired_inorganics
+                resource for resource in planet["resources"]["inorganic"] if resource in desired_inorganics
             ]
-            resource_score_inorganic = score_inorganic(
-                planet_inorganics, rarity["inorganic"], full_chain=True
-            )
+            resource_score_inorganic = score_inorganic(planet_inorganics, rarity["inorganic"], full_chain=True)
 
-        planet_scores[planet["name"]] = (
-            resource_score_inorganic + resource_score_organic
-        )
+        planet_scores[planet["name"]] = resource_score_inorganic + resource_score_organic
 
     return planet_scores
 
 
-def score_systems_by_full_chains(
-    system_data, uncaptured_inorganic_groups, processed_systems
-):
+def score_systems_by_full_chains(system_data, uncaptured_inorganic_groups, processed_systems):
     """
     Scores systems based on the number of uncaptured full resource chains they contain.
     Returns a dictionary of system names and their scores.
@@ -142,9 +121,7 @@ def score_systems_by_full_chains(
             candidacy = planet.get("outpost_candidacy", {})
             if candidacy.get("full_resource_chain"):
                 unique_uncaptured_groups.update(
-                    group
-                    for group in candidacy["full_resource_chain"]
-                    if group in uncaptured_inorganic_groups
+                    group for group in candidacy["full_resource_chain"] if group in uncaptured_inorganic_groups
                 )
 
         if unique_uncaptured_groups:
@@ -153,9 +130,7 @@ def score_systems_by_full_chains(
     return system_scores
 
 
-def collect_candidate_planets(
-    system_data, candidate_systems, uncaptured_inorganic_groups
-):
+def collect_candidate_planets(system_data, candidate_systems, uncaptured_inorganic_groups):
     """
     Collects candidate planets with full resource chains from the top-scoring systems.
     Returns a list of candidate planets.
@@ -164,12 +139,8 @@ def collect_candidate_planets(
     for system in system_data:
         if system["name"] in candidate_systems:
             for planet in system["planets"]:
-                candidacy = planet.get("outpost_candidacy", {}).get(
-                    "full_resource_chain"
-                )
-                if candidacy and any(
-                    item in uncaptured_inorganic_groups for item in candidacy
-                ):
+                candidacy = planet.get("outpost_candidacy", {}).get("full_resource_chain")
+                if candidacy and any(item in uncaptured_inorganic_groups for item in candidacy):
                     candidate_planets.append(planet)
     return candidate_planets
 
@@ -195,9 +166,7 @@ def recalculate_captured_resources(final_planets, old_captured_resources):
     return captured_resources
 
 
-def calculate_uncaptured_resources(
-    captured_resources, resources_by_rarity, gatherable_only
-):
+def calculate_uncaptured_resources(captured_resources, resources_by_rarity, gatherable_only):
     """
     Calculates uncaptured inorganic and organic resources.
     Returns uncaptured_inorganics and uncaptured_organics.
@@ -206,15 +175,9 @@ def calculate_uncaptured_resources(
     all_organic_resources = set(resources_by_rarity["organic"].keys())
 
     uncaptured_inorganics = (
-        all_inorganic_resources
-        - captured_resources["inorganic"]
-        - set(gatherable_only["inorganic"])
+        all_inorganic_resources - captured_resources["inorganic"] - set(gatherable_only["inorganic"])
     )
-    uncaptured_organics = (
-        all_organic_resources
-        - captured_resources["organic"]
-        - set(gatherable_only["organic"])
-    )
+    uncaptured_organics = all_organic_resources - captured_resources["organic"] - set(gatherable_only["organic"])
 
     uncaptured_resources = {
         "inorganic": uncaptured_inorganics,
@@ -264,9 +227,7 @@ def capture_unique_resource_systems(system_data, unique_resources, groups):
                 for group_name, group_resources in groups["inorganic"].items():
                     capturable_inorganics = planet_inorganics & set(group_resources)
                     if capturable_inorganics:
-                        potential_groups[group_name] = list(
-                            capturable_inorganics
-                        )  # Store as list of resources
+                        potential_groups[group_name] = list(capturable_inorganics)  # Store as list of resources
 
                 # Store potential groups in outpost_candidacy
                 planet.setdefault("outpost_candidacy", {})
@@ -276,7 +237,6 @@ def capture_unique_resource_systems(system_data, unique_resources, groups):
                 captured_organics.update(planet["resources"].get("organic", []))
 
         # If the system contains unique resources, process full chains
-        """
         if unique_system:
             processed_systems.add(system['name'])
             for planet in system['planets']:
@@ -286,7 +246,8 @@ def capture_unique_resource_systems(system_data, unique_resources, groups):
                     for group in candidacy['full_resource_chain']:
                         captured_inorganics.update(groups['inorganic'][group])
                         captured_organics.update(planet['resources'].get('organic', []))
-        """
+
+                        
     captured_resources = {
         "inorganic": captured_inorganics,
         "organic": captured_organics,
@@ -317,50 +278,36 @@ def capture_full_chain_systems(
 
     while True:
         # Determine remaining uncaptured resources
-        uncaptured_inorganic_groups = [
-            group
-            for group in inorganic_groups
-            if group not in captured_inorganic_groups
-        ]
+        uncaptured_inorganic_groups = [group for group in inorganic_groups if group not in captured_inorganic_groups]
         uncaptured_inorganics = [
             res
             for res in all_inorganic_resources
-            if res not in captured_inorganics
-            and res not in groups["gatherable_only"]["inorganic"]
+            if res not in captured_inorganics and res not in groups["gatherable_only"]["inorganic"]
         ]
         uncaptured_organics = [
             res
             for res in all_organic_resources
-            if res not in captured_organics
-            and res not in groups["gatherable_only"]["organic"]
+            if res not in captured_organics and res not in groups["gatherable_only"]["organic"]
         ]
 
         if not uncaptured_inorganic_groups:
             break  # Exit if all resource groups are captured
 
         # Score systems based on the count of uncaptured full chains
-        system_scores = score_systems_by_full_chains(
-            system_data, uncaptured_inorganic_groups, processed_systems
-        )
+        system_scores = score_systems_by_full_chains(system_data, uncaptured_inorganic_groups, processed_systems)
 
         if not system_scores:
-            captured_resources = recalculate_captured_resources(
-                final_planets, captured_resources
-            )
+            captured_resources = recalculate_captured_resources(final_planets, captured_resources)
             captured_inorganics = captured_resources["inorganic"]
             captured_organics = captured_resources["organic"]
             continue
 
         # Identify the maximum count of uncaptured groups and select those systems
         max_score = max(system_scores.values(), default=0)
-        candidate_systems = [
-            system for system, score in system_scores.items() if score == max_score
-        ]
+        candidate_systems = [system for system, score in system_scores.items() if score == max_score]
 
         # Collect candidate planets with full chains in the top-scoring systems
-        candidate_planets = collect_candidate_planets(
-            system_data, candidate_systems, uncaptured_inorganic_groups
-        )
+        candidate_planets = collect_candidate_planets(system_data, candidate_systems, uncaptured_inorganic_groups)
 
         # Use `score_by_desired` to rank candidates based on desired organics and desired inorganics
         scored_planets = score_by_desired(
@@ -372,8 +319,7 @@ def capture_full_chain_systems(
         )
 
         # Select the best planet(s)
-        best_planet_name = max(scored_planets, key=lambda planet: scored_planets.get(planet, -float('inf')))
-
+        best_planet_name = max(scored_planets, key=lambda planet: scored_planets.get(planet, -float("inf")))
 
         # Find the system name for the best planet
         best_system_name = next(
@@ -407,9 +353,7 @@ def capture_full_chain_systems(
     return final_planets, processed_systems, captured_resources
 
 
-def apply_highlander_rules(
-    final_planets, captured_resources, resources_by_rarity, groups
-):
+def apply_highlander_rules(final_planets, captured_resources, resources_by_rarity, groups):
     """
     Applies the Highlander rules to eliminate duplicate resource chains,
     favoring unique resource planets.
@@ -431,19 +375,13 @@ def apply_highlander_rules(
             # Only one planet has this unique resource
             planet = planets[0]
             unique_resource_planets.append(planet)
-            full_resource_chain = tuple(
-                planet.get("outpost_candidacy", {}).get("full_resource_chain", [])
-            )
+            full_resource_chain = tuple(planet.get("outpost_candidacy", {}).get("full_resource_chain", []))
             if full_resource_chain:
                 locked_full_chains.add(full_resource_chain)
         else:
             # Multiple planets have this unique resource
             # Prefer the one with a full chain
-            planets_with_full_chain = [
-                p
-                for p in planets
-                if "full_resource_chain" in p.get("outpost_candidacy", {})
-            ]
+            planets_with_full_chain = [p for p in planets if "full_resource_chain" in p.get("outpost_candidacy", {})]
             if planets_with_full_chain:
                 # Pick the best one among them
                 scored_planets = score_by_desired(
@@ -462,12 +400,13 @@ def apply_highlander_rules(
                     desired_inorganics=[],
                     desired_organics=[],
                 )
-            best_planet_name = max(scored_planets, key=lambda planet: scored_planets.get(planet, -float('inf')))
+            best_planet_name = max(
+                scored_planets,
+                key=lambda planet: scored_planets.get(planet, -float("inf")),
+            )
             best_planet = next(p for p in planets if p["name"] == best_planet_name)
             unique_resource_planets.append(best_planet)
-            full_resource_chain = tuple(
-                best_planet.get("outpost_candidacy", {}).get("full_resource_chain", [])
-            )
+            full_resource_chain = tuple(best_planet.get("outpost_candidacy", {}).get("full_resource_chain", []))
             if full_resource_chain:
                 locked_full_chains.add(full_resource_chain)
 
@@ -476,9 +415,7 @@ def apply_highlander_rules(
     for planet in final_planets:
         if planet in unique_resource_planets:
             continue
-        full_resource_chain = tuple(
-            planet.get("outpost_candidacy", {}).get("full_resource_chain", [])
-        )
+        full_resource_chain = tuple(planet.get("outpost_candidacy", {}).get("full_resource_chain", []))
         if not full_resource_chain or full_resource_chain in locked_full_chains:
             continue
         unique_full_chain_planets.setdefault(full_resource_chain, []).append(planet)
@@ -496,24 +433,20 @@ def apply_highlander_rules(
             desired_organics=all_organics,
         )
         # Find the planet with the highest score
-        best_planet_name = max(scored_planets, key=lambda planet: scored_planets.get(planet, -float('inf')))
-        best_planet = next(
-            planet for planet in candidates if planet["name"] == best_planet_name
-        )
+        best_planet_name = max(scored_planets, key=lambda planet: scored_planets.get(planet, -float("inf")))
+        best_planet = next(planet for planet in candidates if planet["name"] == best_planet_name)
         best_planets.append(best_planet)
 
     # Retain the final list of planets
     final_planets = unique_resource_planets + best_planets
 
     # Recalculate captured resources and uncaptured resources after removing planets
-    captured_resources = recalculate_captured_resources(
-        final_planets, captured_resources
-    )
+    captured_resources = recalculate_captured_resources(final_planets, captured_resources)
 
     return final_planets
 
 
-def capture_organic_resources(planet, filter=set()):
+def capture_organic_resources(planet, groups, filter=set()):
     """If were going to sift through all systems lets get it perfect"""
 
     capturable_resources = set()
@@ -522,6 +455,7 @@ def capture_organic_resources(planet, filter=set()):
     capturable_flora = flora_resources & filter
 
     # Get capturable organics from fauna only if in groups['organic']['fauna']
+
     fauna_resources = set(planet.get("fauna", {}).get("domesticable", []))
     capturable_fauna = fauna_resources & set(groups["organic"]["fauna"]) & filter
 
@@ -532,9 +466,7 @@ def capture_organic_resources(planet, filter=set()):
     return capturable_resources
 
 
-def capture_remaining_organics(
-    system_data, final_planets, captured_resources, groups, remaining_organics
-):
+def capture_remaining_organics(system_data, final_planets, captured_resources, groups, remaining_organics):
     """
     Selects planets to capture the remaining uncaptured organics using a greedy set cover algorithm.
     Returns the updated list of final planets and captured resources.
@@ -557,9 +489,7 @@ def capture_remaining_organics(
 
         for planet in candidate_planets:
             # Get capturable organics
-            capturable_organic_resources = capture_organic_resources(
-                planet, remaining_organics
-            )
+            capturable_organic_resources = capture_organic_resources(planet, groups, remaining_organics)
 
             if not capturable_organic_resources:
                 # Skip planets that do not have any of the remaining organics
@@ -589,9 +519,7 @@ def capture_remaining_organics(
         final_planets.append(best_planet)
         # Set outpost candidacy for the best planet
         best_planet.setdefault("outpost_candidacy", {})
-        best_planet["outpost_candidacy"]["other"] = list(
-            best_candidate_organic_resources
-        )
+        best_planet["outpost_candidacy"]["other"] = list(best_candidate_organic_resources)
         best_planet["outpost_candidacy"]["potential_groups"] = best_potential_groups
 
         # Update captured resources
@@ -634,9 +562,7 @@ def eliminate_redundant_planets(final_planets, groups):
 
     # For each planet with a full resource chain, check if we can eliminate it
     for planet in final_planets:
-        full_resource_chain = planet.get("outpost_candidacy", {}).get(
-            "full_resource_chain", []
-        )
+        full_resource_chain = planet.get("outpost_candidacy", {}).get("full_resource_chain", [])
         if not full_resource_chain:
             continue  # Skip planets without a full resource chain
 
@@ -645,54 +571,44 @@ def eliminate_redundant_planets(final_planets, groups):
 
             # Collect other planets' potential inorganics for this group, excluding assigned planets
             other_planets = [
-                p
-                for p in final_planets
-                if p["name"] != planet["name"] and p["name"] not in assigned_planets
+                p for p in final_planets if p["name"] != planet["name"] and p["name"] not in assigned_planets
             ]
             potential_planets = []
             for p in other_planets:
-                potential_groups = p.get("outpost_candidacy", {}).get(
-                    "potential_groups", {}
-                )
+                potential_groups = p.get("outpost_candidacy", {}).get("potential_groups", {})
                 if group_name in potential_groups:
-                    potential_planets.append(
-                        {"planet": p, "resources": set(potential_groups[group_name])}
-                    )
+                    potential_planets.append({"planet": p, "resources": set(potential_groups[group_name])})
 
             # Try to find combinations of planets that cover the group
             found_combination = False
-            max_combination_size = min(
-                4, len(potential_planets)
-            )  # Cap combinations at size 4
+            max_combination_size = min(4, len(potential_planets))  # Cap combinations at size 4
             for r in range(1, max_combination_size + 1):
                 for combo in combinations(potential_planets, r):
                     combo_planets = [info["planet"] for info in combo]
                     # Skip combinations if any planet is already assigned
                     if any(p["name"] in assigned_planets for p in combo_planets):
                         continue
-                    combined_resources = set().union(
-                        *(info["resources"] for info in combo)
-                    )
+                    combined_resources = set().union(*(info["resources"] for info in combo))
                     if combined_resources >= group_resources:
                         # Found a valid combination
                         planets_to_remove.add(planet["name"])
                         # Add resource group info to combo planets
                         for combo in combo_planets:
                             combo.setdefault("outpost_candidacy", {})
-                            combo["outpost_candidacy"].setdefault(
-                                "resource_group_partial", []
-                            ).append(f"{group_name} (partial)")
-                            partner_planets = [
-                                p["name"]
-                                for p in combo_planets
-                                if p["name"] != combo["name"]
-                            ]
-                            combo["outpost_candidacy"].setdefault("partner_planets", []).extend(
-                                [p for p in partner_planets if p not in combo["outpost_candidacy"]["partner_planets"]]
-                            )
+                            # Use a set temporarily to avoid duplicate checks slowing down
+                            resource_group_partial = set(combo["outpost_candidacy"].setdefault("resource_group_partial", []))
+                            
+                            if f"{group_name} (partial)" not in resource_group_partial:
+                                resource_group_partial.add(f"{group_name} (partial)")
+                            # Convert back to list
+                            combo["outpost_candidacy"]["resource_group_partial"] = list(resource_group_partial)
 
+                            partner_planets = {p["name"] for p in combo_planets if p["name"] != combo["name"]}
+                            current_partners = set(combo["outpost_candidacy"].setdefault("partner_planets", []))
+                            # Convert back to list
+                            combo["outpost_candidacy"]["partner_planets"] = list(current_partners | partner_planets)
                             assigned_planets.add(combo["name"])  # Mark planet as assigned
-                        #print(f"Eliminated planet {planet['name']} covering group {group_name} with combination of planets {[p['name'] for p in combo_planets]}")
+                        # print(f"Eliminated planet {planet['name']} covering group {group_name} with combination of planets {[p['name'] for p in combo_planets]}")
                         found_combination = True
                         break
                 if found_combination:
@@ -725,6 +641,7 @@ def capture_helium_and_water(final_planets, captured_resources):
 
     return captured_resources
 
+
 def clean_up_after_processing(all_systems, final_planets):
 
     # Iterate over each system's planets in all_systems and each planet in final_planets
@@ -736,14 +653,15 @@ def clean_up_after_processing(all_systems, final_planets):
 
     return all_systems, final_planets
 
+
 def find_best_systems(system_data, unique_resources, resources_by_rarity, groups):
     """
     Identifies the best systems for outpost setup based on unique resources and full resource chains.
     Returns the final list of planets for outpost placement.
     """
     # Step 1: Capture unique resource systems
-    final_planets, processed_systems, captured_resources = (
-        capture_unique_resource_systems(system_data, unique_resources, groups)
+    final_planets, processed_systems, captured_resources = capture_unique_resource_systems(
+        system_data, unique_resources, groups
     )
 
     # Step 2: Capture systems with full chains that contibute the most to uncaptured organics.
@@ -761,9 +679,7 @@ def find_best_systems(system_data, unique_resources, resources_by_rarity, groups
     # )
 
     # Step 3: Apply Highlander Rules
-    final_planets = apply_highlander_rules(
-        final_planets, captured_resources, resources_by_rarity, groups
-    )
+    final_planets = apply_highlander_rules(final_planets, captured_resources, resources_by_rarity, groups)
 
     # Calculate uncaptured resources for next step
     uncaptured_resources = calculate_uncaptured_resources(
@@ -785,21 +701,18 @@ def find_best_systems(system_data, unique_resources, resources_by_rarity, groups
         # Step 5: Elimination
         final_planets = eliminate_redundant_planets(final_planets, groups)
 
-        captured_resources = recalculate_captured_resources(final_planets, captured_resources
-        )
+        captured_resources = recalculate_captured_resources(final_planets, captured_resources)
         uncaptured_resources = calculate_uncaptured_resources(
             captured_resources, resources_by_rarity, groups["gatherable_only"]
         )
         iter_count += 1
 
-    # Step 6: Capture Helium-3 and Water and clean up potential groups. 
+    # Step 6: Capture Helium-3 and Water and clean up potential groups.
     captured_resources = capture_helium_and_water(final_planets, captured_resources)
     system_data, final_planets = clean_up_after_processing(system_data, final_planets)
 
     # Print final results
-    captured_resources = recalculate_captured_resources(
-        final_planets, captured_resources
-    )
+    captured_resources = recalculate_captured_resources(final_planets, captured_resources)
     uncaptured_resources = calculate_uncaptured_resources(
         captured_resources, resources_by_rarity, groups["gatherable_only"]
     )
@@ -851,11 +764,10 @@ def print_final_results(final_planets, uncaptured_resources):
 
     print(f"\nNumber of Planets: {len(final_planets)}")
 
-    if len(uncaptured_resources['inorganic']) > 0:
+    if len(uncaptured_resources["inorganic"]) > 0:
         print(f"Uncaptured Inorganics:\n{'\n'.join(sorted(uncaptured_resources['inorganic']))}")
-    if len(uncaptured_resources['organic']) > 0:
+    if len(uncaptured_resources["organic"]) > 0:
         print(f"Uncaptured Organics:\n{'\n'.join(sorted(uncaptured_resources['organic']))}")
-
 
 
 if __name__ == "__main__":
@@ -866,9 +778,7 @@ if __name__ == "__main__":
     rarity = {"inorganic": inorganic_rarity, "organic": organic_rarity}
 
     unique = {
-        category: {
-            key: value for key, value in items.items() if value == "Unique" and key
-        }
+        category: {key: value for key, value in items.items() if value == "Unique" and key}
         for category, items in rarity.items()
     }
 
@@ -882,8 +792,6 @@ if __name__ == "__main__":
 
     all_systems = load_system_data(SCORED_SYSTEM_DATA_PATH)
 
-    fullchain_inorganic_planets = find_fullchain_planets(
-        all_systems, groups["inorganic"]
-    )
+    fullchain_inorganic_planets = find_fullchain_planets(all_systems, groups["inorganic"])
     unique_resource_planets = find_unique_resources(all_systems, unique)
     selected_systems = find_best_systems(all_systems, unique, rarity, groups)

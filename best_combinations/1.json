@@ -1,0 +1,1847 @@
+[
+    {
+        "name": "Linnaeus II",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Rock"
+            ],
+            "gravity": "0.52g",
+            "temperature": "Cold",
+            "atmosphere": {
+                "density": "Thin",
+                "type": "O2",
+                "property": null
+            },
+            "magnetosphere": "Weak",
+            "water": "Chemical",
+            "day_length": "28.0 hours",
+            "planetary_habitation": "0",
+            "isMoon": false,
+            "hasMoon": true
+        },
+        "resources": {
+            "inorganic": [
+                "Argon",
+                "Lead",
+                "Water",
+                "Benzene",
+                "Silver"
+            ],
+            "organic": [
+                "Fiber",
+                "Sealant",
+                "High-Tensile Spidroin"
+            ],
+            "possible": [
+                "Caelumite"
+            ]
+        },
+        "traits": [
+            "Gravitational Anomaly (possible)",
+            "Sentient Microbial Colonies"
+        ],
+        "biomes": [
+            "Ocean",
+            "Frozen Mountains",
+            "Mountains"
+        ],
+        "flora": {
+            "count": "3",
+            "domesticable": {
+                "Fiber": "Cold Cave Nettle",
+                "High-Tensile Spidroin": "Frigid Palm"
+            },
+            "gatherable": {
+                "Pigment": "Mountain Silkweed"
+            }
+        },
+        "fauna": {
+            "count": "3",
+            "domesticable": {
+                "Sealant": "Herding Canard Filterer"
+            },
+            "gatherable": {
+                "Ornamental Material": "Finhead",
+                "Nutrient": "Trident Filterer"
+            }
+        },
+        "moons": [
+            "Linnaeus II-a"
+        ],
+        "biome_resources": {
+            "Frozen Mountains": {
+                "inorganic": [
+                    "Water",
+                    "Argon",
+                    "Benzene"
+                ]
+            },
+            "Mountains": {
+                "inorganic": [
+                    "Lead",
+                    "Silver"
+                ]
+            },
+            "Ocean": {
+                "inorganic": []
+            }
+        },
+        "scores": {
+            "habitability_score": "-0.500",
+            "organic_score": "15.222",
+            "inorganic_score": "9.667"
+        },
+        "outpost_candidacy": {
+            "unique": [
+                "High-Tensile Spidroin"
+            ],
+            "potential_groups": {
+                "Argon": [
+                    "Argon",
+                    "Benzene"
+                ],
+                "Lead-Tungsten": [
+                    "Lead"
+                ],
+                "Lead-Silver": [
+                    "Silver",
+                    "Lead"
+                ]
+            },
+            "has_water": true
+        }
+    },
+    {
+        "name": "Zelazny III",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Rock"
+            ],
+            "gravity": "0.63g",
+            "temperature": "Temperate",
+            "atmosphere": {
+                "density": "High",
+                "type": "M",
+                "property": "Corrosive"
+            },
+            "magnetosphere": "Powerful",
+            "water": "Biological",
+            "day_length": "15.0 hours",
+            "planetary_habitation": "3",
+            "isMoon": false,
+            "hasMoon": false
+        },
+        "resources": {
+            "inorganic": [
+                "Argon",
+                "Chlorine",
+                "Lead",
+                "Water",
+                "Tungsten",
+                "Caesium"
+            ],
+            "organic": [
+                "Metabolic Agent",
+                "Nutrient",
+                "Sealant",
+                "Structural Material",
+                "Toxin",
+                "Membrane",
+                "Hallucinogen",
+                "Immunostimulant"
+            ]
+        },
+        "traits": [
+            "Ecological Consortium",
+            "Psychotropic Biota"
+        ],
+        "biomes": [
+            "Wetlands",
+            "Ocean",
+            "Frozen Plains",
+            "Tropical Forest",
+            "Coniferous Forest",
+            "Volcanic"
+        ],
+        "flora": {
+            "count": "9",
+            "domesticable": {
+                "Immunostimulant": "Bright Fire Reed",
+                "Membrane": "Ice Creeper",
+                "Nutrient": "Laga Plant",
+                "Hallucinogen": "Split Leaf Watercress",
+                "Structural Material": "Swamp Weed"
+            },
+            "gatherable": {
+                "Sealant": "Autumn Junglebloom",
+                "Toxin": "Cage Brain",
+                "Hallucinogen": "Haven Vine",
+                "Fiber": "Moth Vine"
+            }
+        },
+        "fauna": {
+            "count": "12",
+            "domesticable": {
+                "Structural Material": "Cagebrain",
+                "Sealant": "Fleshleaf",
+                "Metabolic Agent": "Leafstrider",
+                "Toxin": "Milliwhale",
+                "Nutrient": "Trihorn"
+            },
+            "gatherable": {
+                "Sealant": "Boneshell",
+                "Membrane": "Cockatrice",
+                "Structural Material": "Saturnine",
+                "Antimicrobial": "Lockjaw",
+                "Toxin": "Scarab"
+            }
+        },
+        "moons": [],
+        "biome_resources": {},
+        "scores": {
+            "habitability_score": "1.000",
+            "organic_score": "21.522",
+            "inorganic_score": "14.333"
+        },
+        "outpost_candidacy": {
+            "unique": [
+                "Immunostimulant"
+            ],
+            "potential_groups": {
+                "Argon": [
+                    "Argon"
+                ],
+                "Chlorine-Xenon": [
+                    "Chlorine"
+                ],
+                "Chlorine-Caesium": [
+                    "Chlorine",
+                    "Caesium"
+                ],
+                "Lead-Tungsten": [
+                    "Tungsten",
+                    "Lead"
+                ],
+                "Lead-Silver": [
+                    "Lead"
+                ]
+            },
+            "resource_group_partial": [
+                "Chlorine-Caesium (partial)"
+            ],
+            "partner_planets": [
+                "Beta Ternion I"
+            ],
+            "has_water": true
+        }
+    },
+    {
+        "name": "Verne I",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Rock"
+            ],
+            "gravity": "1.25g",
+            "temperature": "Inferno",
+            "atmosphere": {
+                "density": "Extreme",
+                "type": "CO2",
+                "property": null
+            },
+            "magnetosphere": "Average",
+            "water": "None",
+            "day_length": "32.0 hours",
+            "planetary_habitation": "2",
+            "isMoon": false,
+            "hasMoon": true
+        },
+        "resources": {
+            "inorganic": [
+                "Argon",
+                "Uranium",
+                "Benzene",
+                "Iridium",
+                "Neon",
+                "Plutonium",
+                "Veryl"
+            ],
+            "organic": []
+        },
+        "traits": [
+            "Charred Ecosystem",
+            "Continual Conductor"
+        ],
+        "biomes": [
+            "Sandy Desert",
+            "Volcanic"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "moons": [
+            "Verne I-a"
+        ],
+        "biome_resources": {},
+        "scores": {
+            "habitability_score": "-9.000",
+            "organic_score": "0.000",
+            "inorganic_score": "38.000"
+        },
+        "outpost_candidacy": {
+            "unique": [
+                "Veryl"
+            ],
+            "potential_groups": {
+                "Argon": [
+                    "Argon",
+                    "Neon",
+                    "Benzene"
+                ],
+                "Uranium": [
+                    "Plutonium",
+                    "Uranium",
+                    "Iridium"
+                ]
+            },
+            "resource_group_partial": [
+                "Argon (partial)"
+            ],
+            "partner_planets": [
+                "Bardeen III"
+            ]
+        }
+    },
+    {
+        "name": "Bardeen III",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Rock"
+            ],
+            "gravity": "0.95g",
+            "temperature": "Temperate",
+            "atmosphere": {
+                "density": "Standard",
+                "type": "O2",
+                "property": null
+            },
+            "magnetosphere": "Weak",
+            "water": "Safe",
+            "day_length": "19.0 hours",
+            "planetary_habitation": "0",
+            "isMoon": false,
+            "hasMoon": true
+        },
+        "resources": {
+            "inorganic": [
+                "Argon",
+                "Chlorine",
+                "Iron",
+                "Nickel",
+                "Water",
+                "Chlorosilanes",
+                "Cobalt",
+                "Carboxylic Acids"
+            ],
+            "organic": [
+                "Metabolic Agent",
+                "Nutrient",
+                "Sealant",
+                "Toxin",
+                "Cosmetic",
+                "Amino Acids",
+                "Analgesic",
+                "Lubricant",
+                "Gastronomic Delight"
+            ]
+        },
+        "traits": [
+            "Amphibious Foothold",
+            "Global Glacial Recession"
+        ],
+        "biomes": [
+            "Ocean",
+            "Frozen Plains",
+            "Deciduous Forest",
+            "Wetlands",
+            "Hills",
+            "Mountains"
+        ],
+        "flora": {
+            "count": "8",
+            "domesticable": {
+                "Nutrient": "Atlas Weed",
+                "Lubricant": "Bowing Shadeleaf",
+                "Cosmetic": "Frost Reed",
+                "Toxin": "Leafy Morningstar",
+                "Analgesic": "Nebula weed",
+                "Sealant": "Rotting Stinkroot"
+            },
+            "gatherable": {
+                "Fiber": "Bleeding Heart Vine",
+                "Metabolic Agent": "Gnaw Stalk"
+            }
+        },
+        "fauna": {
+            "count": "11",
+            "domesticable": {
+                "Sealant": "Dragon",
+                "Gastronomic Delight": "Hornface",
+                "Metabolic Agent": "Roundface",
+                "Amino Acids": "Spiderwasp"
+            },
+            "gatherable": {
+                "Sedative": "Clickbeetle",
+                "Spice": "Exocrawler",
+                "Pigment": "Grabber",
+                "Polymer": "Horsamander",
+                "Structural Material": "Kronosaurus",
+                "Membrane": "Parrothawk",
+                "Nutrient": "Tubecrawler"
+            }
+        },
+        "moons": [
+            "Bardeen III-b",
+            "Bardeen III-a"
+        ],
+        "biome_resources": {},
+        "scores": {
+            "habitability_score": "12.000",
+            "organic_score": "18.000",
+            "inorganic_score": "13.667"
+        },
+        "outpost_candidacy": {
+            "unique": [
+                "Gastronomic Delight"
+            ],
+            "potential_groups": {
+                "Argon": [
+                    "Argon",
+                    "Carboxylic Acids"
+                ],
+                "Iron": [
+                    "Iron"
+                ],
+                "Nickel": [
+                    "Cobalt",
+                    "Nickel"
+                ],
+                "Chlorine-Xenon": [
+                    "Chlorine",
+                    "Chlorosilanes"
+                ],
+                "Chlorine-Caesium": [
+                    "Chlorine",
+                    "Chlorosilanes"
+                ]
+            },
+            "resource_group_partial": [
+                "Argon (partial)"
+            ],
+            "partner_planets": [
+                "Verne I"
+            ],
+            "has_water": true
+        }
+    },
+    {
+        "name": "Huygens VII-a",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Rock"
+            ],
+            "gravity": "0.46g",
+            "temperature": "Frozen",
+            "atmosphere": {
+                "density": "Thin",
+                "type": "N2",
+                "property": null
+            },
+            "magnetosphere": "None",
+            "water": "Biological",
+            "day_length": "5.0 hours",
+            "planetary_habitation": "0",
+            "isMoon": true,
+            "hasMoon": false
+        },
+        "resources": {
+            "inorganic": [
+                "Chlorine",
+                "Nickel",
+                "Uranium",
+                "Water",
+                "Cobalt",
+                "Iridium",
+                "Tasine"
+            ],
+            "organic": []
+        },
+        "traits": [],
+        "biomes": [
+            "Hills",
+            "Rocky Desert",
+            "Mountains",
+            "Frozen Plains",
+            "Volcanic",
+            "Ocean"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "moons": [],
+        "biome_resources": {},
+        "scores": {
+            "habitability_score": "-2.000",
+            "organic_score": "0.000",
+            "inorganic_score": "17.000"
+        },
+        "outpost_candidacy": {
+            "unique": [
+                "Tasine"
+            ],
+            "potential_groups": {
+                "Uranium": [
+                    "Uranium",
+                    "Iridium"
+                ],
+                "Nickel": [
+                    "Cobalt",
+                    "Nickel"
+                ],
+                "Chlorine-Xenon": [
+                    "Chlorine"
+                ],
+                "Chlorine-Caesium": [
+                    "Chlorine"
+                ]
+            },
+            "has_water": true
+        }
+    },
+    {
+        "name": "Fermi VII-a",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Rock"
+            ],
+            "gravity": "0.47g",
+            "temperature": "Frozen",
+            "atmosphere": {
+                "density": "Standard",
+                "type": "M",
+                "property": null
+            },
+            "magnetosphere": "Very weak",
+            "water": "Safe",
+            "day_length": "32.0 hours",
+            "planetary_habitation": "0",
+            "isMoon": true,
+            "hasMoon": false
+        },
+        "resources": {
+            "inorganic": [
+                "Copper",
+                "Nickel",
+                "Uranium",
+                "Water",
+                "Cobalt",
+                "Fluorine",
+                "Platinum",
+                "Palladium"
+            ],
+            "organic": [
+                "Memory Substrate"
+            ]
+        },
+        "traits": [
+            "Pelted Fields"
+        ],
+        "biomes": [
+            "Hills",
+            "Sandy Desert",
+            "Frozen Hills",
+            "Plateau"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "3",
+            "domesticable": {
+                "Memory Substrate": "Nautiloos"
+            },
+            "gatherable": {
+                "Toxin": "Jellyfin",
+                "Stimulant": "Sunfish"
+            }
+        },
+        "moons": [],
+        "biome_resources": {},
+        "scores": {
+            "habitability_score": "10.000",
+            "organic_score": "16.000",
+            "inorganic_score": "20.000"
+        },
+        "outpost_candidacy": {
+            "full_resource_chain": [
+                "Nickel"
+            ],
+            "unique": [
+                "Memory Substrate"
+            ],
+            "potential_groups": {
+                "Uranium": [
+                    "Uranium"
+                ],
+                "Nickel": [
+                    "Palladium",
+                    "Cobalt",
+                    "Platinum",
+                    "Nickel"
+                ],
+                "Copper-Tetrafluorides": [
+                    "Fluorine",
+                    "Copper"
+                ],
+                "Copper-Gold": [
+                    "Fluorine",
+                    "Copper"
+                ]
+            },
+            "has_water": true
+        }
+    },
+    {
+        "name": "Carinae III-a",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Rock"
+            ],
+            "gravity": "0.36g",
+            "temperature": "Frozen",
+            "atmosphere": {
+                "density": "Thin",
+                "type": "N2",
+                "property": null
+            },
+            "magnetosphere": "None",
+            "water": "Heavy metal",
+            "day_length": "15.0 hours",
+            "planetary_habitation": "0",
+            "isMoon": true,
+            "hasMoon": false
+        },
+        "resources": {
+            "inorganic": [
+                "Iron",
+                "Lead",
+                "Water",
+                "Alkanes",
+                "Rothicite"
+            ],
+            "organic": []
+        },
+        "traits": [
+            "Energetic Rifting",
+            "Prismatic Plumes",
+            "Turbulent Lithosphere"
+        ],
+        "biomes": [
+            "Rocky Desert",
+            "Hills",
+            "Frozen Plains"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "moons": [],
+        "biome_resources": {
+            "Frozen Plains": {
+                "inorganic": [
+                    "Water",
+                    "Lead"
+                ]
+            },
+            "Hills": {
+                "inorganic": [
+                    "Iron",
+                    "Alkanes",
+                    "Rothicite"
+                ]
+            },
+            "Rocky Desert": {
+                "inorganic": [
+                    "Lead"
+                ]
+            }
+        },
+        "scores": {
+            "habitability_score": "-4.500",
+            "organic_score": "0.000",
+            "inorganic_score": "19.000"
+        },
+        "outpost_candidacy": {
+            "unique": [
+                "Rothicite"
+            ],
+            "potential_groups": {
+                "Iron": [
+                    "Alkanes",
+                    "Iron"
+                ],
+                "Lead-Tungsten": [
+                    "Lead"
+                ],
+                "Lead-Silver": [
+                    "Lead"
+                ]
+            },
+            "has_water": true
+        }
+    },
+    {
+        "name": "Decaran VII-b",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Barren"
+            ],
+            "gravity": "0.29g",
+            "temperature": "Deep freeze",
+            "atmosphere": {
+                "density": "None",
+                "type": "None",
+                "property": null
+            },
+            "magnetosphere": "None",
+            "water": "None",
+            "day_length": "1080.0 hours",
+            "planetary_habitation": "1",
+            "isMoon": true,
+            "hasMoon": false
+        },
+        "resources": {
+            "inorganic": [
+                "Uranium",
+                "Helium-3",
+                "Iridium",
+                "Vytinium"
+            ],
+            "organic": []
+        },
+        "traits": [],
+        "biomes": [
+            "Craters"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "moons": [],
+        "biome_resources": {},
+        "scores": {
+            "habitability_score": "-6.000",
+            "organic_score": "0.000",
+            "inorganic_score": "35.000"
+        },
+        "outpost_candidacy": {
+            "unique": [
+                "Vytinium"
+            ],
+            "potential_groups": {
+                "Uranium": [
+                    "Uranium",
+                    "Iridium"
+                ]
+            },
+            "has_helium": true
+        }
+    },
+    {
+        "name": "Katydid III",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Rock"
+            ],
+            "gravity": "1.14g",
+            "temperature": "Frozen",
+            "atmosphere": {
+                "density": "Standard",
+                "type": "N2",
+                "property": null
+            },
+            "magnetosphere": "Average",
+            "water": "Chemical",
+            "day_length": "32.0 hours",
+            "planetary_habitation": "0",
+            "isMoon": false,
+            "hasMoon": false
+        },
+        "resources": {
+            "inorganic": [
+                "Aluminum",
+                "Copper",
+                "Iron",
+                "Lead",
+                "Water",
+                "Beryllium",
+                "Silver",
+                "Indicite"
+            ],
+            "organic": []
+        },
+        "traits": [
+            "Energetic Rifting",
+            "Turbulent Lithosphere"
+        ],
+        "biomes": [
+            "Hills",
+            "Plateau",
+            "Rocky Desert",
+            "Frozen Plains"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "moons": [],
+        "biome_resources": {},
+        "scores": {
+            "habitability_score": "-2.000",
+            "organic_score": "0.000",
+            "inorganic_score": "30.000"
+        },
+        "outpost_candidacy": {
+            "unique": [
+                "Indicite"
+            ],
+            "potential_groups": {
+                "Iron": [
+                    "Iron"
+                ],
+                "Aluminum": [
+                    "Beryllium",
+                    "Aluminum"
+                ],
+                "Lead-Tungsten": [
+                    "Lead"
+                ],
+                "Lead-Silver": [
+                    "Silver",
+                    "Lead"
+                ],
+                "Copper-Tetrafluorides": [
+                    "Copper"
+                ],
+                "Copper-Gold": [
+                    "Copper"
+                ]
+            },
+            "has_water": true
+        }
+    },
+    {
+        "name": "Schrodinger II",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Rock"
+            ],
+            "gravity": "1.19g",
+            "temperature": "Inferno",
+            "atmosphere": {
+                "density": "Standard",
+                "type": "CO2",
+                "property": null
+            },
+            "magnetosphere": "Powerful",
+            "water": "None",
+            "day_length": "8.0 hours",
+            "planetary_habitation": "1",
+            "isMoon": false,
+            "hasMoon": false
+        },
+        "resources": {
+            "inorganic": [
+                "Chlorine",
+                "Lead",
+                "Uranium",
+                "Chlorosilanes",
+                "Tungsten",
+                "Titanium",
+                "Plutonium",
+                "Aldumite"
+            ],
+            "organic": []
+        },
+        "traits": [
+            "Continual Conductor",
+            "Extinction Event",
+            "Turbulent Lithosphere"
+        ],
+        "biomes": [
+            "Mountains",
+            "Sandy Desert",
+            "Plateau",
+            "Hills"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "moons": [],
+        "biome_resources": {},
+        "scores": {
+            "habitability_score": "-2.000",
+            "organic_score": "0.000",
+            "inorganic_score": "35.000"
+        },
+        "outpost_candidacy": {
+            "unique": [
+                "Aldumite"
+            ],
+            "potential_groups": {
+                "Uranium": [
+                    "Plutonium",
+                    "Uranium"
+                ],
+                "Chlorine-Xenon": [
+                    "Chlorine",
+                    "Chlorosilanes"
+                ],
+                "Chlorine-Caesium": [
+                    "Chlorine",
+                    "Chlorosilanes"
+                ],
+                "Lead-Tungsten": [
+                    "Tungsten",
+                    "Lead",
+                    "Titanium"
+                ],
+                "Lead-Silver": [
+                    "Lead"
+                ]
+            },
+            "resource_group_partial": [
+                "Lead-Tungsten (partial)"
+            ],
+            "partner_planets": [
+                "Al-Battani II"
+            ]
+        }
+    },
+    {
+        "name": "Schrodinger III",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Rock"
+            ],
+            "gravity": "1.07g",
+            "temperature": "Temperate",
+            "atmosphere": {
+                "density": "Standard",
+                "type": "O2",
+                "property": null
+            },
+            "magnetosphere": "Average",
+            "water": "Safe",
+            "day_length": "50.0 hours",
+            "planetary_habitation": "0",
+            "isMoon": false,
+            "hasMoon": true
+        },
+        "resources": {
+            "inorganic": [
+                "Argon",
+                "Chlorine",
+                "Iron",
+                "Nickel",
+                "Water",
+                "Cobalt"
+            ],
+            "organic": [
+                "Metabolic Agent",
+                "Nutrient",
+                "Toxin",
+                "Analgesic",
+                "Sedative",
+                "Luxury Textile"
+            ]
+        },
+        "traits": [
+            "Ecological Consortium",
+            "Global Glacial Recession"
+        ],
+        "biomes": [
+            "Ocean",
+            "Sandy Desert",
+            "Hills",
+            "Mountains",
+            "Frozen Mountains"
+        ],
+        "flora": {
+            "count": "8",
+            "domesticable": {
+                "Nutrient": "Chillhook",
+                "Toxin": "Cold Cave Nettle",
+                "Metabolic Agent": "Mustard Bugweed",
+                "Analgesic": "Spiny Bell Cactus"
+            },
+            "gatherable": {
+                "Fiber": "Aruna Goldenglow",
+                "Structural Material": "Bleeding Heart Vine",
+                "Sealant": "Scarlet Hillfrond",
+                "Nutrient": "Stinging Flutterleaf"
+            }
+        },
+        "fauna": {
+            "count": "9",
+            "domesticable": {
+                "Toxin": "Exocrawler",
+                "Luxury Textile": "Foxbat",
+                "Sedative": "Loxodont"
+            },
+            "gatherable": {
+                "Stimulant": "Ankylosaurus",
+                "Antimicrobial": "Beetle",
+                "Nutrient": "Cassowary",
+                "Membrane": "Flamethorn",
+                "Pigment": "Scarab",
+                "Sealant": "Toadface"
+            }
+        },
+        "moons": [
+            "Schrodinger III-a"
+        ],
+        "biome_resources": {},
+        "scores": {
+            "habitability_score": "11.500",
+            "organic_score": "10.333",
+            "inorganic_score": "10.600"
+        },
+        "outpost_candidacy": {
+            "unique": [
+                "Luxury Textile"
+            ],
+            "potential_groups": {
+                "Argon": [
+                    "Argon"
+                ],
+                "Iron": [
+                    "Iron"
+                ],
+                "Nickel": [
+                    "Cobalt",
+                    "Nickel"
+                ],
+                "Chlorine-Xenon": [
+                    "Chlorine"
+                ],
+                "Chlorine-Caesium": [
+                    "Chlorine"
+                ]
+            },
+            "has_water": true
+        }
+    },
+    {
+        "name": "Zelazny VII-d",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Rock"
+            ],
+            "gravity": "0.45g",
+            "temperature": "Cold",
+            "atmosphere": {
+                "density": "Thin",
+                "type": "M",
+                "property": null
+            },
+            "magnetosphere": "None",
+            "water": "Chemical",
+            "day_length": "16.0 hours",
+            "planetary_habitation": "0",
+            "isMoon": true,
+            "hasMoon": false
+        },
+        "resources": {
+            "inorganic": [
+                "Argon",
+                "Nickel",
+                "Uranium",
+                "Water",
+                "Iridium",
+                "Vanadium",
+                "Palladium",
+                "Plutonium"
+            ],
+            "organic": []
+        },
+        "traits": [
+            "Emerging Tectonics"
+        ],
+        "biomes": [
+            "Hills",
+            "Ocean",
+            "Frozen Plains",
+            "Rocky Desert",
+            "Swamp"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "moons": [],
+        "biome_resources": {},
+        "scores": {
+            "habitability_score": "-1.500",
+            "organic_score": "0.000",
+            "inorganic_score": "20.600"
+        },
+        "outpost_candidacy": {
+            "full_resource_chain": [
+                "Uranium"
+            ],
+            "has_water": true
+        }
+    },
+    {
+        "name": "Verne VII-d",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Rock"
+            ],
+            "gravity": "0.46g",
+            "temperature": "Cold",
+            "atmosphere": {
+                "density": "Thin",
+                "type": "M",
+                "property": "Corrosive"
+            },
+            "magnetosphere": "None",
+            "water": "Safe",
+            "day_length": "28.0 hours",
+            "planetary_habitation": "3",
+            "isMoon": true,
+            "hasMoon": false
+        },
+        "resources": {
+            "inorganic": [
+                "Copper",
+                "Lead",
+                "Nickel",
+                "Uranium",
+                "Water",
+                "Fluorine",
+                "Silver",
+                "Mercury"
+            ],
+            "organic": []
+        },
+        "traits": [],
+        "biomes": [
+            "Ocean",
+            "Frozen Plains",
+            "Sandy Desert",
+            "Plateau",
+            "Mountains"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "moons": [],
+        "biome_resources": {},
+        "scores": {
+            "habitability_score": "-1.500",
+            "organic_score": "0.000",
+            "inorganic_score": "15.400"
+        },
+        "outpost_candidacy": {
+            "full_resource_chain": [
+                "Lead-Silver"
+            ],
+            "has_water": true
+        }
+    },
+    {
+        "name": "Hawking IV-a",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Barren"
+            ],
+            "gravity": "0.26g",
+            "temperature": "Deep freeze",
+            "atmosphere": {
+                "density": "None",
+                "type": "None",
+                "property": null
+            },
+            "magnetosphere": "None",
+            "water": "None",
+            "day_length": "480.0 hours",
+            "planetary_habitation": "1",
+            "isMoon": true,
+            "hasMoon": false
+        },
+        "resources": {
+            "inorganic": [
+                "Iron",
+                "Alkanes",
+                "Helium-3",
+                "Tantalum",
+                "Ytterbium"
+            ],
+            "organic": []
+        },
+        "traits": [],
+        "biomes": [
+            "Craters"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "moons": [],
+        "biome_resources": {},
+        "scores": {
+            "habitability_score": "-6.000",
+            "organic_score": "0.000",
+            "inorganic_score": "31.000"
+        },
+        "outpost_candidacy": {
+            "full_resource_chain": [
+                "Iron"
+            ],
+            "has_helium": true
+        },
+        "system_name": "Hawking"
+    },
+    {
+        "name": "Jaffa I",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Rock"
+            ],
+            "gravity": "0.68g",
+            "temperature": "Scorched",
+            "atmosphere": {
+                "density": "Standard",
+                "type": "CO2",
+                "property": null
+            },
+            "magnetosphere": "Weak",
+            "water": "None",
+            "day_length": "38.0 hours",
+            "planetary_habitation": "0",
+            "isMoon": false,
+            "hasMoon": true
+        },
+        "resources": {
+            "inorganic": [
+                "Iron",
+                "Lead",
+                "Uranium",
+                "Alkanes",
+                "Tungsten",
+                "Titanium",
+                "Dysprosium"
+            ],
+            "organic": []
+        },
+        "traits": [
+            "Continual Conductor",
+            "Turbulent Lithosphere"
+        ],
+        "biomes": [
+            "Sandy Desert",
+            "Rocky Desert",
+            "Mountains",
+            "Hills"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "moons": [
+            "Jaffa I-a"
+        ],
+        "biome_resources": {
+            "Hills": {
+                "inorganic": [
+                    "Iron",
+                    "Alkanes"
+                ]
+            },
+            "Mountains": {
+                "inorganic": [
+                    "Lead",
+                    "Tungsten",
+                    "Titanium",
+                    "Dysprosium"
+                ]
+            },
+            "Rocky Desert": {
+                "inorganic": [
+                    "Lead",
+                    "Tungsten",
+                    "Dysprosium",
+                    "Titanium"
+                ]
+            },
+            "Sandy Desert": {
+                "inorganic": [
+                    "Uranium"
+                ]
+            }
+        },
+        "scores": {
+            "habitability_score": "-2.000",
+            "organic_score": "0.000",
+            "inorganic_score": "19.000"
+        },
+        "outpost_candidacy": {
+            "full_resource_chain": [
+                "Lead-Tungsten"
+            ]
+        },
+        "system_name": "Jaffa"
+    },
+    {
+        "name": "Nirvana II",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Rock"
+            ],
+            "gravity": "1.83g",
+            "temperature": "Temperate",
+            "atmosphere": {
+                "density": "High",
+                "type": "O2",
+                "property": null
+            },
+            "magnetosphere": "Very strong",
+            "water": "Heavy metal",
+            "day_length": "26.0 hours",
+            "planetary_habitation": "0",
+            "isMoon": false,
+            "hasMoon": true
+        },
+        "resources": {
+            "inorganic": [
+                "Copper",
+                "Iron",
+                "Uranium",
+                "Water",
+                "Fluorine",
+                "Tetrafluorides",
+                "Vanadium",
+                "Ionic Liquids"
+            ],
+            "organic": [
+                "Fiber",
+                "Nutrient",
+                "Structural Material",
+                "Toxin",
+                "Cosmetic"
+            ]
+        },
+        "traits": [
+            "Amphibious Foothold",
+            "Ecological Consortium",
+            "Psychotropic Biota"
+        ],
+        "biomes": [
+            "Ocean",
+            "Frozen Plains",
+            "Mountains",
+            "Volcanic"
+        ],
+        "flora": {
+            "count": "4",
+            "domesticable": {
+                "Fiber": "Cliffberry",
+                "Nutrient": "Crater Weed",
+                "Toxin": "Crimson Courtstalk",
+                "Structural Material": "Star Bloom Root"
+            },
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "8",
+            "domesticable": {
+                "Cosmetic": "Herding Beetlecrab Scavenger"
+            },
+            "gatherable": {
+                "Nutrient": "Herding Bonefrill Geophage",
+                "Stimulant": "Hunting Cephalopod",
+                "Aromatic": "Cronosaurus",
+                "Metabolic Agent": "Grabber Grazer",
+                "Amino Acids": "Hunting Loxodont",
+                "Spice": "Schooling Paddlefish Scavenger",
+                "Sealant": "Triworm Scavenger"
+            }
+        },
+        "moons": [
+            "Nirvana II-a"
+        ],
+        "biome_resources": {
+            "Volcanic": {
+                "inorganic": [
+                    "Uranium",
+                    "Iridium"
+                ]
+            },
+            "Frozen Plains": {
+                "inorganic": [
+                    "Water",
+                    "Copper",
+                    "Fluorine",
+                    "Tetrafluorides",
+                    "Ionic Liquids"
+                ]
+            },
+            "Mountains": {
+                "inorganic": [
+                    "Iron"
+                ]
+            },
+            "Ocean": {
+                "inorganic": []
+            }
+        },
+        "scores": {
+            "habitability_score": "1.000",
+            "organic_score": "3.882",
+            "inorganic_score": "27.000"
+        },
+        "outpost_candidacy": {
+            "full_resource_chain": [
+                "Copper-Tetrafluorides"
+            ],
+            "has_water": true
+        },
+        "system_name": "Nirvana"
+    },
+    {
+        "name": "Eridani IV-b",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Barren"
+            ],
+            "gravity": "0.25g",
+            "temperature": "Cold",
+            "atmosphere": {
+                "density": "None",
+                "type": "None",
+                "property": null
+            },
+            "magnetosphere": "None",
+            "water": "None",
+            "day_length": "312.0 hours",
+            "planetary_habitation": "0",
+            "isMoon": true,
+            "hasMoon": false
+        },
+        "resources": {
+            "inorganic": [
+                "Aluminum",
+                "Beryllium",
+                "Helium-3",
+                "Neodymium",
+                "Europium"
+            ],
+            "organic": []
+        },
+        "traits": [],
+        "biomes": [
+            "Craters"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "moons": [],
+        "biome_resources": {
+            "Craters": {
+                "inorganic": [
+                    "Helium-3",
+                    "Aluminum",
+                    "Beryllium",
+                    "Neodymium",
+                    "Europium"
+                ]
+            }
+        },
+        "scores": {
+            "habitability_score": "-2.000",
+            "organic_score": "0.000",
+            "inorganic_score": "31.000"
+        },
+        "outpost_candidacy": {
+            "full_resource_chain": [
+                "Aluminum"
+            ],
+            "has_helium": true
+        },
+        "system_name": "Eridani"
+    },
+    {
+        "name": "Charybdis VIII-b",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Ice"
+            ],
+            "gravity": "0.20g",
+            "temperature": "Deep freeze",
+            "atmosphere": {
+                "density": "None",
+                "type": "None",
+                "property": null
+            },
+            "magnetosphere": "None",
+            "water": "Heavy metal",
+            "day_length": "23.0 hours",
+            "planetary_habitation": "1",
+            "isMoon": true,
+            "hasMoon": false
+        },
+        "resources": {
+            "inorganic": [
+                "Argon",
+                "Water",
+                "Benzene",
+                "Carboxylic Acids",
+                "Neon"
+            ],
+            "organic": []
+        },
+        "traits": [],
+        "biomes": [
+            "Frozen Plains"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "moons": [],
+        "biome_resources": {},
+        "scores": {
+            "habitability_score": "-7.000",
+            "organic_score": "0.000",
+            "inorganic_score": "21.000"
+        },
+        "outpost_candidacy": {
+            "full_resource_chain": [
+                "Argon"
+            ],
+            "has_water": true
+        },
+        "system_name": "Charybdis"
+    },
+    {
+        "name": "Cruth",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Ice"
+            ],
+            "gravity": "0.20g",
+            "temperature": "Deep freeze",
+            "atmosphere": {
+                "density": "None",
+                "type": "None",
+                "property": null
+            },
+            "magnetosphere": "None",
+            "water": "Chemical",
+            "day_length": "72.0 hours",
+            "planetary_habitation": "1",
+            "isMoon": false,
+            "hasMoon": false
+        },
+        "resources": {
+            "inorganic": [
+                "Copper",
+                "Water",
+                "Gold",
+                "Antimony",
+                "Fluorine",
+                "Fluorine"
+            ],
+            "organic": []
+        },
+        "traits": [],
+        "biomes": [
+            "Frozen Dunes"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "moons": [],
+        "biome_resources": {
+            "Frozen Dunes": {
+                "inorganic": [
+                    "Antimony",
+                    "Copper",
+                    "Fluorine",
+                    "Water",
+                    "Gold"
+                ]
+            }
+        },
+        "scores": {
+            "habitability_score": "-7.000",
+            "organic_score": "0.000",
+            "inorganic_score": "23.000"
+        },
+        "outpost_candidacy": {
+            "full_resource_chain": [
+                "Copper-Gold"
+            ],
+            "has_water": true
+        },
+        "system_name": "Narion"
+    },
+    {
+        "name": "Altair IV-b",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Ice"
+            ],
+            "gravity": "0.14g",
+            "temperature": "Frozen",
+            "atmosphere": {
+                "density": "None",
+                "type": "None",
+                "property": null
+            },
+            "magnetosphere": "None",
+            "water": "Heavy metal",
+            "day_length": "144.0 hours",
+            "planetary_habitation": "0",
+            "isMoon": true,
+            "hasMoon": false
+        },
+        "resources": {
+            "inorganic": [
+                "Chlorine",
+                "Water",
+                "Chlorosilanes",
+                "Lithium",
+                "Xenon"
+            ],
+            "organic": []
+        },
+        "traits": [
+            "Crystalline Crust"
+        ],
+        "biomes": [
+            "Frozen Hills"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "moons": [],
+        "biome_resources": {
+            "Frozen Hills": {
+                "inorganic": [
+                    "Water",
+                    "Chlorine",
+                    "Chlorosilanes",
+                    "Lithium",
+                    "Xenon"
+                ]
+            }
+        },
+        "scores": {
+            "habitability_score": "-5.000",
+            "organic_score": "0.000",
+            "inorganic_score": "37.000"
+        },
+        "outpost_candidacy": {
+            "full_resource_chain": [
+                "Chlorine-Xenon"
+            ],
+            "has_water": true
+        },
+        "system_name": "Altair"
+    },
+    {
+        "name": "Eridani VIII-c",
+        "attributes": {
+            "planet_type": [
+                "Terrestrial",
+                "Ice"
+            ],
+            "gravity": "0.10g",
+            "temperature": "Deep freeze",
+            "atmosphere": {
+                "density": "None",
+                "type": "None",
+                "property": null
+            },
+            "magnetosphere": "None",
+            "water": "Chemical",
+            "day_length": "168.0 hours",
+            "planetary_habitation": "1",
+            "isMoon": true,
+            "hasMoon": false
+        },
+        "resources": {
+            "inorganic": [
+                "Chlorine",
+                "Water",
+                "Chlorosilanes",
+                "Lithium",
+                "Caesium"
+            ],
+            "organic": []
+        },
+        "traits": [],
+        "biomes": [
+            "Frozen Volcanic"
+        ],
+        "flora": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "fauna": {
+            "count": "0",
+            "domesticable": {},
+            "gatherable": {}
+        },
+        "moons": [],
+        "biome_resources": {
+            "Frozen Volcanic": {
+                "inorganic": [
+                    "Water",
+                    "Chlorine",
+                    "Chlorosilanes",
+                    "Lithium",
+                    "Caesium"
+                ]
+            }
+        },
+        "scores": {
+            "habitability_score": "-7.000",
+            "organic_score": "0.000",
+            "inorganic_score": "21.000"
+        },
+        "outpost_candidacy": {
+            "full_resource_chain": [
+                "Chlorine-Caesium"
+            ],
+            "has_water": true
+        },
+        "system_name": "Eridani"
+    }
+]
