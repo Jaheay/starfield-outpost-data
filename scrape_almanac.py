@@ -250,7 +250,7 @@ def scrape_planet_page(base_url, planet_link, driver):
     return biomes_data
 
 
-if __name__ == "__main__":
+def scrape_almanac():
     base_url = "https://starfieldalmanac.com"
     systems_url = f"{base_url}/system"
 
@@ -335,3 +335,6 @@ if __name__ == "__main__":
 
     driver.quit()
     print("Completed scraping all systems.")
+
+if __name__ == "__main__":
+    scrape_almanac()

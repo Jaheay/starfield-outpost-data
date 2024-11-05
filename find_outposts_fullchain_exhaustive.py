@@ -15,14 +15,13 @@ from copy import deepcopy, copy
 warnings.filterwarnings("ignore", category=TqdmExperimentalWarning)
 
 # Local Imports
-from config import *
+
 from common import (
-    load_resource_groups,
     save_system_data,
-    load_system_data,
-    load_resources,
+    load_all_data,
 )
-from find_outposts import (
+
+from find_outposts_fullchain import (
     apply_highlander_rules,
     calculate_uncaptured_resources,
     capture_remaining_organics,
@@ -33,7 +32,6 @@ from find_outposts import (
     find_fullchain_planets,
     find_unique_resources,
     print_final_results,
-    score_by_desired,
 )
 
 
@@ -226,7 +224,7 @@ def find_best_combinations(
 
             # Manually update tqdm's progress
             if idx % 10 == 0:
-                pbar.update(100)  # Update by 100 steps at once
+                pbar.update(10)  # Update by 100 steps at once
                 pbar.set_postfix({"Min planets": min_planet_count})
 
             # Refresh the live table display
@@ -237,6 +235,29 @@ def find_best_combinations(
 
     return best_combinations, min_planet_count, dict(planet_count_occurrences)
 
+def dedupe_combinations(best_combinations):
+    unique_combinations = set()
+    deduped_combinations = []
+
+    for combination in best_combinations:
+        planets = combination['final_planets']
+
+        # Create a tuple with sorted planet names and optional attributes for comparison
+        planet_names = tuple(sorted([planet['name'] for planet in planets]))
+        optional_attributes = tuple(
+            tuple(sorted(planet.get('outpost_candidacy', {}).get('resource_group_partial', []))) +
+            tuple(sorted(planet.get('outpost_candidacy', {}).get('partner_planets', [])))
+            for planet in planets
+        )
+        
+        combination_key = (planet_names, optional_attributes)
+
+        # Only add to deduped_combinations if unique
+        if combination_key not in unique_combinations:
+            unique_combinations.add(combination_key)
+            deduped_combinations.append(combination)
+
+    return deduped_combinations
 
 def find_best_systems(system_data, unique_resources, resources_by_rarity, groups):
     """
@@ -271,6 +292,9 @@ def find_best_systems(system_data, unique_resources, resources_by_rarity, groups
         groups,
     )
 
+    print("... Deduping...")
+    best_combinations = dedupe_combinations(best_combinations)
+
     print(f"\nMinimal total planets: {min_planet_count}")
     print(f"Number of combinations with minimal planets: {len(best_combinations)}")
 
@@ -299,28 +323,12 @@ def find_best_systems(system_data, unique_resources, resources_by_rarity, groups
     return best_combinations
 
 
-if __name__ == '__main__':
-    inorganic_rarity = load_resources(INORGANIC_DATA_PATH, shortname=False)
-    organic_rarity = load_resources(ORGANIC_DATA_PATH, shortname=False)
-    gatherable_only = load_resource_groups(GATHERABLE_ONLY_PATH)
-
-    rarity = {"inorganic": inorganic_rarity, "organic": organic_rarity}
-
-    unique = {
-        category: {key: value for key, value in items.items() if value == "Unique" and key}
-        for category, items in rarity.items()
-    }
-
-    inorganic_groups = load_resource_groups(INORGANIC_GROUPS_PATH, unique["inorganic"])
-    organic_groups = load_resource_groups(ORGANIC_GROUPS_PATH, unique["inorganic"])
-    groups = {
-        "inorganic": inorganic_groups,
-        "organic": organic_groups,
-        "gatherable_only": gatherable_only,
-    }
-
-    all_systems = load_system_data(SCORED_SYSTEM_DATA_PATH)
+def find_outposts_with_exhaustive_fullchain(): 
+    all_systems, rarity, unique, groups = load_all_data()
 
     find_fullchain_planets(all_systems, groups["inorganic"])
     find_unique_resources(all_systems, unique)
     find_best_systems(all_systems, unique, rarity, groups)
+
+if __name__ == '__main__':
+    find_outposts_with_exhaustive_fullchain()

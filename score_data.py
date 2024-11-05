@@ -1,4 +1,5 @@
-from common import *
+from config import SCORED_SYSTEM_DATA_PATH
+from common import get_grouped_inorganics, get_grouped_organics, score_resources_by_rarity, score_organics, score_inorganic, load_all_data, save_system_data
 import json
 
 
@@ -150,26 +151,8 @@ def score_system(system, rarity):
         'inorganic_score': f"{round(system_inorganic_score, 3):.3f}"
     }
 
-
-
-if __name__ == '__main__':
-    inorganic_rarity = load_resources(INORGANIC_DATA_PATH, shortname=False)
-    organic_rarity = load_resources(ORGANIC_DATA_PATH, shortname=False)
-    gatherable_only = load_resource_groups(GATHERABLE_ONLY_PATH) 
-    
-    rarity = { 'inorganic': inorganic_rarity, 'organic': organic_rarity}
-    
-    unique = {
-        category: {key: value for key, value in items.items() 
-        if value == 'Unique' and key not in gatherable_only[category]}
-        for category, items in rarity.items()
-    }
-
-    inorganic_groups = load_resource_groups(INORGANIC_GROUPS_PATH, unique['inorganic'])
-    organic_groups = load_resource_groups(ORGANIC_GROUPS_PATH, unique['inorganic'])
-    groups = {'inorganic': inorganic_groups, 'organic': organic_groups, 'gatherable_only': gatherable_only}
-
-    all_systems = load_system_data(RAW_SYSTEMS_DATA_PATH)
+def score_system_data():
+    all_systems, rarity, unique, groups = load_all_data()
 
     for system in all_systems: 
         for planet in system['planets']:
@@ -177,3 +160,10 @@ if __name__ == '__main__':
         system['scores'] = score_system(system, rarity)
 
     save_system_data(SCORED_SYSTEM_DATA_PATH, all_systems)
+
+
+if __name__ == '__main__':
+    score_system_data()
+
+    
+    

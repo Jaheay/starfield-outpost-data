@@ -349,7 +349,7 @@ def clean_attributes(attributes):
     return attributes
 
 
-if __name__ == "__main__":
+def scrape_inara():
     # Load dictionaries for inorganic, organic, and gatherable resources
     inorganic_dict = load_resources(INORGANIC_DATA_PATH, shortname=True)
     organic_dict = load_resources(ORGANIC_DATA_PATH, shortname=True)
@@ -389,3 +389,6 @@ if __name__ == "__main__":
     # Append newly scraped data to existing systems and save
     all_systems.extend(new_data)
     save_system_data(INARA_SYSTEM_DATA_PATH, all_systems)
+
+if __name__ == "__main__":
+    scrape_inara()

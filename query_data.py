@@ -325,182 +325,180 @@ def plot_biome_distribution(significance_results):
 
 
 
+def query_unique_values(planets): 
+    planet_fields = ['planet_type', 'temperature', 'atmosphere', 'magnetosphere', 'water', 'biomes']
+    print('----- Unique Values -----')
+    for value in planet_fields: 
+        print(f"Unique {value}:", get_unique_values(planets, value))
+
+def query_two_value_histogram(planets): 
+    #get_attribute_combos(planets, 'magnetosphere', 'planet_type')
+    get_attribute_combos(planets, 'atmosphere', 'planetary_habitation')
+
+def query_fun_facts(systems, planets):
+    terrestrial_planets = [planet for planet in planets if planet['planet_type'][0] == 'Terrestrial']
+    gas_planets = [planet for planet in planets if planet['planet_type'][0] == 'Gas']
+    
+    print('\n----- Ranges -----')
+    print("Gravity range:", get_min_max(terrestrial_planets, 'gravity'))
+    print("Day length range (in hours):", get_min_max(terrestrial_planets, 'day_length'))
+
+    print('\n----- Resource Queries -----')
+    print("Planet with most inorganic resources:", planet_with_most_resources(terrestrial_planets, 'inorganic'))
+    print("Planet with most organic resources:", planet_with_most_resources(terrestrial_planets, 'organic'))
+
+    print('\n----- System Queries -----')
+    print("System with most planets:", system_with_most_planets(systems))
+    print("System with most gas giants:", system_with_most(systems, 'planet_type', {'Gas'}))
+    print("System with least planets:", system_with_least_planets(systems))
+
+def query_highs_and_lows(systems, planets):
+
+    highest_lowest_hab_score = planet_with_highest_lowest_score(planets, 'habitability_score')
+    highest_lowest_org_score = planet_with_highest_lowest_score(planets, 'organic_score')
+    highest_lowest_inorg_score = planet_with_highest_lowest_score(planets, 'inorganic_score')
+
+    highest_lowest_sys_hab_score = system_with_highest_lowest_score(systems, 'habitability_score')
+    highest_lowest_sys_org_score = system_with_highest_lowest_score(systems, 'organic_score')
+    highest_lowest_sys_inorg_score = system_with_highest_lowest_score(systems, 'inorganic_score')
+
+    print("----- Planet Scores -----")
+    print(f"Planet with highest habitability score: {highest_lowest_hab_score[0][0]} ({highest_lowest_hab_score[0][1]})")
+    print(f"Planet with lowest habitability score: {highest_lowest_hab_score[1][0]} ({highest_lowest_hab_score[1][1]})")
+    print(f"Planet with highest organic score: {highest_lowest_org_score[0][0]} ({highest_lowest_org_score[0][1]})")
+    print(f"Planet with lowest organic score: {highest_lowest_org_score[1][0]} ({highest_lowest_org_score[1][1]})")
+    print(f"Planet with highest inorganic score: {highest_lowest_inorg_score[0][0]} ({highest_lowest_inorg_score[0][1]})")
+    print(f"Planet with lowest inorganic score: {highest_lowest_inorg_score[1][0]} ({highest_lowest_inorg_score[1][1]})")
+
+    print("\n----- System Scores -----")
+    print(f"System with highest habitability score: {highest_lowest_sys_hab_score[0][0]} ({highest_lowest_sys_hab_score[0][1]})")
+    print(f"System with lowest habitability score: {highest_lowest_sys_hab_score[1][0]} ({highest_lowest_sys_hab_score[1][1]})")
+    print(f"System with highest organic score: {highest_lowest_sys_org_score[0][0]} ({highest_lowest_sys_org_score[0][1]})")
+    print(f"System with lowest organic score: {highest_lowest_sys_org_score[1][0]} ({highest_lowest_sys_org_score[1][1]})")
+    print(f"System with highest inorganic score: {highest_lowest_sys_inorg_score[0][0]} ({highest_lowest_sys_inorg_score[0][1]})")
+    print(f"System with lowest inorganic score: {highest_lowest_sys_inorg_score[1][0]} ({highest_lowest_sys_inorg_score[1][1]})")
+
+def query_top_tens(systems, planets): 
+
+    top_hab_systems = top_n_systems(systems, 'habitability_score', 10)
+    top_hab_planets = top_n_planets(planets, 'habitability_score', 10)
+    top_inorg_systems = top_n_systems(systems, 'inorganic_score', 10)
+    top_inorg_planets = top_n_planets(planets, 'inorganic_score', 10)
+    top_org_systems = top_n_systems(systems, 'organic_score', 10)
+    top_org_planets = top_n_planets(planets, 'organic_score', 10)
+
+    print("\n----- Top Habitable Systems -----")
+    for i, (name, score) in enumerate(top_hab_systems, start=1):
+        print(f"{i}. {name}: {score}")
+
+    print("\n----- Top Habitable Planets -----")
+    for i, (planet_name, score) in enumerate(top_hab_planets, start=1):
+        print(f"{i}. {planet_name}: {score}")
+
+    print("\n----- Top Inorganic Systems -----")
+    for i, (name, score) in enumerate(top_inorg_systems, start=1):
+        print(f"{i}. {name}: {score}")
+
+    print("\n----- Top Inorganic Planets -----")
+    for i, (planet_name, score) in enumerate(top_inorg_planets, start=1):
+        print(f"{i}. {planet_name}: {score}")
+
+    print("\n----- Top Organic Systems -----")
+    for i, (name, score) in enumerate(top_org_systems, start=1):
+        print(f"{i}. {name}: {score}")
+
+    print("\n----- Top Organic Systems -----")
+    for i, (planet_name, score) in enumerate(top_org_planets, start=1):
+        print(f"{i}. {planet_name}: {score}")
+
+def query_flora_fauna(planets): 
+    domesticable_flora = set()
+    domesticable_fauna = set()
+    gatherable_flora = set()
+    gatherable_fauna = set()
+    for planet in planets:
+        domesticable_flora.update(planet['flora']['domesticable'].keys())
+        domesticable_fauna.update(planet['fauna']['domesticable'].keys())
+        gatherable_flora.update(planet['flora']['gatherable'].keys())
+        gatherable_fauna.update(planet['fauna']['gatherable'].keys())
+
+    all_domesticable = domesticable_fauna | domesticable_flora
+    all_gatherable = gatherable_fauna | gatherable_flora
+    gatherable_only = [resource for resource in all_gatherable if resource not in all_domesticable]
+
+    gatherable_only_flora = [flora for flora in gatherable_flora if flora in gatherable_only]
+    gatherable_only_fauna = [fauna for fauna in gatherable_fauna if fauna in gatherable_only]
+
+    domesticable_flora = [resource for resource in domesticable_flora]
+    domesticable_fauna_only = [resource for resource in domesticable_fauna if resource not in domesticable_flora]
+
+    print(json.dumps(gatherable_only, indent=4))
+    organics = {'flora': domesticable_flora, 'fauna': domesticable_fauna_only}
+    print(json.dumps(organics, indent=4))
 
 
+def query_biome_group_tendency(systems, planets): 
+    # TODO: Fix to use new biome_resources data. 
+    resource_biome_data = []
+    inorganic_rarity = load_resources(INORGANIC_DATA_PATH, shortname=False)
+    gatherable_only = load_resource_groups(GATHERABLE_ONLY_PATH) 
+    
+    unique = {
+        key for key, value in inorganic_rarity.items()
+        if value == 'Unique' and key not in gatherable_only['inorganic']
+    }
 
-if __name__ == '__main__':
+    inorganic_groups = load_resource_groups(INORGANIC_GROUPS_PATH, unique)
+    print(json.dumps(inorganic_groups, indent=4))
+    for system in systems:
+        for planet in system.get('planets', []):
+            grouped_resources = get_grouped_inorganics(planet['resources']['inorganic'], inorganic_groups)
+            for resource in grouped_resources: 
+                resource_biomes = {
+                    'planet': planet['name'],
+                    'resource': [resource] if isinstance(resource, str) else resource,  # Ensure resource is a list
+                    'biomes': planet.get('biomes', [])
+                }
+                resource_biome_data.append(resource_biomes)
+
+    frequency_data = {}
+    total_counts = {}
+    total_biome_distribution = {}
+    # Populate frequency_data and total_counts
+    for datum in resource_biome_data:
+        for resource in datum['resource']:  # Iterate over each resource in the list
+            if resource not in frequency_data:
+                frequency_data[resource] = {}
+                total_counts[resource] = 0
+            total_counts[resource] += 1  # Increment total count for each resource occurrence
+            for biome in datum['biomes']:
+                total_biome_distribution[biome] = total_biome_distribution.get(biome, 0) + 1
+                frequency_data[resource][biome] = frequency_data[resource].get(biome, 0) + 1
+
+    # Convert total biome distribution to relative frequencies
+    total_biome_count = sum(total_biome_distribution.values())
+    expected_biome_distribution = {
+        biome: count / total_biome_count for biome, count in total_biome_distribution.items()
+    }
+
+    # Calculate significance results
+    significance_results = calculate_statistical_significance(frequency_data, expected_biome_distribution)
+    print_significance_results(significance_results)
+    plot_biome_distribution(significance_results)
+
+
+def run_queries(): 
     systems = load_system_data(SCORED_SYSTEM_DATA_PATH)
     planets = [planet for system in systems for planet in system['planets']]
     
-    VALUES = False
-    TWO_VALUE_HISTOGRAM = False
-    FUN_FACTS = False
-    HIGHS_AND_LOWS = False
-    TOP_10S = False
-    FLORA_FAUNA = True
-    BIOME_GROUP_TENDENCY = False
-
-    
-    if VALUES:
-        planet_fields = ['planet_type', 'temperature', 'atmosphere', 'magnetosphere', 'water', 'biomes']
-        print('----- Unique Values -----')
-        for value in planet_fields: 
-            print(f"Unique {value}:", get_unique_values(planets, value))
+    #query_unique_values(planets)
+    #query_two_value_histogram(planets)
+    #query_fun_facts(systems, planets)
+    #query_highs_and_lows(systems, planets)
+    #query_top_tens(systems, planets)
+    #query_flora_fauna(planets)
+    query_biome_group_tendency(systems, planets)
 
 
-    if TWO_VALUE_HISTOGRAM:
-      
-        #get_attribute_combos(planets, 'magnetosphere', 'planet_type')
-        get_attribute_combos(planets, 'atmosphere', 'planetary_habitation')
-
-
-    if FUN_FACTS:
-        terrestrial_planets = [planet for planet in planets if planet['planet_type'][0] == 'Terrestrial']
-        gas_planets = [planet for planet in planets if planet['planet_type'][0] == 'Gas']
-        
-        print('\n----- Ranges -----')
-        print("Gravity range:", get_min_max(terrestrial_planets, 'gravity'))
-        print("Day length range (in hours):", get_min_max(terrestrial_planets, 'day_length'))
-
-        print('\n----- Resource Queries -----')
-        print("Planet with most inorganic resources:", planet_with_most_resources(terrestrial_planets, 'inorganic'))
-        print("Planet with most organic resources:", planet_with_most_resources(terrestrial_planets, 'organic'))
-
-        print('\n----- System Queries -----')
-        print("System with most planets:", system_with_most_planets(systems))
-        print("System with most gas giants:", system_with_most(systems, 'planet_type', {'Gas'}))
-        print("System with least planets:", system_with_least_planets(systems))
-    
-    if HIGHS_AND_LOWS:
-
-        highest_lowest_hab_score = planet_with_highest_lowest_score(planets, 'habitability_score')
-        highest_lowest_org_score = planet_with_highest_lowest_score(planets, 'organic_score')
-        highest_lowest_inorg_score = planet_with_highest_lowest_score(planets, 'inorganic_score')
-
-        highest_lowest_sys_hab_score = system_with_highest_lowest_score(systems, 'habitability_score')
-        highest_lowest_sys_org_score = system_with_highest_lowest_score(systems, 'organic_score')
-        highest_lowest_sys_inorg_score = system_with_highest_lowest_score(systems, 'inorganic_score')
-
-        print("----- Planet Scores -----")
-        print(f"Planet with highest habitability score: {highest_lowest_hab_score[0][0]} ({highest_lowest_hab_score[0][1]})")
-        print(f"Planet with lowest habitability score: {highest_lowest_hab_score[1][0]} ({highest_lowest_hab_score[1][1]})")
-        print(f"Planet with highest organic score: {highest_lowest_org_score[0][0]} ({highest_lowest_org_score[0][1]})")
-        print(f"Planet with lowest organic score: {highest_lowest_org_score[1][0]} ({highest_lowest_org_score[1][1]})")
-        print(f"Planet with highest inorganic score: {highest_lowest_inorg_score[0][0]} ({highest_lowest_inorg_score[0][1]})")
-        print(f"Planet with lowest inorganic score: {highest_lowest_inorg_score[1][0]} ({highest_lowest_inorg_score[1][1]})")
-
-        print("\n----- System Scores -----")
-        print(f"System with highest habitability score: {highest_lowest_sys_hab_score[0][0]} ({highest_lowest_sys_hab_score[0][1]})")
-        print(f"System with lowest habitability score: {highest_lowest_sys_hab_score[1][0]} ({highest_lowest_sys_hab_score[1][1]})")
-        print(f"System with highest organic score: {highest_lowest_sys_org_score[0][0]} ({highest_lowest_sys_org_score[0][1]})")
-        print(f"System with lowest organic score: {highest_lowest_sys_org_score[1][0]} ({highest_lowest_sys_org_score[1][1]})")
-        print(f"System with highest inorganic score: {highest_lowest_sys_inorg_score[0][0]} ({highest_lowest_sys_inorg_score[0][1]})")
-        print(f"System with lowest inorganic score: {highest_lowest_sys_inorg_score[1][0]} ({highest_lowest_sys_inorg_score[1][1]})")
-
-    if TOP_10S: 
-
-        top_hab_systems = top_n_systems(systems, 'habitability_score', 10)
-        top_hab_planets = top_n_planets(planets, 'habitability_score', 10)
-        top_inorg_systems = top_n_systems(systems, 'inorganic_score', 10)
-        top_inorg_planets = top_n_planets(planets, 'inorganic_score', 10)
-        top_org_systems = top_n_systems(systems, 'organic_score', 10)
-        top_org_planets = top_n_planets(planets, 'organic_score', 10)
-
-        print("\n----- Top Habitable Systems -----")
-        for i, (name, score) in enumerate(top_hab_systems, start=1):
-            print(f"{i}. {name}: {score}")
-
-        print("\n----- Top Habitable Planets -----")
-        for i, (planet_name, score) in enumerate(top_hab_planets, start=1):
-            print(f"{i}. {planet_name}: {score}")
-
-        print("\n----- Top Inorganic Systems -----")
-        for i, (name, score) in enumerate(top_inorg_systems, start=1):
-            print(f"{i}. {name}: {score}")
-
-        print("\n----- Top Inorganic Planets -----")
-        for i, (planet_name, score) in enumerate(top_inorg_planets, start=1):
-            print(f"{i}. {planet_name}: {score}")
-
-        print("\n----- Top Organic Systems -----")
-        for i, (name, score) in enumerate(top_org_systems, start=1):
-            print(f"{i}. {name}: {score}")
-
-        print("\n----- Top Organic Systems -----")
-        for i, (planet_name, score) in enumerate(top_org_planets, start=1):
-            print(f"{i}. {planet_name}: {score}")
-    
-    if FLORA_FAUNA: 
-        domesticable_flora = set()
-        domesticable_fauna = set()
-        gatherable_flora = set()
-        gatherable_fauna = set()
-        for planet in planets:
-            domesticable_flora.update(planet['flora']['domesticable'].keys())
-            domesticable_fauna.update(planet['fauna']['domesticable'].keys())
-            gatherable_flora.update(planet['flora']['gatherable'].keys())
-            gatherable_fauna.update(planet['fauna']['gatherable'].keys())
-
-        all_domesticable = domesticable_fauna | domesticable_flora
-        all_gatherable = gatherable_fauna | gatherable_flora
-        gatherable_only = [resource for resource in all_gatherable if resource not in all_domesticable]
-
-        gatherable_only_flora = [flora for flora in gatherable_flora if flora in gatherable_only]
-        gatherable_only_fauna = [fauna for fauna in gatherable_fauna if fauna in gatherable_only]
-
-        domesticable_flora = [resource for resource in domesticable_flora]
-        domesticable_fauna_only = [resource for resource in domesticable_fauna if resource not in domesticable_flora]
-
-        print(json.dumps(gatherable_only, indent=4))
-        organics = {'flora': domesticable_flora, 'fauna': domesticable_fauna_only}
-        print(json.dumps(organics, indent=4))
-
-    if BIOME_GROUP_TENDENCY: 
-        resource_biome_data = []
-        inorganic_rarity = load_resources(INORGANIC_DATA_PATH, shortname=False)
-        gatherable_only = load_resource_groups(GATHERABLE_ONLY_PATH) 
-        
-        unique = {
-            key for key, value in inorganic_rarity.items()
-            if value == 'Unique' and key not in gatherable_only['inorganic']
-        }
-
-        inorganic_groups = load_resource_groups(INORGANIC_GROUPS_PATH, unique)
-        print(json.dumps(inorganic_groups, indent=4))
-        for system in systems:
-            for planet in system.get('planets', []):
-                grouped_resources = get_grouped_inorganics(planet['resources']['inorganic'], inorganic_groups)
-                for resource in grouped_resources: 
-                    resource_biomes = {
-                        'planet': planet['name'],
-                        'resource': [resource] if isinstance(resource, str) else resource,  # Ensure resource is a list
-                        'biomes': planet.get('biomes', [])
-                    }
-                    resource_biome_data.append(resource_biomes)
-
-        frequency_data = {}
-        total_counts = {}
-        total_biome_distribution = {}
-        # Populate frequency_data and total_counts
-        for datum in resource_biome_data:
-            for resource in datum['resource']:  # Iterate over each resource in the list
-                if resource not in frequency_data:
-                    frequency_data[resource] = {}
-                    total_counts[resource] = 0
-                total_counts[resource] += 1  # Increment total count for each resource occurrence
-                for biome in datum['biomes']:
-                    total_biome_distribution[biome] = total_biome_distribution.get(biome, 0) + 1
-                    frequency_data[resource][biome] = frequency_data[resource].get(biome, 0) + 1
-
-        # Convert total biome distribution to relative frequencies
-        total_biome_count = sum(total_biome_distribution.values())
-        expected_biome_distribution = {
-            biome: count / total_biome_count for biome, count in total_biome_distribution.items()
-        }
-
-        # Calculate significance results
-        significance_results = calculate_statistical_significance(frequency_data, expected_biome_distribution)
-        print_significance_results(significance_results)
-        plot_biome_distribution(significance_results)
-
-
+if __name__ == '__main__':
+    run_queries()

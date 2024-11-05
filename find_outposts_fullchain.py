@@ -1,7 +1,7 @@
 import itertools
 
 # Local Imports
-from config import *
+from config import FINAL_SYSTEM_DATA_PATH
 from common import (
     get_grouped_inorganics,
     get_grouped_organics,
@@ -11,6 +11,7 @@ from common import (
     load_resources,
     load_system_data,
     save_system_data,
+    load_all_data
 )
 
 
@@ -99,7 +100,7 @@ def score_by_desired(
             planet_inorganics = [
                 resource for resource in planet["resources"]["inorganic"] if resource in desired_inorganics
             ]
-            resource_score_inorganic = score_inorganic(planet_inorganics, rarity["inorganic"], full_chain=True)
+            resource_score_inorganic = score_inorganic(planet_inorganics, resources_by_rarity["inorganic"], full_chain=True)
 
         planet_scores[planet["name"]] = resource_score_inorganic + resource_score_organic
 
@@ -770,28 +771,14 @@ def print_final_results(final_planets, uncaptured_resources):
         print(f"Uncaptured Organics:\n{'\n'.join(sorted(uncaptured_resources['organic']))}")
 
 
-if __name__ == "__main__":
-    inorganic_rarity = load_resources(INORGANIC_DATA_PATH, shortname=False)
-    organic_rarity = load_resources(ORGANIC_DATA_PATH, shortname=False)
-    gatherable_only = load_resource_groups(GATHERABLE_ONLY_PATH)
 
-    rarity = {"inorganic": inorganic_rarity, "organic": organic_rarity}
+def find_outposts_with_scored_fullchain(): 
+    
+    all_systems, rarity, unique, groups = load_all_data()
 
-    unique = {
-        category: {key: value for key, value in items.items() if value == "Unique" and key}
-        for category, items in rarity.items()
-    }
+    find_fullchain_planets(all_systems, groups["inorganic"])
+    find_unique_resources(all_systems, unique)
+    find_best_systems(all_systems, unique, rarity, groups)
 
-    inorganic_groups = load_resource_groups(INORGANIC_GROUPS_PATH, unique["inorganic"])
-    organic_groups = load_resource_groups(ORGANIC_GROUPS_PATH, unique["inorganic"])
-    groups = {
-        "inorganic": inorganic_groups,
-        "organic": organic_groups,
-        "gatherable_only": gatherable_only,
-    }
-
-    all_systems = load_system_data(SCORED_SYSTEM_DATA_PATH)
-
-    fullchain_inorganic_planets = find_fullchain_planets(all_systems, groups["inorganic"])
-    unique_resource_planets = find_unique_resources(all_systems, unique)
-    selected_systems = find_best_systems(all_systems, unique, rarity, groups)
+if __name__ == '__main__':
+    find_outposts_with_scored_fullchain()

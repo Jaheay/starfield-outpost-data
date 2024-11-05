@@ -1,5 +1,10 @@
 from copy import deepcopy
-from config import *
+from config import (
+    ALMANAC_SYSTEM_DATA_PATH,
+    INARA_SYSTEM_DATA_PATH,
+    INORGANIC_GROUPS_PATH,
+    RAW_SYSTEMS_DATA_PATH
+)
 from common import load_system_data, save_system_data, load_resource_groups
 
 # Constant to control the verbosity of fixed discrepancy messages
@@ -422,13 +427,17 @@ def stitch_planet_data(systems_almanac, systems_inara, resource_groups):
 
     return fixed_data  # Return the modified copy with all corrections applied
 
-
-
-if __name__ == "__main__":
+def combine_scraped_data():
     systems_almanac = load_system_data(ALMANAC_SYSTEM_DATA_PATH)
     systems_inara = load_system_data(INARA_SYSTEM_DATA_PATH)
+
     resource_groups = load_resource_groups(INORGANIC_GROUPS_PATH)
 
     combined_data = stitch_planet_data(systems_almanac, systems_inara, resource_groups)
 
     save_system_data(RAW_SYSTEMS_DATA_PATH, combined_data)
+
+if __name__ == "__main__":
+    combine_scraped_data()
+    
+

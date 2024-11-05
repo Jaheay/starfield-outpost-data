@@ -1,7 +1,15 @@
 import csv
 import json
 import os
-from config import *
+from config import (
+    INORGANIC_DATA_PATH,
+    ORGANIC_DATA_PATH,
+    GATHERABLE_ONLY_PATH,
+    ORGANIC_GROUPS_PATH,
+    SCORED_SYSTEM_DATA_PATH,
+    INORGANIC_GROUPS_PATH,
+    RARITY_SCORES
+)
 
 def load_resources(filename, shortname=False):
     resources = {}
@@ -171,3 +179,26 @@ def score_organics(flora, fauna, organic_groups, rarity):
     return organic_score
 
 
+def load_all_data():
+    inorganic_rarity = load_resources(INORGANIC_DATA_PATH, shortname=False)
+    organic_rarity = load_resources(ORGANIC_DATA_PATH, shortname=False)
+    gatherable_only = load_resource_groups(GATHERABLE_ONLY_PATH)
+
+    rarity = {"inorganic": inorganic_rarity, "organic": organic_rarity}
+
+    unique = {
+        category: {key: value for key, value in items.items() if value == "Unique" and key}
+        for category, items in rarity.items()
+    }
+
+    inorganic_groups = load_resource_groups(INORGANIC_GROUPS_PATH, unique["inorganic"])
+    organic_groups = load_resource_groups(ORGANIC_GROUPS_PATH, unique["inorganic"])
+    groups = {
+        "inorganic": inorganic_groups,
+        "organic": organic_groups,
+        "gatherable_only": gatherable_only,
+    }
+
+    all_systems = load_system_data(SCORED_SYSTEM_DATA_PATH)
+
+    return all_systems, rarity, unique, groups
