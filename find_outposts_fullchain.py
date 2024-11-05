@@ -7,9 +7,6 @@ from common import (
     get_grouped_organics,
     score_inorganic,
     score_organics,
-    load_resource_groups,
-    load_resources,
-    load_system_data,
     save_system_data,
     load_all_data
 )

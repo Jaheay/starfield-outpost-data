@@ -163,7 +163,6 @@ def find_best_combinations(
     resources_by_rarity,
     groups,
 ):
-    combination_results = []
     min_planet_count = float("inf")
     planet_count_occurrences = defaultdict(int)
 
