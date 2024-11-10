@@ -1,0 +1,4670 @@
+[
+    {
+        "name": "Al-Battani",
+        "link": "/system/al-battani",
+        "planets": [
+            {
+                "name": "Al-Battani I",
+                "link": "/system/al-battani/planet/al-battani-i"
+            },
+            {
+                "name": "Al-Battani I-a",
+                "link": "/system/al-battani/planet/al-battani-i-a"
+            },
+            {
+                "name": "Al-Battani I-b",
+                "link": "/system/al-battani/planet/al-battani-i-b"
+            },
+            {
+                "name": "Al-Battani I-c",
+                "link": "/system/al-battani/planet/al-battani-i-c"
+            },
+            {
+                "name": "Al-Battani II",
+                "link": "/system/al-battani/planet/al-battani-ii"
+            },
+            {
+                "name": "Al-Battani III",
+                "link": "/system/al-battani/planet/al-battani-iii"
+            },
+            {
+                "name": "Al-Battani III-a",
+                "link": "/system/al-battani/planet/al-battani-iii-a"
+            },
+            {
+                "name": "Al-Battani III-b",
+                "link": "/system/al-battani/planet/al-battani-iii-b"
+            },
+            {
+                "name": "Al-Battani IV",
+                "link": "/system/al-battani/planet/al-battani-iv"
+            },
+            {
+                "name": "Al-Battani IV-a",
+                "link": "/system/al-battani/planet/al-battani-iv-a"
+            },
+            {
+                "name": "Al-Battani IV-b",
+                "link": "/system/al-battani/planet/al-battani-iv-b"
+            },
+            {
+                "name": "Al-Battani V",
+                "link": "/system/al-battani/planet/al-battani-v"
+            },
+            {
+                "name": "Al-Battani V-a",
+                "link": "/system/al-battani/planet/al-battani-v-a"
+            },
+            {
+                "name": "Al-Battani VI",
+                "link": "/system/al-battani/planet/al-battani-vi"
+            },
+            {
+                "name": "Al-Battani VI-a",
+                "link": "/system/al-battani/planet/al-battani-vi-a"
+            },
+            {
+                "name": "Al-Battani VI-b",
+                "link": "/system/al-battani/planet/al-battani-vi-b"
+            },
+            {
+                "name": "Al-Battani VII",
+                "link": "/system/al-battani/planet/al-battani-vii"
+            },
+            {
+                "name": "Al-Battani VII-a",
+                "link": "/system/al-battani/planet/al-battani-vii-a"
+            },
+            {
+                "name": "Al-Battani VIII",
+                "link": "/system/al-battani/planet/al-battani-viii"
+            },
+            {
+                "name": "Al-Battani VIII-a",
+                "link": "/system/al-battani/planet/al-battani-viii-a"
+            }
+        ]
+    },
+    {
+        "name": "Alpha Andraste",
+        "link": "/system/alpha-andraste",
+        "planets": [
+            {
+                "name": "Alpha Andraste I",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-i"
+            },
+            {
+                "name": "Alpha Andraste I-a",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-i-a"
+            },
+            {
+                "name": "Alpha Andraste II",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-ii"
+            },
+            {
+                "name": "Alpha Andraste III",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-iii"
+            },
+            {
+                "name": "Alpha Andraste IV",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-iv"
+            },
+            {
+                "name": "Alpha Andraste V",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-v"
+            },
+            {
+                "name": "Alpha Andraste VI",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-vi"
+            }
+        ]
+    },
+    {
+        "name": "Alpha Centauri",
+        "link": "/system/alpha-centauri",
+        "planets": [
+            {
+                "name": "Bondar",
+                "link": "/system/alpha-centauri/planet/bondar"
+            },
+            {
+                "name": "Chawla",
+                "link": "/system/alpha-centauri/planet/chawla"
+            },
+            {
+                "name": "Curbeam",
+                "link": "/system/alpha-centauri/planet/curbeam"
+            },
+            {
+                "name": "Gagarin",
+                "link": "/system/alpha-centauri/planet/gagarin"
+            },
+            {
+                "name": "Grissom",
+                "link": "/system/alpha-centauri/planet/grissom"
+            },
+            {
+                "name": "Hawley",
+                "link": "/system/alpha-centauri/planet/hawley"
+            },
+            {
+                "name": "Jemison",
+                "link": "/system/alpha-centauri/planet/jemison"
+            },
+            {
+                "name": "Kurtz",
+                "link": "/system/alpha-centauri/planet/kurtz"
+            },
+            {
+                "name": "Lovell",
+                "link": "/system/alpha-centauri/planet/lovell"
+            },
+            {
+                "name": "Olivas",
+                "link": "/system/alpha-centauri/planet/olivas"
+            },
+            {
+                "name": "Voss",
+                "link": "/system/alpha-centauri/planet/voss"
+            },
+            {
+                "name": "Zamka",
+                "link": "/system/alpha-centauri/planet/zamka"
+            }
+        ]
+    },
+    {
+        "name": "Alpha Marae",
+        "link": "/system/alpha-marae",
+        "planets": [
+            {
+                "name": "Alpha Marae I",
+                "link": "/system/alpha-marae/planet/alpha-marae-i"
+            },
+            {
+                "name": "Alpha Marae II",
+                "link": "/system/alpha-marae/planet/alpha-marae-ii"
+            },
+            {
+                "name": "Alpha Marae II-a",
+                "link": "/system/alpha-marae/planet/alpha-marae-ii-a"
+            },
+            {
+                "name": "Alpha Marae III",
+                "link": "/system/alpha-marae/planet/alpha-marae-iii"
+            },
+            {
+                "name": "Alpha Marae III-a",
+                "link": "/system/alpha-marae/planet/alpha-marae-iii-a"
+            },
+            {
+                "name": "Alpha Marae III-b",
+                "link": "/system/alpha-marae/planet/alpha-marae-iii-b"
+            },
+            {
+                "name": "Alpha Marae III-c",
+                "link": "/system/alpha-marae/planet/alpha-marae-iii-c"
+            },
+            {
+                "name": "Alpha Marae III-d",
+                "link": "/system/alpha-marae/planet/alpha-marae-iii-d"
+            },
+            {
+                "name": "Alpha Marae IV",
+                "link": "/system/alpha-marae/planet/alpha-marae-iv"
+            },
+            {
+                "name": "Alpha Marae IV-a",
+                "link": "/system/alpha-marae/planet/alpha-marae-iv-a"
+            },
+            {
+                "name": "Alpha Marae IV-b",
+                "link": "/system/alpha-marae/planet/alpha-marae-iv-b"
+            },
+            {
+                "name": "Alpha Marae V",
+                "link": "/system/alpha-marae/planet/alpha-marae-v"
+            }
+        ]
+    },
+    {
+        "name": "Alpha Tirna",
+        "link": "/system/alpha-tirna",
+        "planets": [
+            {
+                "name": "Tirna I",
+                "link": "/system/alpha-tirna/planet/tirna-i"
+            },
+            {
+                "name": "Tirna II",
+                "link": "/system/alpha-tirna/planet/tirna-ii"
+            },
+            {
+                "name": "Tirna II-a",
+                "link": "/system/alpha-tirna/planet/tirna-ii-a"
+            },
+            {
+                "name": "Tirna III",
+                "link": "/system/alpha-tirna/planet/tirna-iii"
+            },
+            {
+                "name": "Tirna III-a",
+                "link": "/system/alpha-tirna/planet/tirna-iii-a"
+            },
+            {
+                "name": "Tirna III-b",
+                "link": "/system/alpha-tirna/planet/tirna-iii-b"
+            },
+            {
+                "name": "Tirna III-c",
+                "link": "/system/alpha-tirna/planet/tirna-iii-c"
+            },
+            {
+                "name": "Tirna IV",
+                "link": "/system/alpha-tirna/planet/tirna-iv"
+            },
+            {
+                "name": "Tirna IV-a",
+                "link": "/system/alpha-tirna/planet/tirna-iv-a"
+            },
+            {
+                "name": "Tirna IX",
+                "link": "/system/alpha-tirna/planet/tirna-ix"
+            },
+            {
+                "name": "Tirna V",
+                "link": "/system/alpha-tirna/planet/tirna-v"
+            },
+            {
+                "name": "Tirna VI",
+                "link": "/system/alpha-tirna/planet/tirna-vi"
+            },
+            {
+                "name": "Tirna VI-a",
+                "link": "/system/alpha-tirna/planet/tirna-vi-a"
+            },
+            {
+                "name": "Tirna VI-b",
+                "link": "/system/alpha-tirna/planet/tirna-vi-b"
+            },
+            {
+                "name": "Tirna VI-c",
+                "link": "/system/alpha-tirna/planet/tirna-vi-c"
+            },
+            {
+                "name": "Tirna VI-d",
+                "link": "/system/alpha-tirna/planet/tirna-vi-d"
+            },
+            {
+                "name": "Tirna VI-e",
+                "link": "/system/alpha-tirna/planet/tirna-vi-e"
+            },
+            {
+                "name": "Tirna VII",
+                "link": "/system/alpha-tirna/planet/tirna-vii"
+            },
+            {
+                "name": "Tirna VII-a",
+                "link": "/system/alpha-tirna/planet/tirna-vii-a"
+            },
+            {
+                "name": "Tirna VII-b",
+                "link": "/system/alpha-tirna/planet/tirna-vii-b"
+            },
+            {
+                "name": "Tirna VII-c",
+                "link": "/system/alpha-tirna/planet/tirna-vii-c"
+            },
+            {
+                "name": "Tirna VIII",
+                "link": "/system/alpha-tirna/planet/tirna-viii"
+            },
+            {
+                "name": "Tirna VIII-a",
+                "link": "/system/alpha-tirna/planet/tirna-viii-a"
+            },
+            {
+                "name": "Tirna VIII-b",
+                "link": "/system/alpha-tirna/planet/tirna-viii-b"
+            },
+            {
+                "name": "Tirna VIII-c",
+                "link": "/system/alpha-tirna/planet/tirna-viii-c"
+            },
+            {
+                "name": "Tirna VIII-d",
+                "link": "/system/alpha-tirna/planet/tirna-viii-d"
+            },
+            {
+                "name": "Tirna VIII-e",
+                "link": "/system/alpha-tirna/planet/tirna-viii-e"
+            },
+            {
+                "name": "Tirna X",
+                "link": "/system/alpha-tirna/planet/tirna-x"
+            },
+            {
+                "name": "Tirna X-a",
+                "link": "/system/alpha-tirna/planet/tirna-x-a"
+            },
+            {
+                "name": "Tirna X-b",
+                "link": "/system/alpha-tirna/planet/tirna-x-b"
+            },
+            {
+                "name": "Tirna X-c",
+                "link": "/system/alpha-tirna/planet/tirna-x-c"
+            }
+        ]
+    },
+    {
+        "name": "Altair",
+        "link": "/system/altair",
+        "planets": [
+            {
+                "name": "Altair I",
+                "link": "/system/altair/planet/altair-i"
+            },
+            {
+                "name": "Altair II",
+                "link": "/system/altair/planet/altair-ii"
+            },
+            {
+                "name": "Altair III",
+                "link": "/system/altair/planet/altair-iii"
+            },
+            {
+                "name": "Altair III-a",
+                "link": "/system/altair/planet/altair-iii-a"
+            },
+            {
+                "name": "Altair III-b",
+                "link": "/system/altair/planet/altair-iii-b"
+            },
+            {
+                "name": "Altair III-c",
+                "link": "/system/altair/planet/altair-iii-c"
+            },
+            {
+                "name": "Altair IV",
+                "link": "/system/altair/planet/altair-iv"
+            },
+            {
+                "name": "Altair IV-a",
+                "link": "/system/altair/planet/altair-iv-a"
+            },
+            {
+                "name": "Altair IV-b",
+                "link": "/system/altair/planet/altair-iv-b"
+            },
+            {
+                "name": "Altair IV-c",
+                "link": "/system/altair/planet/altair-iv-c"
+            },
+            {
+                "name": "Altair IV-d",
+                "link": "/system/altair/planet/altair-iv-d"
+            },
+            {
+                "name": "Altair V",
+                "link": "/system/altair/planet/altair-v"
+            },
+            {
+                "name": "Altair V-a",
+                "link": "/system/altair/planet/altair-v-a"
+            }
+        ]
+    },
+    {
+        "name": "Andromas",
+        "link": "/system/andromas",
+        "planets": [
+            {
+                "name": "Andromas I",
+                "link": "/system/andromas/planet/andromas-i"
+            },
+            {
+                "name": "Andromas II",
+                "link": "/system/andromas/planet/andromas-ii"
+            },
+            {
+                "name": "Andromas III",
+                "link": "/system/andromas/planet/andromas-iii"
+            },
+            {
+                "name": "Andromas IV",
+                "link": "/system/andromas/planet/andromas-iv"
+            },
+            {
+                "name": "Andromas IV-a",
+                "link": "/system/andromas/planet/andromas-iv-a"
+            },
+            {
+                "name": "Andromas V",
+                "link": "/system/andromas/planet/andromas-v"
+            },
+            {
+                "name": "Andromas V-a",
+                "link": "/system/andromas/planet/andromas-v-a"
+            },
+            {
+                "name": "Andromas V-b",
+                "link": "/system/andromas/planet/andromas-v-b"
+            },
+            {
+                "name": "Andromas VI",
+                "link": "/system/andromas/planet/andromas-vi"
+            },
+            {
+                "name": "Andromas VI-a",
+                "link": "/system/andromas/planet/andromas-vi-a"
+            },
+            {
+                "name": "Andromas VI-b",
+                "link": "/system/andromas/planet/andromas-vi-b"
+            }
+        ]
+    },
+    {
+        "name": "Aranae",
+        "link": "/system/aranae",
+        "planets": [
+            {
+                "name": "Aranae I",
+                "link": "/system/aranae/planet/aranae-i"
+            },
+            {
+                "name": "Aranae II",
+                "link": "/system/aranae/planet/aranae-ii"
+            },
+            {
+                "name": "Aranae II-a",
+                "link": "/system/aranae/planet/aranae-ii-a"
+            },
+            {
+                "name": "Aranae II-b",
+                "link": "/system/aranae/planet/aranae-ii-b"
+            },
+            {
+                "name": "Aranae III",
+                "link": "/system/aranae/planet/aranae-iii"
+            },
+            {
+                "name": "Aranae IV",
+                "link": "/system/aranae/planet/aranae-iv"
+            },
+            {
+                "name": "Aranae IV-a",
+                "link": "/system/aranae/planet/aranae-iv-a"
+            },
+            {
+                "name": "Aranae IV-b",
+                "link": "/system/aranae/planet/aranae-iv-b"
+            },
+            {
+                "name": "Aranae IV-c",
+                "link": "/system/aranae/planet/aranae-iv-c"
+            },
+            {
+                "name": "Aranae IV-d",
+                "link": "/system/aranae/planet/aranae-iv-d"
+            },
+            {
+                "name": "Aranae V",
+                "link": "/system/aranae/planet/aranae-v"
+            }
+        ]
+    },
+    {
+        "name": "Arcturus",
+        "link": "/system/arcturus",
+        "planets": [
+            {
+                "name": "Arcturus I",
+                "link": "/system/arcturus/planet/arcturus-i"
+            },
+            {
+                "name": "Arcturus II",
+                "link": "/system/arcturus/planet/arcturus-ii"
+            },
+            {
+                "name": "Arcturus III",
+                "link": "/system/arcturus/planet/arcturus-iii"
+            },
+            {
+                "name": "Arcturus III-a",
+                "link": "/system/arcturus/planet/arcturus-iii-a"
+            }
+        ]
+    },
+    {
+        "name": "Bara",
+        "link": "/system/bara",
+        "planets": [
+            {
+                "name": "Bara I",
+                "link": "/system/bara/planet/bara-i"
+            },
+            {
+                "name": "Bara II",
+                "link": "/system/bara/planet/bara-ii"
+            },
+            {
+                "name": "Bara II-a",
+                "link": "/system/bara/planet/bara-ii-a"
+            },
+            {
+                "name": "Bara III",
+                "link": "/system/bara/planet/bara-iii"
+            },
+            {
+                "name": "Bara III-a",
+                "link": "/system/bara/planet/bara-iii-a"
+            },
+            {
+                "name": "Bara IV",
+                "link": "/system/bara/planet/bara-iv"
+            },
+            {
+                "name": "Bara V",
+                "link": "/system/bara/planet/bara-v"
+            },
+            {
+                "name": "Bara V-a",
+                "link": "/system/bara/planet/bara-v-a"
+            },
+            {
+                "name": "Bara VI",
+                "link": "/system/bara/planet/bara-vi"
+            },
+            {
+                "name": "Bara VI-a",
+                "link": "/system/bara/planet/bara-vi-a"
+            },
+            {
+                "name": "Bara VI-b",
+                "link": "/system/bara/planet/bara-vi-b"
+            },
+            {
+                "name": "Bara VI-c",
+                "link": "/system/bara/planet/bara-vi-c"
+            },
+            {
+                "name": "Bara VII",
+                "link": "/system/bara/planet/bara-vii"
+            },
+            {
+                "name": "Bara VII-a",
+                "link": "/system/bara/planet/bara-vii-a"
+            },
+            {
+                "name": "Bara VII-b",
+                "link": "/system/bara/planet/bara-vii-b"
+            },
+            {
+                "name": "Bara VII-c",
+                "link": "/system/bara/planet/bara-vii-c"
+            },
+            {
+                "name": "Bara VII-d",
+                "link": "/system/bara/planet/bara-vii-d"
+            }
+        ]
+    },
+    {
+        "name": "Barnard's Star",
+        "link": "/system/barnards-star",
+        "planets": [
+            {
+                "name": "Frost",
+                "link": "/system/barnards-star/planet/frost"
+            }
+        ]
+    },
+    {
+        "name": "Bessel",
+        "link": "/system/bessel",
+        "planets": [
+            {
+                "name": "Bessel I",
+                "link": "/system/bessel/planet/bessel-i"
+            },
+            {
+                "name": "Bessel II",
+                "link": "/system/bessel/planet/bessel-ii"
+            },
+            {
+                "name": "Bessel III",
+                "link": "/system/bessel/planet/bessel-iii"
+            },
+            {
+                "name": "Bessel III-a",
+                "link": "/system/bessel/planet/bessel-iii-a"
+            },
+            {
+                "name": "Bessel III-b",
+                "link": "/system/bessel/planet/bessel-iii-b"
+            }
+        ]
+    },
+    {
+        "name": "Beta Andraste",
+        "link": "/system/beta-andraste",
+        "planets": [
+            {
+                "name": "Beta Andraste I",
+                "link": "/system/beta-andraste/planet/beta-andraste-i"
+            },
+            {
+                "name": "Beta Andraste I-a",
+                "link": "/system/beta-andraste/planet/beta-andraste-i-a"
+            },
+            {
+                "name": "Beta Andraste I-b",
+                "link": "/system/beta-andraste/planet/beta-andraste-i-b"
+            },
+            {
+                "name": "Beta Andraste I-c",
+                "link": "/system/beta-andraste/planet/beta-andraste-i-c"
+            },
+            {
+                "name": "Beta Andraste I-d",
+                "link": "/system/beta-andraste/planet/beta-andraste-i-d"
+            }
+        ]
+    },
+    {
+        "name": "Beta Marae",
+        "link": "/system/beta-marae",
+        "planets": [
+            {
+                "name": "Beta Marae I",
+                "link": "/system/beta-marae/planet/beta-marae-i"
+            },
+            {
+                "name": "Beta Marae I-a",
+                "link": "/system/beta-marae/planet/beta-marae-i-a"
+            },
+            {
+                "name": "Beta Marae II",
+                "link": "/system/beta-marae/planet/beta-marae-ii"
+            },
+            {
+                "name": "Beta Marae II-a",
+                "link": "/system/beta-marae/planet/beta-marae-ii-a"
+            },
+            {
+                "name": "Beta Marae II-b",
+                "link": "/system/beta-marae/planet/beta-marae-ii-b"
+            },
+            {
+                "name": "Beta Marae III",
+                "link": "/system/beta-marae/planet/beta-marae-iii"
+            },
+            {
+                "name": "Beta Marae III-a",
+                "link": "/system/beta-marae/planet/beta-marae-iii-a"
+            },
+            {
+                "name": "Beta Marae IV",
+                "link": "/system/beta-marae/planet/beta-marae-iv"
+            },
+            {
+                "name": "Beta Marae IV-a",
+                "link": "/system/beta-marae/planet/beta-marae-iv-a"
+            },
+            {
+                "name": "Beta Marae IV-b",
+                "link": "/system/beta-marae/planet/beta-marae-iv-b"
+            },
+            {
+                "name": "Beta Marae IV-c",
+                "link": "/system/beta-marae/planet/beta-marae-iv-c"
+            },
+            {
+                "name": "Beta Marae IV-d",
+                "link": "/system/beta-marae/planet/beta-marae-iv-d"
+            },
+            {
+                "name": "Beta Marae V",
+                "link": "/system/beta-marae/planet/beta-marae-v"
+            },
+            {
+                "name": "Beta Marae V-a",
+                "link": "/system/beta-marae/planet/beta-marae-v-a"
+            },
+            {
+                "name": "Beta Marae V-b",
+                "link": "/system/beta-marae/planet/beta-marae-v-b"
+            },
+            {
+                "name": "Beta Marae V-c",
+                "link": "/system/beta-marae/planet/beta-marae-v-c"
+            },
+            {
+                "name": "Beta Marae V-d",
+                "link": "/system/beta-marae/planet/beta-marae-v-d"
+            },
+            {
+                "name": "Beta Marae VI",
+                "link": "/system/beta-marae/planet/beta-marae-vi"
+            },
+            {
+                "name": "Beta Marae VI-a",
+                "link": "/system/beta-marae/planet/beta-marae-vi-a"
+            },
+            {
+                "name": "Beta Marae VI-b",
+                "link": "/system/beta-marae/planet/beta-marae-vi-b"
+            },
+            {
+                "name": "Beta Marae VI-c",
+                "link": "/system/beta-marae/planet/beta-marae-vi-c"
+            }
+        ]
+    },
+    {
+        "name": "Beta Ternion",
+        "link": "/system/beta-ternion",
+        "planets": [
+            {
+                "name": "Beta Ternion I",
+                "link": "/system/beta-ternion/planet/beta-ternion-i"
+            },
+            {
+                "name": "Beta Ternion I-a",
+                "link": "/system/beta-ternion/planet/beta-ternion-i-a"
+            },
+            {
+                "name": "Beta Ternion II",
+                "link": "/system/beta-ternion/planet/beta-ternion-ii"
+            },
+            {
+                "name": "Beta Ternion III",
+                "link": "/system/beta-ternion/planet/beta-ternion-iii"
+            },
+            {
+                "name": "Beta Ternion III-a",
+                "link": "/system/beta-ternion/planet/beta-ternion-iii-a"
+            }
+        ]
+    },
+    {
+        "name": "Beta Tirna",
+        "link": "/system/beta-tirna",
+        "planets": [
+            {
+                "name": "Tirna B",
+                "link": "/system/beta-tirna/planet/tirna-b"
+            }
+        ]
+    },
+    {
+        "name": "Bolivar",
+        "link": "/system/bolivar",
+        "planets": [
+            {
+                "name": "Bolivar I",
+                "link": "/system/bolivar/planet/bolivar-i"
+            }
+        ]
+    },
+    {
+        "name": "Bradbury",
+        "link": "/system/bradbury",
+        "planets": [
+            {
+                "name": "Bradbury I",
+                "link": "/system/bradbury/planet/bradbury-i"
+            },
+            {
+                "name": "Bradbury I-a",
+                "link": "/system/bradbury/planet/bradbury-i-a"
+            },
+            {
+                "name": "Bradbury I-b",
+                "link": "/system/bradbury/planet/bradbury-i-b"
+            },
+            {
+                "name": "Bradbury II",
+                "link": "/system/bradbury/planet/bradbury-ii"
+            },
+            {
+                "name": "Bradbury III",
+                "link": "/system/bradbury/planet/bradbury-iii"
+            },
+            {
+                "name": "Bradbury IV",
+                "link": "/system/bradbury/planet/bradbury-iv"
+            },
+            {
+                "name": "Bradbury IV-a",
+                "link": "/system/bradbury/planet/bradbury-iv-a"
+            },
+            {
+                "name": "Bradbury V",
+                "link": "/system/bradbury/planet/bradbury-v"
+            },
+            {
+                "name": "Bradbury V-a",
+                "link": "/system/bradbury/planet/bradbury-v-a"
+            }
+        ]
+    },
+    {
+        "name": "Carinae",
+        "link": "/system/carinae",
+        "planets": [
+            {
+                "name": "Carinae I",
+                "link": "/system/carinae/planet/carinae-i"
+            },
+            {
+                "name": "Carinae II",
+                "link": "/system/carinae/planet/carinae-ii"
+            },
+            {
+                "name": "Carinae II-a",
+                "link": "/system/carinae/planet/carinae-ii-a"
+            },
+            {
+                "name": "Carinae III",
+                "link": "/system/carinae/planet/carinae-iii"
+            },
+            {
+                "name": "Carinae III-a",
+                "link": "/system/carinae/planet/carinae-iii-a"
+            },
+            {
+                "name": "Carinae III-b",
+                "link": "/system/carinae/planet/carinae-iii-b"
+            },
+            {
+                "name": "Carinae III-c",
+                "link": "/system/carinae/planet/carinae-iii-c"
+            },
+            {
+                "name": "Carinae III-d",
+                "link": "/system/carinae/planet/carinae-iii-d"
+            },
+            {
+                "name": "Carinae IV",
+                "link": "/system/carinae/planet/carinae-iv"
+            },
+            {
+                "name": "Carinae IV-a",
+                "link": "/system/carinae/planet/carinae-iv-a"
+            },
+            {
+                "name": "Carinae V",
+                "link": "/system/carinae/planet/carinae-v"
+            },
+            {
+                "name": "Carinae V-a",
+                "link": "/system/carinae/planet/carinae-v-a"
+            },
+            {
+                "name": "Carinae V-b",
+                "link": "/system/carinae/planet/carinae-v-b"
+            },
+            {
+                "name": "Carinae V-c",
+                "link": "/system/carinae/planet/carinae-v-c"
+            }
+        ]
+    },
+    {
+        "name": "Cheyenne",
+        "link": "/system/cheyenne",
+        "planets": [
+            {
+                "name": "Agamon",
+                "link": "/system/cheyenne/planet/agamon"
+            },
+            {
+                "name": "Agamon A",
+                "link": "/system/cheyenne/planet/agamon-a"
+            },
+            {
+                "name": "Agamon B",
+                "link": "/system/cheyenne/planet/agamon-b"
+            },
+            {
+                "name": "Agamon C",
+                "link": "/system/cheyenne/planet/agamon-c"
+            },
+            {
+                "name": "Agamon D",
+                "link": "/system/cheyenne/planet/agamon-d"
+            },
+            {
+                "name": "Akila",
+                "link": "/system/cheyenne/planet/akila"
+            },
+            {
+                "name": "Antharum",
+                "link": "/system/cheyenne/planet/antharum"
+            },
+            {
+                "name": "Belwah",
+                "link": "/system/cheyenne/planet/belwah"
+            },
+            {
+                "name": "Bindi",
+                "link": "/system/cheyenne/planet/bindi"
+            },
+            {
+                "name": "Bismark",
+                "link": "/system/cheyenne/planet/bismark"
+            },
+            {
+                "name": "Burran",
+                "link": "/system/cheyenne/planet/burran"
+            },
+            {
+                "name": "Codos",
+                "link": "/system/cheyenne/planet/codos"
+            },
+            {
+                "name": "Cragg",
+                "link": "/system/cheyenne/planet/cragg"
+            },
+            {
+                "name": "Fenn",
+                "link": "/system/cheyenne/planet/fenn"
+            },
+            {
+                "name": "Grizzit",
+                "link": "/system/cheyenne/planet/grizzit"
+            },
+            {
+                "name": "Hardpoint",
+                "link": "/system/cheyenne/planet/hardpoint"
+            },
+            {
+                "name": "Heilo",
+                "link": "/system/cheyenne/planet/heilo"
+            },
+            {
+                "name": "Kalira",
+                "link": "/system/cheyenne/planet/kalira"
+            },
+            {
+                "name": "Laramie",
+                "link": "/system/cheyenne/planet/laramie"
+            },
+            {
+                "name": "Montara",
+                "link": "/system/cheyenne/planet/montara"
+            },
+            {
+                "name": "Montara Luna",
+                "link": "/system/cheyenne/planet/montara-luna"
+            },
+            {
+                "name": "Navaha",
+                "link": "/system/cheyenne/planet/navaha"
+            },
+            {
+                "name": "Olaran",
+                "link": "/system/cheyenne/planet/olaran"
+            },
+            {
+                "name": "Rell",
+                "link": "/system/cheyenne/planet/rell"
+            },
+            {
+                "name": "Skink",
+                "link": "/system/cheyenne/planet/skink"
+            },
+            {
+                "name": "Smet",
+                "link": "/system/cheyenne/planet/smet"
+            },
+            {
+                "name": "Stellis",
+                "link": "/system/cheyenne/planet/stellis"
+            },
+            {
+                "name": "Stellis A",
+                "link": "/system/cheyenne/planet/stellis-a"
+            },
+            {
+                "name": "Stellis B",
+                "link": "/system/cheyenne/planet/stellis-b"
+            },
+            {
+                "name": "Stellis C",
+                "link": "/system/cheyenne/planet/stellis-c"
+            },
+            {
+                "name": "Stellis D",
+                "link": "/system/cheyenne/planet/stellis-d"
+            },
+            {
+                "name": "Tahrnis",
+                "link": "/system/cheyenne/planet/tahrnis"
+            },
+            {
+                "name": "Thren",
+                "link": "/system/cheyenne/planet/thren"
+            },
+            {
+                "name": "Washakie",
+                "link": "/system/cheyenne/planet/washakie"
+            },
+            {
+                "name": "Wellish",
+                "link": "/system/cheyenne/planet/wellish"
+            }
+        ]
+    },
+    {
+        "name": "Al-Battani",
+        "link": "/system/al-battani",
+        "planets": [
+            {
+                "name": "Al-Battani I",
+                "link": "/system/al-battani/planet/al-battani-i"
+            },
+            {
+                "name": "Al-Battani I-a",
+                "link": "/system/al-battani/planet/al-battani-i-a"
+            },
+            {
+                "name": "Al-Battani I-b",
+                "link": "/system/al-battani/planet/al-battani-i-b"
+            },
+            {
+                "name": "Al-Battani I-c",
+                "link": "/system/al-battani/planet/al-battani-i-c"
+            },
+            {
+                "name": "Al-Battani II",
+                "link": "/system/al-battani/planet/al-battani-ii"
+            },
+            {
+                "name": "Al-Battani III",
+                "link": "/system/al-battani/planet/al-battani-iii"
+            },
+            {
+                "name": "Al-Battani III-a",
+                "link": "/system/al-battani/planet/al-battani-iii-a"
+            },
+            {
+                "name": "Al-Battani III-b",
+                "link": "/system/al-battani/planet/al-battani-iii-b"
+            },
+            {
+                "name": "Al-Battani IV",
+                "link": "/system/al-battani/planet/al-battani-iv"
+            },
+            {
+                "name": "Al-Battani IV-a",
+                "link": "/system/al-battani/planet/al-battani-iv-a"
+            },
+            {
+                "name": "Al-Battani IV-b",
+                "link": "/system/al-battani/planet/al-battani-iv-b"
+            },
+            {
+                "name": "Al-Battani V",
+                "link": "/system/al-battani/planet/al-battani-v"
+            },
+            {
+                "name": "Al-Battani V-a",
+                "link": "/system/al-battani/planet/al-battani-v-a"
+            },
+            {
+                "name": "Al-Battani VI",
+                "link": "/system/al-battani/planet/al-battani-vi"
+            },
+            {
+                "name": "Al-Battani VI-a",
+                "link": "/system/al-battani/planet/al-battani-vi-a"
+            },
+            {
+                "name": "Al-Battani VI-b",
+                "link": "/system/al-battani/planet/al-battani-vi-b"
+            },
+            {
+                "name": "Al-Battani VII",
+                "link": "/system/al-battani/planet/al-battani-vii"
+            },
+            {
+                "name": "Al-Battani VII-a",
+                "link": "/system/al-battani/planet/al-battani-vii-a"
+            },
+            {
+                "name": "Al-Battani VIII",
+                "link": "/system/al-battani/planet/al-battani-viii"
+            },
+            {
+                "name": "Al-Battani VIII-a",
+                "link": "/system/al-battani/planet/al-battani-viii-a"
+            }
+        ]
+    },
+    {
+        "name": "Alpha Andraste",
+        "link": "/system/alpha-andraste",
+        "planets": [
+            {
+                "name": "Alpha Andraste I",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-i"
+            },
+            {
+                "name": "Alpha Andraste I-a",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-i-a"
+            },
+            {
+                "name": "Alpha Andraste II",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-ii"
+            },
+            {
+                "name": "Alpha Andraste III",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-iii"
+            },
+            {
+                "name": "Alpha Andraste IV",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-iv"
+            },
+            {
+                "name": "Alpha Andraste V",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-v"
+            },
+            {
+                "name": "Alpha Andraste VI",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-vi"
+            }
+        ]
+    },
+    {
+        "name": "Alpha Centauri",
+        "link": "/system/alpha-centauri",
+        "planets": [
+            {
+                "name": "Bondar",
+                "link": "/system/alpha-centauri/planet/bondar"
+            },
+            {
+                "name": "Chawla",
+                "link": "/system/alpha-centauri/planet/chawla"
+            },
+            {
+                "name": "Curbeam",
+                "link": "/system/alpha-centauri/planet/curbeam"
+            },
+            {
+                "name": "Gagarin",
+                "link": "/system/alpha-centauri/planet/gagarin"
+            },
+            {
+                "name": "Grissom",
+                "link": "/system/alpha-centauri/planet/grissom"
+            },
+            {
+                "name": "Hawley",
+                "link": "/system/alpha-centauri/planet/hawley"
+            },
+            {
+                "name": "Jemison",
+                "link": "/system/alpha-centauri/planet/jemison"
+            },
+            {
+                "name": "Kurtz",
+                "link": "/system/alpha-centauri/planet/kurtz"
+            },
+            {
+                "name": "Lovell",
+                "link": "/system/alpha-centauri/planet/lovell"
+            },
+            {
+                "name": "Olivas",
+                "link": "/system/alpha-centauri/planet/olivas"
+            },
+            {
+                "name": "Voss",
+                "link": "/system/alpha-centauri/planet/voss"
+            },
+            {
+                "name": "Zamka",
+                "link": "/system/alpha-centauri/planet/zamka"
+            }
+        ]
+    },
+    {
+        "name": "Alpha Marae",
+        "link": "/system/alpha-marae",
+        "planets": [
+            {
+                "name": "Alpha Marae I",
+                "link": "/system/alpha-marae/planet/alpha-marae-i"
+            },
+            {
+                "name": "Alpha Marae II",
+                "link": "/system/alpha-marae/planet/alpha-marae-ii"
+            },
+            {
+                "name": "Alpha Marae II-a",
+                "link": "/system/alpha-marae/planet/alpha-marae-ii-a"
+            },
+            {
+                "name": "Alpha Marae III",
+                "link": "/system/alpha-marae/planet/alpha-marae-iii"
+            },
+            {
+                "name": "Alpha Marae III-a",
+                "link": "/system/alpha-marae/planet/alpha-marae-iii-a"
+            },
+            {
+                "name": "Alpha Marae III-b",
+                "link": "/system/alpha-marae/planet/alpha-marae-iii-b"
+            },
+            {
+                "name": "Alpha Marae III-c",
+                "link": "/system/alpha-marae/planet/alpha-marae-iii-c"
+            },
+            {
+                "name": "Alpha Marae III-d",
+                "link": "/system/alpha-marae/planet/alpha-marae-iii-d"
+            },
+            {
+                "name": "Alpha Marae IV",
+                "link": "/system/alpha-marae/planet/alpha-marae-iv"
+            },
+            {
+                "name": "Alpha Marae IV-a",
+                "link": "/system/alpha-marae/planet/alpha-marae-iv-a"
+            },
+            {
+                "name": "Alpha Marae IV-b",
+                "link": "/system/alpha-marae/planet/alpha-marae-iv-b"
+            },
+            {
+                "name": "Alpha Marae V",
+                "link": "/system/alpha-marae/planet/alpha-marae-v"
+            }
+        ]
+    },
+    {
+        "name": "Alpha Tirna",
+        "link": "/system/alpha-tirna",
+        "planets": [
+            {
+                "name": "Tirna I",
+                "link": "/system/alpha-tirna/planet/tirna-i"
+            },
+            {
+                "name": "Tirna II",
+                "link": "/system/alpha-tirna/planet/tirna-ii"
+            },
+            {
+                "name": "Tirna II-a",
+                "link": "/system/alpha-tirna/planet/tirna-ii-a"
+            },
+            {
+                "name": "Tirna III",
+                "link": "/system/alpha-tirna/planet/tirna-iii"
+            },
+            {
+                "name": "Tirna III-a",
+                "link": "/system/alpha-tirna/planet/tirna-iii-a"
+            },
+            {
+                "name": "Tirna III-b",
+                "link": "/system/alpha-tirna/planet/tirna-iii-b"
+            },
+            {
+                "name": "Tirna III-c",
+                "link": "/system/alpha-tirna/planet/tirna-iii-c"
+            },
+            {
+                "name": "Tirna IV",
+                "link": "/system/alpha-tirna/planet/tirna-iv"
+            },
+            {
+                "name": "Tirna IV-a",
+                "link": "/system/alpha-tirna/planet/tirna-iv-a"
+            },
+            {
+                "name": "Tirna IX",
+                "link": "/system/alpha-tirna/planet/tirna-ix"
+            },
+            {
+                "name": "Tirna V",
+                "link": "/system/alpha-tirna/planet/tirna-v"
+            },
+            {
+                "name": "Tirna VI",
+                "link": "/system/alpha-tirna/planet/tirna-vi"
+            },
+            {
+                "name": "Tirna VI-a",
+                "link": "/system/alpha-tirna/planet/tirna-vi-a"
+            },
+            {
+                "name": "Tirna VI-b",
+                "link": "/system/alpha-tirna/planet/tirna-vi-b"
+            },
+            {
+                "name": "Tirna VI-c",
+                "link": "/system/alpha-tirna/planet/tirna-vi-c"
+            },
+            {
+                "name": "Tirna VI-d",
+                "link": "/system/alpha-tirna/planet/tirna-vi-d"
+            },
+            {
+                "name": "Tirna VI-e",
+                "link": "/system/alpha-tirna/planet/tirna-vi-e"
+            },
+            {
+                "name": "Tirna VII",
+                "link": "/system/alpha-tirna/planet/tirna-vii"
+            },
+            {
+                "name": "Tirna VII-a",
+                "link": "/system/alpha-tirna/planet/tirna-vii-a"
+            },
+            {
+                "name": "Tirna VII-b",
+                "link": "/system/alpha-tirna/planet/tirna-vii-b"
+            },
+            {
+                "name": "Tirna VII-c",
+                "link": "/system/alpha-tirna/planet/tirna-vii-c"
+            },
+            {
+                "name": "Tirna VIII",
+                "link": "/system/alpha-tirna/planet/tirna-viii"
+            },
+            {
+                "name": "Tirna VIII-a",
+                "link": "/system/alpha-tirna/planet/tirna-viii-a"
+            },
+            {
+                "name": "Tirna VIII-b",
+                "link": "/system/alpha-tirna/planet/tirna-viii-b"
+            },
+            {
+                "name": "Tirna VIII-c",
+                "link": "/system/alpha-tirna/planet/tirna-viii-c"
+            },
+            {
+                "name": "Tirna VIII-d",
+                "link": "/system/alpha-tirna/planet/tirna-viii-d"
+            },
+            {
+                "name": "Tirna VIII-e",
+                "link": "/system/alpha-tirna/planet/tirna-viii-e"
+            },
+            {
+                "name": "Tirna X",
+                "link": "/system/alpha-tirna/planet/tirna-x"
+            },
+            {
+                "name": "Tirna X-a",
+                "link": "/system/alpha-tirna/planet/tirna-x-a"
+            },
+            {
+                "name": "Tirna X-b",
+                "link": "/system/alpha-tirna/planet/tirna-x-b"
+            },
+            {
+                "name": "Tirna X-c",
+                "link": "/system/alpha-tirna/planet/tirna-x-c"
+            }
+        ]
+    },
+    {
+        "name": "Altair",
+        "link": "/system/altair",
+        "planets": [
+            {
+                "name": "Altair I",
+                "link": "/system/altair/planet/altair-i"
+            },
+            {
+                "name": "Altair II",
+                "link": "/system/altair/planet/altair-ii"
+            },
+            {
+                "name": "Altair III",
+                "link": "/system/altair/planet/altair-iii"
+            },
+            {
+                "name": "Altair III-a",
+                "link": "/system/altair/planet/altair-iii-a"
+            },
+            {
+                "name": "Altair III-b",
+                "link": "/system/altair/planet/altair-iii-b"
+            },
+            {
+                "name": "Altair III-c",
+                "link": "/system/altair/planet/altair-iii-c"
+            },
+            {
+                "name": "Altair IV",
+                "link": "/system/altair/planet/altair-iv"
+            },
+            {
+                "name": "Altair IV-a",
+                "link": "/system/altair/planet/altair-iv-a"
+            },
+            {
+                "name": "Altair IV-b",
+                "link": "/system/altair/planet/altair-iv-b"
+            },
+            {
+                "name": "Altair IV-c",
+                "link": "/system/altair/planet/altair-iv-c"
+            },
+            {
+                "name": "Altair IV-d",
+                "link": "/system/altair/planet/altair-iv-d"
+            },
+            {
+                "name": "Altair V",
+                "link": "/system/altair/planet/altair-v"
+            },
+            {
+                "name": "Altair V-a",
+                "link": "/system/altair/planet/altair-v-a"
+            }
+        ]
+    },
+    {
+        "name": "Andromas",
+        "link": "/system/andromas",
+        "planets": [
+            {
+                "name": "Andromas I",
+                "link": "/system/andromas/planet/andromas-i"
+            },
+            {
+                "name": "Andromas II",
+                "link": "/system/andromas/planet/andromas-ii"
+            },
+            {
+                "name": "Andromas III",
+                "link": "/system/andromas/planet/andromas-iii"
+            },
+            {
+                "name": "Andromas IV",
+                "link": "/system/andromas/planet/andromas-iv"
+            },
+            {
+                "name": "Andromas IV-a",
+                "link": "/system/andromas/planet/andromas-iv-a"
+            },
+            {
+                "name": "Andromas V",
+                "link": "/system/andromas/planet/andromas-v"
+            },
+            {
+                "name": "Andromas V-a",
+                "link": "/system/andromas/planet/andromas-v-a"
+            },
+            {
+                "name": "Andromas V-b",
+                "link": "/system/andromas/planet/andromas-v-b"
+            },
+            {
+                "name": "Andromas VI",
+                "link": "/system/andromas/planet/andromas-vi"
+            },
+            {
+                "name": "Andromas VI-a",
+                "link": "/system/andromas/planet/andromas-vi-a"
+            },
+            {
+                "name": "Andromas VI-b",
+                "link": "/system/andromas/planet/andromas-vi-b"
+            }
+        ]
+    },
+    {
+        "name": "Aranae",
+        "link": "/system/aranae",
+        "planets": [
+            {
+                "name": "Aranae I",
+                "link": "/system/aranae/planet/aranae-i"
+            },
+            {
+                "name": "Aranae II",
+                "link": "/system/aranae/planet/aranae-ii"
+            },
+            {
+                "name": "Aranae II-a",
+                "link": "/system/aranae/planet/aranae-ii-a"
+            },
+            {
+                "name": "Aranae II-b",
+                "link": "/system/aranae/planet/aranae-ii-b"
+            },
+            {
+                "name": "Aranae III",
+                "link": "/system/aranae/planet/aranae-iii"
+            },
+            {
+                "name": "Aranae IV",
+                "link": "/system/aranae/planet/aranae-iv"
+            },
+            {
+                "name": "Aranae IV-a",
+                "link": "/system/aranae/planet/aranae-iv-a"
+            },
+            {
+                "name": "Aranae IV-b",
+                "link": "/system/aranae/planet/aranae-iv-b"
+            },
+            {
+                "name": "Aranae IV-c",
+                "link": "/system/aranae/planet/aranae-iv-c"
+            },
+            {
+                "name": "Aranae IV-d",
+                "link": "/system/aranae/planet/aranae-iv-d"
+            },
+            {
+                "name": "Aranae V",
+                "link": "/system/aranae/planet/aranae-v"
+            }
+        ]
+    },
+    {
+        "name": "Arcturus",
+        "link": "/system/arcturus",
+        "planets": [
+            {
+                "name": "Arcturus I",
+                "link": "/system/arcturus/planet/arcturus-i"
+            },
+            {
+                "name": "Arcturus II",
+                "link": "/system/arcturus/planet/arcturus-ii"
+            },
+            {
+                "name": "Arcturus III",
+                "link": "/system/arcturus/planet/arcturus-iii"
+            },
+            {
+                "name": "Arcturus III-a",
+                "link": "/system/arcturus/planet/arcturus-iii-a"
+            }
+        ]
+    },
+    {
+        "name": "Bara",
+        "link": "/system/bara",
+        "planets": [
+            {
+                "name": "Bara I",
+                "link": "/system/bara/planet/bara-i"
+            },
+            {
+                "name": "Bara II",
+                "link": "/system/bara/planet/bara-ii"
+            },
+            {
+                "name": "Bara II-a",
+                "link": "/system/bara/planet/bara-ii-a"
+            },
+            {
+                "name": "Bara III",
+                "link": "/system/bara/planet/bara-iii"
+            },
+            {
+                "name": "Bara III-a",
+                "link": "/system/bara/planet/bara-iii-a"
+            },
+            {
+                "name": "Bara IV",
+                "link": "/system/bara/planet/bara-iv"
+            },
+            {
+                "name": "Bara V",
+                "link": "/system/bara/planet/bara-v"
+            },
+            {
+                "name": "Bara V-a",
+                "link": "/system/bara/planet/bara-v-a"
+            },
+            {
+                "name": "Bara VI",
+                "link": "/system/bara/planet/bara-vi"
+            },
+            {
+                "name": "Bara VI-a",
+                "link": "/system/bara/planet/bara-vi-a"
+            },
+            {
+                "name": "Bara VI-b",
+                "link": "/system/bara/planet/bara-vi-b"
+            },
+            {
+                "name": "Bara VI-c",
+                "link": "/system/bara/planet/bara-vi-c"
+            },
+            {
+                "name": "Bara VII",
+                "link": "/system/bara/planet/bara-vii"
+            },
+            {
+                "name": "Bara VII-a",
+                "link": "/system/bara/planet/bara-vii-a"
+            },
+            {
+                "name": "Bara VII-b",
+                "link": "/system/bara/planet/bara-vii-b"
+            },
+            {
+                "name": "Bara VII-c",
+                "link": "/system/bara/planet/bara-vii-c"
+            },
+            {
+                "name": "Bara VII-d",
+                "link": "/system/bara/planet/bara-vii-d"
+            }
+        ]
+    },
+    {
+        "name": "Barnard's Star",
+        "link": "/system/barnards-star",
+        "planets": [
+            {
+                "name": "Frost",
+                "link": "/system/barnards-star/planet/frost"
+            }
+        ]
+    },
+    {
+        "name": "Bessel",
+        "link": "/system/bessel",
+        "planets": [
+            {
+                "name": "Bessel I",
+                "link": "/system/bessel/planet/bessel-i"
+            },
+            {
+                "name": "Bessel II",
+                "link": "/system/bessel/planet/bessel-ii"
+            },
+            {
+                "name": "Bessel III",
+                "link": "/system/bessel/planet/bessel-iii"
+            },
+            {
+                "name": "Bessel III-a",
+                "link": "/system/bessel/planet/bessel-iii-a"
+            },
+            {
+                "name": "Bessel III-b",
+                "link": "/system/bessel/planet/bessel-iii-b"
+            }
+        ]
+    },
+    {
+        "name": "Beta Andraste",
+        "link": "/system/beta-andraste",
+        "planets": [
+            {
+                "name": "Beta Andraste I",
+                "link": "/system/beta-andraste/planet/beta-andraste-i"
+            },
+            {
+                "name": "Beta Andraste I-a",
+                "link": "/system/beta-andraste/planet/beta-andraste-i-a"
+            },
+            {
+                "name": "Beta Andraste I-b",
+                "link": "/system/beta-andraste/planet/beta-andraste-i-b"
+            },
+            {
+                "name": "Beta Andraste I-c",
+                "link": "/system/beta-andraste/planet/beta-andraste-i-c"
+            },
+            {
+                "name": "Beta Andraste I-d",
+                "link": "/system/beta-andraste/planet/beta-andraste-i-d"
+            }
+        ]
+    },
+    {
+        "name": "Beta Marae",
+        "link": "/system/beta-marae",
+        "planets": [
+            {
+                "name": "Beta Marae I",
+                "link": "/system/beta-marae/planet/beta-marae-i"
+            },
+            {
+                "name": "Beta Marae I-a",
+                "link": "/system/beta-marae/planet/beta-marae-i-a"
+            },
+            {
+                "name": "Beta Marae II",
+                "link": "/system/beta-marae/planet/beta-marae-ii"
+            },
+            {
+                "name": "Beta Marae II-a",
+                "link": "/system/beta-marae/planet/beta-marae-ii-a"
+            },
+            {
+                "name": "Beta Marae II-b",
+                "link": "/system/beta-marae/planet/beta-marae-ii-b"
+            },
+            {
+                "name": "Beta Marae III",
+                "link": "/system/beta-marae/planet/beta-marae-iii"
+            },
+            {
+                "name": "Beta Marae III-a",
+                "link": "/system/beta-marae/planet/beta-marae-iii-a"
+            },
+            {
+                "name": "Beta Marae IV",
+                "link": "/system/beta-marae/planet/beta-marae-iv"
+            },
+            {
+                "name": "Beta Marae IV-a",
+                "link": "/system/beta-marae/planet/beta-marae-iv-a"
+            },
+            {
+                "name": "Beta Marae IV-b",
+                "link": "/system/beta-marae/planet/beta-marae-iv-b"
+            },
+            {
+                "name": "Beta Marae IV-c",
+                "link": "/system/beta-marae/planet/beta-marae-iv-c"
+            },
+            {
+                "name": "Beta Marae IV-d",
+                "link": "/system/beta-marae/planet/beta-marae-iv-d"
+            },
+            {
+                "name": "Beta Marae V",
+                "link": "/system/beta-marae/planet/beta-marae-v"
+            },
+            {
+                "name": "Beta Marae V-a",
+                "link": "/system/beta-marae/planet/beta-marae-v-a"
+            },
+            {
+                "name": "Beta Marae V-b",
+                "link": "/system/beta-marae/planet/beta-marae-v-b"
+            },
+            {
+                "name": "Beta Marae V-c",
+                "link": "/system/beta-marae/planet/beta-marae-v-c"
+            },
+            {
+                "name": "Beta Marae V-d",
+                "link": "/system/beta-marae/planet/beta-marae-v-d"
+            },
+            {
+                "name": "Beta Marae VI",
+                "link": "/system/beta-marae/planet/beta-marae-vi"
+            },
+            {
+                "name": "Beta Marae VI-a",
+                "link": "/system/beta-marae/planet/beta-marae-vi-a"
+            },
+            {
+                "name": "Beta Marae VI-b",
+                "link": "/system/beta-marae/planet/beta-marae-vi-b"
+            },
+            {
+                "name": "Beta Marae VI-c",
+                "link": "/system/beta-marae/planet/beta-marae-vi-c"
+            }
+        ]
+    },
+    {
+        "name": "Beta Ternion",
+        "link": "/system/beta-ternion",
+        "planets": [
+            {
+                "name": "Beta Ternion I",
+                "link": "/system/beta-ternion/planet/beta-ternion-i"
+            },
+            {
+                "name": "Beta Ternion I-a",
+                "link": "/system/beta-ternion/planet/beta-ternion-i-a"
+            },
+            {
+                "name": "Beta Ternion II",
+                "link": "/system/beta-ternion/planet/beta-ternion-ii"
+            },
+            {
+                "name": "Beta Ternion III",
+                "link": "/system/beta-ternion/planet/beta-ternion-iii"
+            },
+            {
+                "name": "Beta Ternion III-a",
+                "link": "/system/beta-ternion/planet/beta-ternion-iii-a"
+            }
+        ]
+    },
+    {
+        "name": "Beta Tirna",
+        "link": "/system/beta-tirna",
+        "planets": [
+            {
+                "name": "Tirna B",
+                "link": "/system/beta-tirna/planet/tirna-b"
+            }
+        ]
+    },
+    {
+        "name": "Bolivar",
+        "link": "/system/bolivar",
+        "planets": [
+            {
+                "name": "Bolivar I",
+                "link": "/system/bolivar/planet/bolivar-i"
+            }
+        ]
+    },
+    {
+        "name": "Bradbury",
+        "link": "/system/bradbury",
+        "planets": [
+            {
+                "name": "Bradbury I",
+                "link": "/system/bradbury/planet/bradbury-i"
+            },
+            {
+                "name": "Bradbury I-a",
+                "link": "/system/bradbury/planet/bradbury-i-a"
+            },
+            {
+                "name": "Bradbury I-b",
+                "link": "/system/bradbury/planet/bradbury-i-b"
+            },
+            {
+                "name": "Bradbury II",
+                "link": "/system/bradbury/planet/bradbury-ii"
+            },
+            {
+                "name": "Bradbury III",
+                "link": "/system/bradbury/planet/bradbury-iii"
+            },
+            {
+                "name": "Bradbury IV",
+                "link": "/system/bradbury/planet/bradbury-iv"
+            },
+            {
+                "name": "Bradbury IV-a",
+                "link": "/system/bradbury/planet/bradbury-iv-a"
+            },
+            {
+                "name": "Bradbury V",
+                "link": "/system/bradbury/planet/bradbury-v"
+            },
+            {
+                "name": "Bradbury V-a",
+                "link": "/system/bradbury/planet/bradbury-v-a"
+            }
+        ]
+    },
+    {
+        "name": "Carinae",
+        "link": "/system/carinae",
+        "planets": [
+            {
+                "name": "Carinae I",
+                "link": "/system/carinae/planet/carinae-i"
+            },
+            {
+                "name": "Carinae II",
+                "link": "/system/carinae/planet/carinae-ii"
+            },
+            {
+                "name": "Carinae II-a",
+                "link": "/system/carinae/planet/carinae-ii-a"
+            },
+            {
+                "name": "Carinae III",
+                "link": "/system/carinae/planet/carinae-iii"
+            },
+            {
+                "name": "Carinae III-a",
+                "link": "/system/carinae/planet/carinae-iii-a"
+            },
+            {
+                "name": "Carinae III-b",
+                "link": "/system/carinae/planet/carinae-iii-b"
+            },
+            {
+                "name": "Carinae III-c",
+                "link": "/system/carinae/planet/carinae-iii-c"
+            },
+            {
+                "name": "Carinae III-d",
+                "link": "/system/carinae/planet/carinae-iii-d"
+            },
+            {
+                "name": "Carinae IV",
+                "link": "/system/carinae/planet/carinae-iv"
+            },
+            {
+                "name": "Carinae IV-a",
+                "link": "/system/carinae/planet/carinae-iv-a"
+            },
+            {
+                "name": "Carinae V",
+                "link": "/system/carinae/planet/carinae-v"
+            },
+            {
+                "name": "Carinae V-a",
+                "link": "/system/carinae/planet/carinae-v-a"
+            },
+            {
+                "name": "Carinae V-b",
+                "link": "/system/carinae/planet/carinae-v-b"
+            },
+            {
+                "name": "Carinae V-c",
+                "link": "/system/carinae/planet/carinae-v-c"
+            }
+        ]
+    },
+    {
+        "name": "Cheyenne",
+        "link": "/system/cheyenne",
+        "planets": [
+            {
+                "name": "Agamon",
+                "link": "/system/cheyenne/planet/agamon"
+            },
+            {
+                "name": "Agamon A",
+                "link": "/system/cheyenne/planet/agamon-a"
+            },
+            {
+                "name": "Agamon B",
+                "link": "/system/cheyenne/planet/agamon-b"
+            },
+            {
+                "name": "Agamon C",
+                "link": "/system/cheyenne/planet/agamon-c"
+            },
+            {
+                "name": "Agamon D",
+                "link": "/system/cheyenne/planet/agamon-d"
+            },
+            {
+                "name": "Akila",
+                "link": "/system/cheyenne/planet/akila"
+            },
+            {
+                "name": "Antharum",
+                "link": "/system/cheyenne/planet/antharum"
+            },
+            {
+                "name": "Belwah",
+                "link": "/system/cheyenne/planet/belwah"
+            },
+            {
+                "name": "Bindi",
+                "link": "/system/cheyenne/planet/bindi"
+            },
+            {
+                "name": "Bismark",
+                "link": "/system/cheyenne/planet/bismark"
+            },
+            {
+                "name": "Burran",
+                "link": "/system/cheyenne/planet/burran"
+            },
+            {
+                "name": "Codos",
+                "link": "/system/cheyenne/planet/codos"
+            },
+            {
+                "name": "Cragg",
+                "link": "/system/cheyenne/planet/cragg"
+            },
+            {
+                "name": "Fenn",
+                "link": "/system/cheyenne/planet/fenn"
+            },
+            {
+                "name": "Grizzit",
+                "link": "/system/cheyenne/planet/grizzit"
+            },
+            {
+                "name": "Hardpoint",
+                "link": "/system/cheyenne/planet/hardpoint"
+            },
+            {
+                "name": "Heilo",
+                "link": "/system/cheyenne/planet/heilo"
+            },
+            {
+                "name": "Kalira",
+                "link": "/system/cheyenne/planet/kalira"
+            },
+            {
+                "name": "Laramie",
+                "link": "/system/cheyenne/planet/laramie"
+            },
+            {
+                "name": "Montara",
+                "link": "/system/cheyenne/planet/montara"
+            },
+            {
+                "name": "Montara Luna",
+                "link": "/system/cheyenne/planet/montara-luna"
+            },
+            {
+                "name": "Navaha",
+                "link": "/system/cheyenne/planet/navaha"
+            },
+            {
+                "name": "Olaran",
+                "link": "/system/cheyenne/planet/olaran"
+            },
+            {
+                "name": "Rell",
+                "link": "/system/cheyenne/planet/rell"
+            },
+            {
+                "name": "Skink",
+                "link": "/system/cheyenne/planet/skink"
+            },
+            {
+                "name": "Smet",
+                "link": "/system/cheyenne/planet/smet"
+            },
+            {
+                "name": "Stellis",
+                "link": "/system/cheyenne/planet/stellis"
+            },
+            {
+                "name": "Stellis A",
+                "link": "/system/cheyenne/planet/stellis-a"
+            },
+            {
+                "name": "Stellis B",
+                "link": "/system/cheyenne/planet/stellis-b"
+            },
+            {
+                "name": "Stellis C",
+                "link": "/system/cheyenne/planet/stellis-c"
+            },
+            {
+                "name": "Stellis D",
+                "link": "/system/cheyenne/planet/stellis-d"
+            },
+            {
+                "name": "Tahrnis",
+                "link": "/system/cheyenne/planet/tahrnis"
+            },
+            {
+                "name": "Thren",
+                "link": "/system/cheyenne/planet/thren"
+            },
+            {
+                "name": "Washakie",
+                "link": "/system/cheyenne/planet/washakie"
+            },
+            {
+                "name": "Wellish",
+                "link": "/system/cheyenne/planet/wellish"
+            }
+        ]
+    },
+    {
+        "name": "Al-Battani",
+        "link": "/system/al-battani",
+        "planets": [
+            {
+                "name": "Al-Battani I",
+                "link": "/system/al-battani/planet/al-battani-i"
+            },
+            {
+                "name": "Al-Battani I-a",
+                "link": "/system/al-battani/planet/al-battani-i-a"
+            },
+            {
+                "name": "Al-Battani I-b",
+                "link": "/system/al-battani/planet/al-battani-i-b"
+            },
+            {
+                "name": "Al-Battani I-c",
+                "link": "/system/al-battani/planet/al-battani-i-c"
+            },
+            {
+                "name": "Al-Battani II",
+                "link": "/system/al-battani/planet/al-battani-ii"
+            },
+            {
+                "name": "Al-Battani III",
+                "link": "/system/al-battani/planet/al-battani-iii"
+            },
+            {
+                "name": "Al-Battani III-a",
+                "link": "/system/al-battani/planet/al-battani-iii-a"
+            },
+            {
+                "name": "Al-Battani III-b",
+                "link": "/system/al-battani/planet/al-battani-iii-b"
+            },
+            {
+                "name": "Al-Battani IV",
+                "link": "/system/al-battani/planet/al-battani-iv"
+            },
+            {
+                "name": "Al-Battani IV-a",
+                "link": "/system/al-battani/planet/al-battani-iv-a"
+            },
+            {
+                "name": "Al-Battani IV-b",
+                "link": "/system/al-battani/planet/al-battani-iv-b"
+            },
+            {
+                "name": "Al-Battani V",
+                "link": "/system/al-battani/planet/al-battani-v"
+            },
+            {
+                "name": "Al-Battani V-a",
+                "link": "/system/al-battani/planet/al-battani-v-a"
+            },
+            {
+                "name": "Al-Battani VI",
+                "link": "/system/al-battani/planet/al-battani-vi"
+            },
+            {
+                "name": "Al-Battani VI-a",
+                "link": "/system/al-battani/planet/al-battani-vi-a"
+            },
+            {
+                "name": "Al-Battani VI-b",
+                "link": "/system/al-battani/planet/al-battani-vi-b"
+            },
+            {
+                "name": "Al-Battani VII",
+                "link": "/system/al-battani/planet/al-battani-vii"
+            },
+            {
+                "name": "Al-Battani VII-a",
+                "link": "/system/al-battani/planet/al-battani-vii-a"
+            },
+            {
+                "name": "Al-Battani VIII",
+                "link": "/system/al-battani/planet/al-battani-viii"
+            },
+            {
+                "name": "Al-Battani VIII-a",
+                "link": "/system/al-battani/planet/al-battani-viii-a"
+            }
+        ]
+    },
+    {
+        "name": "Alpha Andraste",
+        "link": "/system/alpha-andraste",
+        "planets": [
+            {
+                "name": "Alpha Andraste I",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-i"
+            },
+            {
+                "name": "Alpha Andraste I-a",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-i-a"
+            },
+            {
+                "name": "Alpha Andraste II",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-ii"
+            },
+            {
+                "name": "Alpha Andraste III",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-iii"
+            },
+            {
+                "name": "Alpha Andraste IV",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-iv"
+            },
+            {
+                "name": "Alpha Andraste V",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-v"
+            },
+            {
+                "name": "Alpha Andraste VI",
+                "link": "/system/alpha-andraste/planet/alpha-andraste-vi"
+            }
+        ]
+    },
+    {
+        "name": "Alpha Centauri",
+        "link": "/system/alpha-centauri",
+        "planets": [
+            {
+                "name": "Bondar",
+                "link": "/system/alpha-centauri/planet/bondar"
+            },
+            {
+                "name": "Chawla",
+                "link": "/system/alpha-centauri/planet/chawla"
+            },
+            {
+                "name": "Curbeam",
+                "link": "/system/alpha-centauri/planet/curbeam"
+            },
+            {
+                "name": "Gagarin",
+                "link": "/system/alpha-centauri/planet/gagarin"
+            },
+            {
+                "name": "Grissom",
+                "link": "/system/alpha-centauri/planet/grissom"
+            },
+            {
+                "name": "Hawley",
+                "link": "/system/alpha-centauri/planet/hawley"
+            },
+            {
+                "name": "Jemison",
+                "link": "/system/alpha-centauri/planet/jemison"
+            },
+            {
+                "name": "Kurtz",
+                "link": "/system/alpha-centauri/planet/kurtz"
+            },
+            {
+                "name": "Lovell",
+                "link": "/system/alpha-centauri/planet/lovell"
+            },
+            {
+                "name": "Olivas",
+                "link": "/system/alpha-centauri/planet/olivas"
+            },
+            {
+                "name": "Voss",
+                "link": "/system/alpha-centauri/planet/voss"
+            },
+            {
+                "name": "Zamka",
+                "link": "/system/alpha-centauri/planet/zamka"
+            }
+        ]
+    },
+    {
+        "name": "Alpha Marae",
+        "link": "/system/alpha-marae",
+        "planets": [
+            {
+                "name": "Alpha Marae I",
+                "link": "/system/alpha-marae/planet/alpha-marae-i"
+            },
+            {
+                "name": "Alpha Marae II",
+                "link": "/system/alpha-marae/planet/alpha-marae-ii"
+            },
+            {
+                "name": "Alpha Marae II-a",
+                "link": "/system/alpha-marae/planet/alpha-marae-ii-a"
+            },
+            {
+                "name": "Alpha Marae III",
+                "link": "/system/alpha-marae/planet/alpha-marae-iii"
+            },
+            {
+                "name": "Alpha Marae III-a",
+                "link": "/system/alpha-marae/planet/alpha-marae-iii-a"
+            },
+            {
+                "name": "Alpha Marae III-b",
+                "link": "/system/alpha-marae/planet/alpha-marae-iii-b"
+            },
+            {
+                "name": "Alpha Marae III-c",
+                "link": "/system/alpha-marae/planet/alpha-marae-iii-c"
+            },
+            {
+                "name": "Alpha Marae III-d",
+                "link": "/system/alpha-marae/planet/alpha-marae-iii-d"
+            },
+            {
+                "name": "Alpha Marae IV",
+                "link": "/system/alpha-marae/planet/alpha-marae-iv"
+            },
+            {
+                "name": "Alpha Marae IV-a",
+                "link": "/system/alpha-marae/planet/alpha-marae-iv-a"
+            },
+            {
+                "name": "Alpha Marae IV-b",
+                "link": "/system/alpha-marae/planet/alpha-marae-iv-b"
+            },
+            {
+                "name": "Alpha Marae V",
+                "link": "/system/alpha-marae/planet/alpha-marae-v"
+            }
+        ]
+    },
+    {
+        "name": "Alpha Tirna",
+        "link": "/system/alpha-tirna",
+        "planets": [
+            {
+                "name": "Tirna I",
+                "link": "/system/alpha-tirna/planet/tirna-i"
+            },
+            {
+                "name": "Tirna II",
+                "link": "/system/alpha-tirna/planet/tirna-ii"
+            },
+            {
+                "name": "Tirna II-a",
+                "link": "/system/alpha-tirna/planet/tirna-ii-a"
+            },
+            {
+                "name": "Tirna III",
+                "link": "/system/alpha-tirna/planet/tirna-iii"
+            },
+            {
+                "name": "Tirna III-a",
+                "link": "/system/alpha-tirna/planet/tirna-iii-a"
+            },
+            {
+                "name": "Tirna III-b",
+                "link": "/system/alpha-tirna/planet/tirna-iii-b"
+            },
+            {
+                "name": "Tirna III-c",
+                "link": "/system/alpha-tirna/planet/tirna-iii-c"
+            },
+            {
+                "name": "Tirna IV",
+                "link": "/system/alpha-tirna/planet/tirna-iv"
+            },
+            {
+                "name": "Tirna IV-a",
+                "link": "/system/alpha-tirna/planet/tirna-iv-a"
+            },
+            {
+                "name": "Tirna IX",
+                "link": "/system/alpha-tirna/planet/tirna-ix"
+            },
+            {
+                "name": "Tirna V",
+                "link": "/system/alpha-tirna/planet/tirna-v"
+            },
+            {
+                "name": "Tirna VI",
+                "link": "/system/alpha-tirna/planet/tirna-vi"
+            },
+            {
+                "name": "Tirna VI-a",
+                "link": "/system/alpha-tirna/planet/tirna-vi-a"
+            },
+            {
+                "name": "Tirna VI-b",
+                "link": "/system/alpha-tirna/planet/tirna-vi-b"
+            },
+            {
+                "name": "Tirna VI-c",
+                "link": "/system/alpha-tirna/planet/tirna-vi-c"
+            },
+            {
+                "name": "Tirna VI-d",
+                "link": "/system/alpha-tirna/planet/tirna-vi-d"
+            },
+            {
+                "name": "Tirna VI-e",
+                "link": "/system/alpha-tirna/planet/tirna-vi-e"
+            },
+            {
+                "name": "Tirna VII",
+                "link": "/system/alpha-tirna/planet/tirna-vii"
+            },
+            {
+                "name": "Tirna VII-a",
+                "link": "/system/alpha-tirna/planet/tirna-vii-a"
+            },
+            {
+                "name": "Tirna VII-b",
+                "link": "/system/alpha-tirna/planet/tirna-vii-b"
+            },
+            {
+                "name": "Tirna VII-c",
+                "link": "/system/alpha-tirna/planet/tirna-vii-c"
+            },
+            {
+                "name": "Tirna VIII",
+                "link": "/system/alpha-tirna/planet/tirna-viii"
+            },
+            {
+                "name": "Tirna VIII-a",
+                "link": "/system/alpha-tirna/planet/tirna-viii-a"
+            },
+            {
+                "name": "Tirna VIII-b",
+                "link": "/system/alpha-tirna/planet/tirna-viii-b"
+            },
+            {
+                "name": "Tirna VIII-c",
+                "link": "/system/alpha-tirna/planet/tirna-viii-c"
+            },
+            {
+                "name": "Tirna VIII-d",
+                "link": "/system/alpha-tirna/planet/tirna-viii-d"
+            },
+            {
+                "name": "Tirna VIII-e",
+                "link": "/system/alpha-tirna/planet/tirna-viii-e"
+            },
+            {
+                "name": "Tirna X",
+                "link": "/system/alpha-tirna/planet/tirna-x"
+            },
+            {
+                "name": "Tirna X-a",
+                "link": "/system/alpha-tirna/planet/tirna-x-a"
+            },
+            {
+                "name": "Tirna X-b",
+                "link": "/system/alpha-tirna/planet/tirna-x-b"
+            },
+            {
+                "name": "Tirna X-c",
+                "link": "/system/alpha-tirna/planet/tirna-x-c"
+            }
+        ]
+    },
+    {
+        "name": "Altair",
+        "link": "/system/altair",
+        "planets": [
+            {
+                "name": "Altair I",
+                "link": "/system/altair/planet/altair-i"
+            },
+            {
+                "name": "Altair II",
+                "link": "/system/altair/planet/altair-ii"
+            },
+            {
+                "name": "Altair III",
+                "link": "/system/altair/planet/altair-iii"
+            },
+            {
+                "name": "Altair III-a",
+                "link": "/system/altair/planet/altair-iii-a"
+            },
+            {
+                "name": "Altair III-b",
+                "link": "/system/altair/planet/altair-iii-b"
+            },
+            {
+                "name": "Altair III-c",
+                "link": "/system/altair/planet/altair-iii-c"
+            },
+            {
+                "name": "Altair IV",
+                "link": "/system/altair/planet/altair-iv"
+            },
+            {
+                "name": "Altair IV-a",
+                "link": "/system/altair/planet/altair-iv-a"
+            },
+            {
+                "name": "Altair IV-b",
+                "link": "/system/altair/planet/altair-iv-b"
+            },
+            {
+                "name": "Altair IV-c",
+                "link": "/system/altair/planet/altair-iv-c"
+            },
+            {
+                "name": "Altair IV-d",
+                "link": "/system/altair/planet/altair-iv-d"
+            },
+            {
+                "name": "Altair V",
+                "link": "/system/altair/planet/altair-v"
+            },
+            {
+                "name": "Altair V-a",
+                "link": "/system/altair/planet/altair-v-a"
+            }
+        ]
+    },
+    {
+        "name": "Andromas",
+        "link": "/system/andromas",
+        "planets": [
+            {
+                "name": "Andromas I",
+                "link": "/system/andromas/planet/andromas-i"
+            },
+            {
+                "name": "Andromas II",
+                "link": "/system/andromas/planet/andromas-ii"
+            },
+            {
+                "name": "Andromas III",
+                "link": "/system/andromas/planet/andromas-iii"
+            },
+            {
+                "name": "Andromas IV",
+                "link": "/system/andromas/planet/andromas-iv"
+            },
+            {
+                "name": "Andromas IV-a",
+                "link": "/system/andromas/planet/andromas-iv-a"
+            },
+            {
+                "name": "Andromas V",
+                "link": "/system/andromas/planet/andromas-v"
+            },
+            {
+                "name": "Andromas V-a",
+                "link": "/system/andromas/planet/andromas-v-a"
+            },
+            {
+                "name": "Andromas V-b",
+                "link": "/system/andromas/planet/andromas-v-b"
+            },
+            {
+                "name": "Andromas VI",
+                "link": "/system/andromas/planet/andromas-vi"
+            },
+            {
+                "name": "Andromas VI-a",
+                "link": "/system/andromas/planet/andromas-vi-a"
+            },
+            {
+                "name": "Andromas VI-b",
+                "link": "/system/andromas/planet/andromas-vi-b"
+            }
+        ]
+    },
+    {
+        "name": "Aranae",
+        "link": "/system/aranae",
+        "planets": [
+            {
+                "name": "Aranae I",
+                "link": "/system/aranae/planet/aranae-i"
+            },
+            {
+                "name": "Aranae II",
+                "link": "/system/aranae/planet/aranae-ii"
+            },
+            {
+                "name": "Aranae II-a",
+                "link": "/system/aranae/planet/aranae-ii-a"
+            },
+            {
+                "name": "Aranae II-b",
+                "link": "/system/aranae/planet/aranae-ii-b"
+            },
+            {
+                "name": "Aranae III",
+                "link": "/system/aranae/planet/aranae-iii"
+            },
+            {
+                "name": "Aranae IV",
+                "link": "/system/aranae/planet/aranae-iv"
+            },
+            {
+                "name": "Aranae IV-a",
+                "link": "/system/aranae/planet/aranae-iv-a"
+            },
+            {
+                "name": "Aranae IV-b",
+                "link": "/system/aranae/planet/aranae-iv-b"
+            },
+            {
+                "name": "Aranae IV-c",
+                "link": "/system/aranae/planet/aranae-iv-c"
+            },
+            {
+                "name": "Aranae IV-d",
+                "link": "/system/aranae/planet/aranae-iv-d"
+            },
+            {
+                "name": "Aranae V",
+                "link": "/system/aranae/planet/aranae-v"
+            }
+        ]
+    },
+    {
+        "name": "Arcturus",
+        "link": "/system/arcturus",
+        "planets": [
+            {
+                "name": "Arcturus I",
+                "link": "/system/arcturus/planet/arcturus-i"
+            },
+            {
+                "name": "Arcturus II",
+                "link": "/system/arcturus/planet/arcturus-ii"
+            },
+            {
+                "name": "Arcturus III",
+                "link": "/system/arcturus/planet/arcturus-iii"
+            },
+            {
+                "name": "Arcturus III-a",
+                "link": "/system/arcturus/planet/arcturus-iii-a"
+            }
+        ]
+    },
+    {
+        "name": "Bara",
+        "link": "/system/bara",
+        "planets": [
+            {
+                "name": "Bara I",
+                "link": "/system/bara/planet/bara-i"
+            },
+            {
+                "name": "Bara II",
+                "link": "/system/bara/planet/bara-ii"
+            },
+            {
+                "name": "Bara II-a",
+                "link": "/system/bara/planet/bara-ii-a"
+            },
+            {
+                "name": "Bara III",
+                "link": "/system/bara/planet/bara-iii"
+            },
+            {
+                "name": "Bara III-a",
+                "link": "/system/bara/planet/bara-iii-a"
+            },
+            {
+                "name": "Bara IV",
+                "link": "/system/bara/planet/bara-iv"
+            },
+            {
+                "name": "Bara V",
+                "link": "/system/bara/planet/bara-v"
+            },
+            {
+                "name": "Bara V-a",
+                "link": "/system/bara/planet/bara-v-a"
+            },
+            {
+                "name": "Bara VI",
+                "link": "/system/bara/planet/bara-vi"
+            },
+            {
+                "name": "Bara VI-a",
+                "link": "/system/bara/planet/bara-vi-a"
+            },
+            {
+                "name": "Bara VI-b",
+                "link": "/system/bara/planet/bara-vi-b"
+            },
+            {
+                "name": "Bara VI-c",
+                "link": "/system/bara/planet/bara-vi-c"
+            },
+            {
+                "name": "Bara VII",
+                "link": "/system/bara/planet/bara-vii"
+            },
+            {
+                "name": "Bara VII-a",
+                "link": "/system/bara/planet/bara-vii-a"
+            },
+            {
+                "name": "Bara VII-b",
+                "link": "/system/bara/planet/bara-vii-b"
+            },
+            {
+                "name": "Bara VII-c",
+                "link": "/system/bara/planet/bara-vii-c"
+            },
+            {
+                "name": "Bara VII-d",
+                "link": "/system/bara/planet/bara-vii-d"
+            }
+        ]
+    },
+    {
+        "name": "Barnard's Star",
+        "link": "/system/barnards-star",
+        "planets": [
+            {
+                "name": "Frost",
+                "link": "/system/barnards-star/planet/frost"
+            }
+        ]
+    },
+    {
+        "name": "Bessel",
+        "link": "/system/bessel",
+        "planets": [
+            {
+                "name": "Bessel I",
+                "link": "/system/bessel/planet/bessel-i"
+            },
+            {
+                "name": "Bessel II",
+                "link": "/system/bessel/planet/bessel-ii"
+            },
+            {
+                "name": "Bessel III",
+                "link": "/system/bessel/planet/bessel-iii"
+            },
+            {
+                "name": "Bessel III-a",
+                "link": "/system/bessel/planet/bessel-iii-a"
+            },
+            {
+                "name": "Bessel III-b",
+                "link": "/system/bessel/planet/bessel-iii-b"
+            }
+        ]
+    },
+    {
+        "name": "Beta Andraste",
+        "link": "/system/beta-andraste",
+        "planets": [
+            {
+                "name": "Beta Andraste I",
+                "link": "/system/beta-andraste/planet/beta-andraste-i"
+            },
+            {
+                "name": "Beta Andraste I-a",
+                "link": "/system/beta-andraste/planet/beta-andraste-i-a"
+            },
+            {
+                "name": "Beta Andraste I-b",
+                "link": "/system/beta-andraste/planet/beta-andraste-i-b"
+            },
+            {
+                "name": "Beta Andraste I-c",
+                "link": "/system/beta-andraste/planet/beta-andraste-i-c"
+            },
+            {
+                "name": "Beta Andraste I-d",
+                "link": "/system/beta-andraste/planet/beta-andraste-i-d"
+            }
+        ]
+    },
+    {
+        "name": "Beta Marae",
+        "link": "/system/beta-marae",
+        "planets": [
+            {
+                "name": "Beta Marae I",
+                "link": "/system/beta-marae/planet/beta-marae-i"
+            },
+            {
+                "name": "Beta Marae I-a",
+                "link": "/system/beta-marae/planet/beta-marae-i-a"
+            },
+            {
+                "name": "Beta Marae II",
+                "link": "/system/beta-marae/planet/beta-marae-ii"
+            },
+            {
+                "name": "Beta Marae II-a",
+                "link": "/system/beta-marae/planet/beta-marae-ii-a"
+            },
+            {
+                "name": "Beta Marae II-b",
+                "link": "/system/beta-marae/planet/beta-marae-ii-b"
+            },
+            {
+                "name": "Beta Marae III",
+                "link": "/system/beta-marae/planet/beta-marae-iii"
+            },
+            {
+                "name": "Beta Marae III-a",
+                "link": "/system/beta-marae/planet/beta-marae-iii-a"
+            },
+            {
+                "name": "Beta Marae IV",
+                "link": "/system/beta-marae/planet/beta-marae-iv"
+            },
+            {
+                "name": "Beta Marae IV-a",
+                "link": "/system/beta-marae/planet/beta-marae-iv-a"
+            },
+            {
+                "name": "Beta Marae IV-b",
+                "link": "/system/beta-marae/planet/beta-marae-iv-b"
+            },
+            {
+                "name": "Beta Marae IV-c",
+                "link": "/system/beta-marae/planet/beta-marae-iv-c"
+            },
+            {
+                "name": "Beta Marae IV-d",
+                "link": "/system/beta-marae/planet/beta-marae-iv-d"
+            },
+            {
+                "name": "Beta Marae V",
+                "link": "/system/beta-marae/planet/beta-marae-v"
+            },
+            {
+                "name": "Beta Marae V-a",
+                "link": "/system/beta-marae/planet/beta-marae-v-a"
+            },
+            {
+                "name": "Beta Marae V-b",
+                "link": "/system/beta-marae/planet/beta-marae-v-b"
+            },
+            {
+                "name": "Beta Marae V-c",
+                "link": "/system/beta-marae/planet/beta-marae-v-c"
+            },
+            {
+                "name": "Beta Marae V-d",
+                "link": "/system/beta-marae/planet/beta-marae-v-d"
+            },
+            {
+                "name": "Beta Marae VI",
+                "link": "/system/beta-marae/planet/beta-marae-vi"
+            },
+            {
+                "name": "Beta Marae VI-a",
+                "link": "/system/beta-marae/planet/beta-marae-vi-a"
+            },
+            {
+                "name": "Beta Marae VI-b",
+                "link": "/system/beta-marae/planet/beta-marae-vi-b"
+            },
+            {
+                "name": "Beta Marae VI-c",
+                "link": "/system/beta-marae/planet/beta-marae-vi-c"
+            }
+        ]
+    },
+    {
+        "name": "Beta Ternion",
+        "link": "/system/beta-ternion",
+        "planets": [
+            {
+                "name": "Beta Ternion I",
+                "link": "/system/beta-ternion/planet/beta-ternion-i"
+            },
+            {
+                "name": "Beta Ternion I-a",
+                "link": "/system/beta-ternion/planet/beta-ternion-i-a"
+            },
+            {
+                "name": "Beta Ternion II",
+                "link": "/system/beta-ternion/planet/beta-ternion-ii"
+            },
+            {
+                "name": "Beta Ternion III",
+                "link": "/system/beta-ternion/planet/beta-ternion-iii"
+            },
+            {
+                "name": "Beta Ternion III-a",
+                "link": "/system/beta-ternion/planet/beta-ternion-iii-a"
+            }
+        ]
+    },
+    {
+        "name": "Beta Tirna",
+        "link": "/system/beta-tirna",
+        "planets": [
+            {
+                "name": "Tirna B",
+                "link": "/system/beta-tirna/planet/tirna-b"
+            }
+        ]
+    },
+    {
+        "name": "Bolivar",
+        "link": "/system/bolivar",
+        "planets": [
+            {
+                "name": "Bolivar I",
+                "link": "/system/bolivar/planet/bolivar-i"
+            }
+        ]
+    },
+    {
+        "name": "Bradbury",
+        "link": "/system/bradbury",
+        "planets": [
+            {
+                "name": "Bradbury I",
+                "link": "/system/bradbury/planet/bradbury-i"
+            },
+            {
+                "name": "Bradbury I-a",
+                "link": "/system/bradbury/planet/bradbury-i-a"
+            },
+            {
+                "name": "Bradbury I-b",
+                "link": "/system/bradbury/planet/bradbury-i-b"
+            },
+            {
+                "name": "Bradbury II",
+                "link": "/system/bradbury/planet/bradbury-ii"
+            },
+            {
+                "name": "Bradbury III",
+                "link": "/system/bradbury/planet/bradbury-iii"
+            },
+            {
+                "name": "Bradbury IV",
+                "link": "/system/bradbury/planet/bradbury-iv"
+            },
+            {
+                "name": "Bradbury IV-a",
+                "link": "/system/bradbury/planet/bradbury-iv-a"
+            },
+            {
+                "name": "Bradbury V",
+                "link": "/system/bradbury/planet/bradbury-v"
+            },
+            {
+                "name": "Bradbury V-a",
+                "link": "/system/bradbury/planet/bradbury-v-a"
+            }
+        ]
+    },
+    {
+        "name": "Carinae",
+        "link": "/system/carinae",
+        "planets": [
+            {
+                "name": "Carinae I",
+                "link": "/system/carinae/planet/carinae-i"
+            },
+            {
+                "name": "Carinae II",
+                "link": "/system/carinae/planet/carinae-ii"
+            },
+            {
+                "name": "Carinae II-a",
+                "link": "/system/carinae/planet/carinae-ii-a"
+            },
+            {
+                "name": "Carinae III",
+                "link": "/system/carinae/planet/carinae-iii"
+            },
+            {
+                "name": "Carinae III-a",
+                "link": "/system/carinae/planet/carinae-iii-a"
+            },
+            {
+                "name": "Carinae III-b",
+                "link": "/system/carinae/planet/carinae-iii-b"
+            },
+            {
+                "name": "Carinae III-c",
+                "link": "/system/carinae/planet/carinae-iii-c"
+            },
+            {
+                "name": "Carinae III-d",
+                "link": "/system/carinae/planet/carinae-iii-d"
+            },
+            {
+                "name": "Carinae IV",
+                "link": "/system/carinae/planet/carinae-iv"
+            },
+            {
+                "name": "Carinae IV-a",
+                "link": "/system/carinae/planet/carinae-iv-a"
+            },
+            {
+                "name": "Carinae V",
+                "link": "/system/carinae/planet/carinae-v"
+            },
+            {
+                "name": "Carinae V-a",
+                "link": "/system/carinae/planet/carinae-v-a"
+            },
+            {
+                "name": "Carinae V-b",
+                "link": "/system/carinae/planet/carinae-v-b"
+            },
+            {
+                "name": "Carinae V-c",
+                "link": "/system/carinae/planet/carinae-v-c"
+            }
+        ]
+    },
+    {
+        "name": "Cheyenne",
+        "link": "/system/cheyenne",
+        "planets": [
+            {
+                "name": "Agamon",
+                "link": "/system/cheyenne/planet/agamon"
+            },
+            {
+                "name": "Agamon A",
+                "link": "/system/cheyenne/planet/agamon-a"
+            },
+            {
+                "name": "Agamon B",
+                "link": "/system/cheyenne/planet/agamon-b"
+            },
+            {
+                "name": "Agamon C",
+                "link": "/system/cheyenne/planet/agamon-c"
+            },
+            {
+                "name": "Agamon D",
+                "link": "/system/cheyenne/planet/agamon-d"
+            },
+            {
+                "name": "Akila",
+                "link": "/system/cheyenne/planet/akila"
+            },
+            {
+                "name": "Antharum",
+                "link": "/system/cheyenne/planet/antharum"
+            },
+            {
+                "name": "Belwah",
+                "link": "/system/cheyenne/planet/belwah"
+            },
+            {
+                "name": "Bindi",
+                "link": "/system/cheyenne/planet/bindi"
+            },
+            {
+                "name": "Bismark",
+                "link": "/system/cheyenne/planet/bismark"
+            },
+            {
+                "name": "Burran",
+                "link": "/system/cheyenne/planet/burran"
+            },
+            {
+                "name": "Codos",
+                "link": "/system/cheyenne/planet/codos"
+            },
+            {
+                "name": "Cragg",
+                "link": "/system/cheyenne/planet/cragg"
+            },
+            {
+                "name": "Fenn",
+                "link": "/system/cheyenne/planet/fenn"
+            },
+            {
+                "name": "Grizzit",
+                "link": "/system/cheyenne/planet/grizzit"
+            },
+            {
+                "name": "Hardpoint",
+                "link": "/system/cheyenne/planet/hardpoint"
+            },
+            {
+                "name": "Heilo",
+                "link": "/system/cheyenne/planet/heilo"
+            },
+            {
+                "name": "Kalira",
+                "link": "/system/cheyenne/planet/kalira"
+            },
+            {
+                "name": "Laramie",
+                "link": "/system/cheyenne/planet/laramie"
+            },
+            {
+                "name": "Montara",
+                "link": "/system/cheyenne/planet/montara"
+            },
+            {
+                "name": "Montara Luna",
+                "link": "/system/cheyenne/planet/montara-luna"
+            },
+            {
+                "name": "Navaha",
+                "link": "/system/cheyenne/planet/navaha"
+            },
+            {
+                "name": "Olaran",
+                "link": "/system/cheyenne/planet/olaran"
+            },
+            {
+                "name": "Rell",
+                "link": "/system/cheyenne/planet/rell"
+            },
+            {
+                "name": "Skink",
+                "link": "/system/cheyenne/planet/skink"
+            },
+            {
+                "name": "Smet",
+                "link": "/system/cheyenne/planet/smet"
+            },
+            {
+                "name": "Stellis",
+                "link": "/system/cheyenne/planet/stellis"
+            },
+            {
+                "name": "Stellis A",
+                "link": "/system/cheyenne/planet/stellis-a"
+            },
+            {
+                "name": "Stellis B",
+                "link": "/system/cheyenne/planet/stellis-b"
+            },
+            {
+                "name": "Stellis C",
+                "link": "/system/cheyenne/planet/stellis-c"
+            },
+            {
+                "name": "Stellis D",
+                "link": "/system/cheyenne/planet/stellis-d"
+            },
+            {
+                "name": "Tahrnis",
+                "link": "/system/cheyenne/planet/tahrnis"
+            },
+            {
+                "name": "Thren",
+                "link": "/system/cheyenne/planet/thren"
+            },
+            {
+                "name": "Washakie",
+                "link": "/system/cheyenne/planet/washakie"
+            },
+            {
+                "name": "Wellish",
+                "link": "/system/cheyenne/planet/wellish"
+            }
+        ]
+    },
+    {
+        "name": "Copernicus",
+        "link": "/system/copernicus",
+        "planets": [
+            {
+                "name": "Copernicus I",
+                "link": "/system/copernicus/planet/copernicus-i"
+            },
+            {
+                "name": "Copernicus II",
+                "link": "/system/copernicus/planet/copernicus-ii"
+            },
+            {
+                "name": "Copernicus III",
+                "link": "/system/copernicus/planet/copernicus-iii"
+            },
+            {
+                "name": "Copernicus III-a",
+                "link": "/system/copernicus/planet/copernicus-iii-a"
+            },
+            {
+                "name": "Copernicus IV",
+                "link": "/system/copernicus/planet/copernicus-iv"
+            },
+            {
+                "name": "Copernicus V",
+                "link": "/system/copernicus/planet/copernicus-v"
+            },
+            {
+                "name": "Copernicus VI",
+                "link": "/system/copernicus/planet/copernicus-vi"
+            },
+            {
+                "name": "Copernicus VII",
+                "link": "/system/copernicus/planet/copernicus-vii"
+            },
+            {
+                "name": "Copernicus VII-a",
+                "link": "/system/copernicus/planet/copernicus-vii-a"
+            },
+            {
+                "name": "Copernicus VII-b",
+                "link": "/system/copernicus/planet/copernicus-vii-b"
+            },
+            {
+                "name": "Copernicus VIII",
+                "link": "/system/copernicus/planet/copernicus-viii"
+            },
+            {
+                "name": "Copernicus VIII-B",
+                "link": "/system/copernicus/planet/copernicus-viii-b"
+            },
+            {
+                "name": "Copernicus VIII-a",
+                "link": "/system/copernicus/planet/copernicus-viii-a"
+            },
+            {
+                "name": "Copernicus VIII-c",
+                "link": "/system/copernicus/planet/copernicus-viii-c"
+            },
+            {
+                "name": "Copernicus VIII-d",
+                "link": "/system/copernicus/planet/copernicus-viii-d"
+            }
+        ]
+    },
+    {
+        "name": "Copernicus Minor",
+        "link": "/system/copernicus-minor",
+        "planets": [
+            {
+                "name": "Copernicus Minor I",
+                "link": "/system/copernicus-minor/planet/copernicus-minor-i"
+            },
+            {
+                "name": "Copernicus Minor I-a",
+                "link": "/system/copernicus-minor/planet/copernicus-minor-i-a"
+            },
+            {
+                "name": "Copernicus Minor I-b",
+                "link": "/system/copernicus-minor/planet/copernicus-minor-i-b"
+            }
+        ]
+    },
+    {
+        "name": "Delta Pavonis",
+        "link": "/system/delta-pavonis",
+        "planets": [
+            {
+                "name": "Ampere",
+                "link": "/system/delta-pavonis/planet/ampere"
+            },
+            {
+                "name": "Arachna",
+                "link": "/system/delta-pavonis/planet/arachna"
+            },
+            {
+                "name": "Augur",
+                "link": "/system/delta-pavonis/planet/augur"
+            },
+            {
+                "name": "Bitsy",
+                "link": "/system/delta-pavonis/planet/bitsy"
+            },
+            {
+                "name": "Bode",
+                "link": "/system/delta-pavonis/planet/bode"
+            },
+            {
+                "name": "Bose",
+                "link": "/system/delta-pavonis/planet/bose"
+            },
+            {
+                "name": "Coulomb",
+                "link": "/system/delta-pavonis/planet/coulomb"
+            },
+            {
+                "name": "Curie",
+                "link": "/system/delta-pavonis/planet/curie"
+            },
+            {
+                "name": "Faraday",
+                "link": "/system/delta-pavonis/planet/faraday"
+            },
+            {
+                "name": "Fundament",
+                "link": "/system/delta-pavonis/planet/fundament"
+            },
+            {
+                "name": "Gamow",
+                "link": "/system/delta-pavonis/planet/gamow"
+            },
+            {
+                "name": "Herald",
+                "link": "/system/delta-pavonis/planet/herald"
+            },
+            {
+                "name": "Itsy",
+                "link": "/system/delta-pavonis/planet/itsy"
+            },
+            {
+                "name": "Magnar",
+                "link": "/system/delta-pavonis/planet/magnar"
+            },
+            {
+                "name": "Nascent",
+                "link": "/system/delta-pavonis/planet/nascent"
+            },
+            {
+                "name": "Ohm",
+                "link": "/system/delta-pavonis/planet/ohm"
+            },
+            {
+                "name": "Rudiment",
+                "link": "/system/delta-pavonis/planet/rudiment"
+            },
+            {
+                "name": "Volt",
+                "link": "/system/delta-pavonis/planet/volt"
+            },
+            {
+                "name": "Worthless",
+                "link": "/system/delta-pavonis/planet/worthless"
+            }
+        ]
+    },
+    {
+        "name": "Denebola",
+        "link": "/system/denebola",
+        "planets": [
+            {
+                "name": "Denebola I",
+                "link": "/system/denebola/planet/denebola-i"
+            },
+            {
+                "name": "Denebola I-a",
+                "link": "/system/denebola/planet/denebola-i-a"
+            },
+            {
+                "name": "Denebola I-b",
+                "link": "/system/denebola/planet/denebola-i-b"
+            },
+            {
+                "name": "Denebola II",
+                "link": "/system/denebola/planet/denebola-ii"
+            },
+            {
+                "name": "Denebola II-a",
+                "link": "/system/denebola/planet/denebola-ii-a"
+            },
+            {
+                "name": "Denebola III",
+                "link": "/system/denebola/planet/denebola-iii"
+            },
+            {
+                "name": "Denebola III-a",
+                "link": "/system/denebola/planet/denebola-iii-a"
+            },
+            {
+                "name": "Denebola III-b",
+                "link": "/system/denebola/planet/denebola-iii-b"
+            }
+        ]
+    },
+    {
+        "name": "Eridani",
+        "link": "/system/eridani",
+        "planets": [
+            {
+                "name": "Eridani I",
+                "link": "/system/eridani/planet/eridani-i"
+            },
+            {
+                "name": "Eridani II",
+                "link": "/system/eridani/planet/eridani-ii"
+            },
+            {
+                "name": "Eridani III",
+                "link": "/system/eridani/planet/eridani-iii"
+            },
+            {
+                "name": "Eridani III-a",
+                "link": "/system/eridani/planet/eridani-iii-a"
+            },
+            {
+                "name": "Eridani III-b",
+                "link": "/system/eridani/planet/eridani-iii-b"
+            },
+            {
+                "name": "Eridani III-c",
+                "link": "/system/eridani/planet/eridani-iii-c"
+            },
+            {
+                "name": "Eridani IV",
+                "link": "/system/eridani/planet/eridani-iv"
+            },
+            {
+                "name": "Eridani IV-a",
+                "link": "/system/eridani/planet/eridani-iv-a"
+            },
+            {
+                "name": "Eridani IV-b",
+                "link": "/system/eridani/planet/eridani-iv-b"
+            },
+            {
+                "name": "Eridani IV-c",
+                "link": "/system/eridani/planet/eridani-iv-c"
+            },
+            {
+                "name": "Eridani IX",
+                "link": "/system/eridani/planet/eridani-ix"
+            },
+            {
+                "name": "Eridani V",
+                "link": "/system/eridani/planet/eridani-v"
+            },
+            {
+                "name": "Eridani VI",
+                "link": "/system/eridani/planet/eridani-vi"
+            },
+            {
+                "name": "Eridani VI-a",
+                "link": "/system/eridani/planet/eridani-vi-a"
+            },
+            {
+                "name": "Eridani VII",
+                "link": "/system/eridani/planet/eridani-vii"
+            },
+            {
+                "name": "Eridani VII-a",
+                "link": "/system/eridani/planet/eridani-vii-a"
+            },
+            {
+                "name": "Eridani VII-b",
+                "link": "/system/eridani/planet/eridani-vii-b"
+            },
+            {
+                "name": "Eridani VII-c",
+                "link": "/system/eridani/planet/eridani-vii-c"
+            },
+            {
+                "name": "Eridani VIII",
+                "link": "/system/eridani/planet/eridani-viii"
+            },
+            {
+                "name": "Eridani VIII-a",
+                "link": "/system/eridani/planet/eridani-viii-a"
+            },
+            {
+                "name": "Eridani VIII-b",
+                "link": "/system/eridani/planet/eridani-viii-b"
+            },
+            {
+                "name": "Eridani VIII-c",
+                "link": "/system/eridani/planet/eridani-viii-c"
+            },
+            {
+                "name": "Eridani VIII-d",
+                "link": "/system/eridani/planet/eridani-viii-d"
+            }
+        ]
+    },
+    {
+        "name": "Eta Cassiopeia",
+        "link": "/system/eta-cassiopeia",
+        "planets": [
+            {
+                "name": "Cassiopeia I",
+                "link": "/system/eta-cassiopeia/planet/cassiopeia-i"
+            },
+            {
+                "name": "Cassiopeia II",
+                "link": "/system/eta-cassiopeia/planet/cassiopeia-ii"
+            },
+            {
+                "name": "Cassiopeia II-a",
+                "link": "/system/eta-cassiopeia/planet/cassiopeia-ii-a"
+            },
+            {
+                "name": "Cassiopeia III",
+                "link": "/system/eta-cassiopeia/planet/cassiopeia-iii"
+            },
+            {
+                "name": "Cassiopeia III-a",
+                "link": "/system/eta-cassiopeia/planet/cassiopeia-iii-a"
+            },
+            {
+                "name": "Cassiopeia IV",
+                "link": "/system/eta-cassiopeia/planet/cassiopeia-iv"
+            },
+            {
+                "name": "Cassiopeia IV-a",
+                "link": "/system/eta-cassiopeia/planet/cassiopeia-iv-a"
+            },
+            {
+                "name": "Cassiopeia IV-b",
+                "link": "/system/eta-cassiopeia/planet/cassiopeia-iv-b"
+            },
+            {
+                "name": "Cassiopeia IV-c",
+                "link": "/system/eta-cassiopeia/planet/cassiopeia-iv-c"
+            }
+        ]
+    },
+    {
+        "name": "Freya",
+        "link": "/system/freya",
+        "planets": [
+            {
+                "name": "Freya I",
+                "link": "/system/freya/planet/freya-i"
+            },
+            {
+                "name": "Freya II",
+                "link": "/system/freya/planet/freya-ii"
+            },
+            {
+                "name": "Freya III",
+                "link": "/system/freya/planet/freya-iii"
+            },
+            {
+                "name": "Freya IV",
+                "link": "/system/freya/planet/freya-iv"
+            },
+            {
+                "name": "Freya IV-a",
+                "link": "/system/freya/planet/freya-iv-a"
+            },
+            {
+                "name": "Freya IV-b",
+                "link": "/system/freya/planet/freya-iv-b"
+            },
+            {
+                "name": "Freya IV-c",
+                "link": "/system/freya/planet/freya-iv-c"
+            },
+            {
+                "name": "Freya IX",
+                "link": "/system/freya/planet/freya-ix"
+            },
+            {
+                "name": "Freya IX-a",
+                "link": "/system/freya/planet/freya-ix-a"
+            },
+            {
+                "name": "Freya IX-b",
+                "link": "/system/freya/planet/freya-ix-b"
+            },
+            {
+                "name": "Freya IX-c",
+                "link": "/system/freya/planet/freya-ix-c"
+            },
+            {
+                "name": "Freya V",
+                "link": "/system/freya/planet/freya-v"
+            },
+            {
+                "name": "Freya VI",
+                "link": "/system/freya/planet/freya-vi"
+            },
+            {
+                "name": "Freya VII",
+                "link": "/system/freya/planet/freya-vii"
+            },
+            {
+                "name": "Freya VII-a",
+                "link": "/system/freya/planet/freya-vii-a"
+            },
+            {
+                "name": "Freya VIII",
+                "link": "/system/freya/planet/freya-viii"
+            },
+            {
+                "name": "Freya VIII-a",
+                "link": "/system/freya/planet/freya-viii-a"
+            }
+        ]
+    },
+    {
+        "name": "Groombridge",
+        "link": "/system/groombridge",
+        "planets": [
+            {
+                "name": "Groombridge I",
+                "link": "/system/groombridge/planet/groombridge-i"
+            },
+            {
+                "name": "Groombridge II",
+                "link": "/system/groombridge/planet/groombridge-ii"
+            },
+            {
+                "name": "Groombridge II-a",
+                "link": "/system/groombridge/planet/groombridge-ii-a"
+            },
+            {
+                "name": "Groombridge II-b",
+                "link": "/system/groombridge/planet/groombridge-ii-b"
+            },
+            {
+                "name": "Groombridge II-c",
+                "link": "/system/groombridge/planet/groombridge-ii-c"
+            },
+            {
+                "name": "Groombridge III",
+                "link": "/system/groombridge/planet/groombridge-iii"
+            },
+            {
+                "name": "Groombridge III-a",
+                "link": "/system/groombridge/planet/groombridge-iii-a"
+            },
+            {
+                "name": "Groombridge IV",
+                "link": "/system/groombridge/planet/groombridge-iv"
+            },
+            {
+                "name": "Groombridge IV-a",
+                "link": "/system/groombridge/planet/groombridge-iv-a"
+            },
+            {
+                "name": "Groombridge V",
+                "link": "/system/groombridge/planet/groombridge-v"
+            },
+            {
+                "name": "Groombridge V-a",
+                "link": "/system/groombridge/planet/groombridge-v-a"
+            },
+            {
+                "name": "Groombridge V-b",
+                "link": "/system/groombridge/planet/groombridge-v-b"
+            },
+            {
+                "name": "Groombridge V-c",
+                "link": "/system/groombridge/planet/groombridge-v-c"
+            },
+            {
+                "name": "Groombridge V-d",
+                "link": "/system/groombridge/planet/groombridge-v-d"
+            },
+            {
+                "name": "Groombridge V-e",
+                "link": "/system/groombridge/planet/groombridge-v-e"
+            },
+            {
+                "name": "Groombridge VI",
+                "link": "/system/groombridge/planet/groombridge-vi"
+            },
+            {
+                "name": "Groombridge VI-a",
+                "link": "/system/groombridge/planet/groombridge-vi-a"
+            },
+            {
+                "name": "Groombridge VI-b",
+                "link": "/system/groombridge/planet/groombridge-vi-b"
+            },
+            {
+                "name": "Groombridge VII",
+                "link": "/system/groombridge/planet/groombridge-vii"
+            },
+            {
+                "name": "Groombridge VII-a",
+                "link": "/system/groombridge/planet/groombridge-vii-a"
+            },
+            {
+                "name": "Groombridge VII-b",
+                "link": "/system/groombridge/planet/groombridge-vii-b"
+            },
+            {
+                "name": "Groombridge VIII",
+                "link": "/system/groombridge/planet/groombridge-viii"
+            },
+            {
+                "name": "Groombridge VIII-a",
+                "link": "/system/groombridge/planet/groombridge-viii-a"
+            },
+            {
+                "name": "Groombridge VIII-b",
+                "link": "/system/groombridge/planet/groombridge-viii-b"
+            },
+            {
+                "name": "Groombridge VIII-c",
+                "link": "/system/groombridge/planet/groombridge-viii-c"
+            },
+            {
+                "name": "Groombridge VIII-d",
+                "link": "/system/groombridge/planet/groombridge-viii-d"
+            }
+        ]
+    },
+    {
+        "name": "Guniibuu",
+        "link": "/system/guniibuu",
+        "planets": [
+            {
+                "name": "Guniibuu I",
+                "link": "/system/guniibuu/planet/guniibuu-i"
+            },
+            {
+                "name": "Guniibuu I-a",
+                "link": "/system/guniibuu/planet/guniibuu-i-a"
+            },
+            {
+                "name": "Guniibuu I-b",
+                "link": "/system/guniibuu/planet/guniibuu-i-b"
+            },
+            {
+                "name": "Guniibuu II",
+                "link": "/system/guniibuu/planet/guniibuu-ii"
+            },
+            {
+                "name": "Guniibuu III",
+                "link": "/system/guniibuu/planet/guniibuu-iii"
+            },
+            {
+                "name": "Guniibuu III-a",
+                "link": "/system/guniibuu/planet/guniibuu-iii-a"
+            },
+            {
+                "name": "Guniibuu III-b",
+                "link": "/system/guniibuu/planet/guniibuu-iii-b"
+            },
+            {
+                "name": "Guniibuu III-c",
+                "link": "/system/guniibuu/planet/guniibuu-iii-c"
+            },
+            {
+                "name": "Guniibuu IV",
+                "link": "/system/guniibuu/planet/guniibuu-iv"
+            },
+            {
+                "name": "Guniibuu IV-a",
+                "link": "/system/guniibuu/planet/guniibuu-iv-a"
+            },
+            {
+                "name": "Guniibuu IV-b",
+                "link": "/system/guniibuu/planet/guniibuu-iv-b"
+            },
+            {
+                "name": "Guniibuu V",
+                "link": "/system/guniibuu/planet/guniibuu-v"
+            },
+            {
+                "name": "Guniibuu V-a",
+                "link": "/system/guniibuu/planet/guniibuu-v-a"
+            },
+            {
+                "name": "Guniibuu V-b",
+                "link": "/system/guniibuu/planet/guniibuu-v-b"
+            },
+            {
+                "name": "Guniibuu V-c",
+                "link": "/system/guniibuu/planet/guniibuu-v-c"
+            },
+            {
+                "name": "Guniibuu V-d",
+                "link": "/system/guniibuu/planet/guniibuu-v-d"
+            },
+            {
+                "name": "Guniibuu V-e",
+                "link": "/system/guniibuu/planet/guniibuu-v-e"
+            },
+            {
+                "name": "Guniibuu VI",
+                "link": "/system/guniibuu/planet/guniibuu-vi"
+            },
+            {
+                "name": "Guniibuu VI-a",
+                "link": "/system/guniibuu/planet/guniibuu-vi-a"
+            },
+            {
+                "name": "Guniibuu VI-b",
+                "link": "/system/guniibuu/planet/guniibuu-vi-b"
+            },
+            {
+                "name": "Guniibuu VI-c",
+                "link": "/system/guniibuu/planet/guniibuu-vi-c"
+            },
+            {
+                "name": "Guniibuu VI-d",
+                "link": "/system/guniibuu/planet/guniibuu-vi-d"
+            },
+            {
+                "name": "Guniibuu VI-e",
+                "link": "/system/guniibuu/planet/guniibuu-vi-e"
+            },
+            {
+                "name": "Guniibuu VII",
+                "link": "/system/guniibuu/planet/guniibuu-vii"
+            },
+            {
+                "name": "Guniibuu VII-a",
+                "link": "/system/guniibuu/planet/guniibuu-vii-a"
+            },
+            {
+                "name": "Guniibuu VII-b",
+                "link": "/system/guniibuu/planet/guniibuu-vii-b"
+            },
+            {
+                "name": "Guniibuu VII-c",
+                "link": "/system/guniibuu/planet/guniibuu-vii-c"
+            }
+        ]
+    },
+    {
+        "name": "Heinlein",
+        "link": "/system/heinlein",
+        "planets": [
+            {
+                "name": "Heinlein I",
+                "link": "/system/heinlein/planet/heinlein-i"
+            },
+            {
+                "name": "Heinlein II",
+                "link": "/system/heinlein/planet/heinlein-ii"
+            },
+            {
+                "name": "Heinlein II-a",
+                "link": "/system/heinlein/planet/heinlein-ii-a"
+            },
+            {
+                "name": "Heinlein II-b",
+                "link": "/system/heinlein/planet/heinlein-ii-b"
+            },
+            {
+                "name": "Heinlein III",
+                "link": "/system/heinlein/planet/heinlein-iii"
+            },
+            {
+                "name": "Heinlein III-a",
+                "link": "/system/heinlein/planet/heinlein-iii-a"
+            },
+            {
+                "name": "Heinlein IV",
+                "link": "/system/heinlein/planet/heinlein-iv"
+            },
+            {
+                "name": "Heinlein IV-a",
+                "link": "/system/heinlein/planet/heinlein-iv-a"
+            },
+            {
+                "name": "Heinlein IV-b",
+                "link": "/system/heinlein/planet/heinlein-iv-b"
+            },
+            {
+                "name": "Heinlein IV-c",
+                "link": "/system/heinlein/planet/heinlein-iv-c"
+            },
+            {
+                "name": "Heinlein IV-d",
+                "link": "/system/heinlein/planet/heinlein-iv-d"
+            },
+            {
+                "name": "Heinlein IV-e",
+                "link": "/system/heinlein/planet/heinlein-iv-e"
+            },
+            {
+                "name": "Heinlein V",
+                "link": "/system/heinlein/planet/heinlein-v"
+            },
+            {
+                "name": "Heinlein V-a",
+                "link": "/system/heinlein/planet/heinlein-v-a"
+            },
+            {
+                "name": "Heinlein V-b",
+                "link": "/system/heinlein/planet/heinlein-v-b"
+            },
+            {
+                "name": "Heinlein V-c",
+                "link": "/system/heinlein/planet/heinlein-v-c"
+            },
+            {
+                "name": "Heinlein VI",
+                "link": "/system/heinlein/planet/heinlein-vi"
+            },
+            {
+                "name": "Heinlein VI-a",
+                "link": "/system/heinlein/planet/heinlein-vi-a"
+            },
+            {
+                "name": "Heinlein VI-b",
+                "link": "/system/heinlein/planet/heinlein-vi-b"
+            },
+            {
+                "name": "Heinlein VI-c",
+                "link": "/system/heinlein/planet/heinlein-vi-c"
+            },
+            {
+                "name": "Heinlein VI-d",
+                "link": "/system/heinlein/planet/heinlein-vi-d"
+            },
+            {
+                "name": "Heinlein VI-e",
+                "link": "/system/heinlein/planet/heinlein-vi-e"
+            },
+            {
+                "name": "Heinlein VII",
+                "link": "/system/heinlein/planet/heinlein-vii"
+            }
+        ]
+    },
+    {
+        "name": "Hyla",
+        "link": "/system/hyla",
+        "planets": [
+            {
+                "name": "Hyla I",
+                "link": "/system/hyla/planet/hyla-i"
+            },
+            {
+                "name": "Hyla I-a",
+                "link": "/system/hyla/planet/hyla-i-a"
+            },
+            {
+                "name": "Hyla II",
+                "link": "/system/hyla/planet/hyla-ii"
+            },
+            {
+                "name": "Hyla II-a",
+                "link": "/system/hyla/planet/hyla-ii-a"
+            },
+            {
+                "name": "Hyla II-b",
+                "link": "/system/hyla/planet/hyla-ii-b"
+            },
+            {
+                "name": "Hyla III",
+                "link": "/system/hyla/planet/hyla-iii"
+            },
+            {
+                "name": "Hyla IV",
+                "link": "/system/hyla/planet/hyla-iv"
+            },
+            {
+                "name": "Hyla IV-a",
+                "link": "/system/hyla/planet/hyla-iv-a"
+            },
+            {
+                "name": "Hyla IV-b",
+                "link": "/system/hyla/planet/hyla-iv-b"
+            },
+            {
+                "name": "Hyla V",
+                "link": "/system/hyla/planet/hyla-v"
+            },
+            {
+                "name": "Hyla V-a",
+                "link": "/system/hyla/planet/hyla-v-a"
+            },
+            {
+                "name": "Hyla VI",
+                "link": "/system/hyla/planet/hyla-vi"
+            },
+            {
+                "name": "Hyla VI-a",
+                "link": "/system/hyla/planet/hyla-vi-a"
+            },
+            {
+                "name": "Hyla VI-b",
+                "link": "/system/hyla/planet/hyla-vi-b"
+            },
+            {
+                "name": "Hyla VII",
+                "link": "/system/hyla/planet/hyla-vii"
+            },
+            {
+                "name": "Hyla VII-a",
+                "link": "/system/hyla/planet/hyla-vii-a"
+            },
+            {
+                "name": "Hyla VIII",
+                "link": "/system/hyla/planet/hyla-viii"
+            },
+            {
+                "name": "Hyla VIII-a",
+                "link": "/system/hyla/planet/hyla-viii-a"
+            },
+            {
+                "name": "Hyla VIII-b",
+                "link": "/system/hyla/planet/hyla-viii-b"
+            },
+            {
+                "name": "Hyla VIII-c",
+                "link": "/system/hyla/planet/hyla-viii-c"
+            },
+            {
+                "name": "Hyla VIII-d",
+                "link": "/system/hyla/planet/hyla-viii-d"
+            },
+            {
+                "name": "Hyla VIII-e",
+                "link": "/system/hyla/planet/hyla-viii-e"
+            }
+        ]
+    },
+    {
+        "name": "Indum",
+        "link": "/system/indum",
+        "planets": [
+            {
+                "name": "Indum I",
+                "link": "/system/indum/planet/indum-i"
+            },
+            {
+                "name": "Indum I-a",
+                "link": "/system/indum/planet/indum-i-a"
+            },
+            {
+                "name": "Indum II",
+                "link": "/system/indum/planet/indum-ii"
+            },
+            {
+                "name": "Indum III",
+                "link": "/system/indum/planet/indum-iii"
+            },
+            {
+                "name": "Indum III-a",
+                "link": "/system/indum/planet/indum-iii-a"
+            },
+            {
+                "name": "Indum III-b",
+                "link": "/system/indum/planet/indum-iii-b"
+            },
+            {
+                "name": "Indum III-c",
+                "link": "/system/indum/planet/indum-iii-c"
+            },
+            {
+                "name": "Indum III-d",
+                "link": "/system/indum/planet/indum-iii-d"
+            },
+            {
+                "name": "Indum IV",
+                "link": "/system/indum/planet/indum-iv"
+            },
+            {
+                "name": "Indum IV-a",
+                "link": "/system/indum/planet/indum-iv-a"
+            },
+            {
+                "name": "Indum IV-b",
+                "link": "/system/indum/planet/indum-iv-b"
+            },
+            {
+                "name": "Indum IV-c",
+                "link": "/system/indum/planet/indum-iv-c"
+            },
+            {
+                "name": "Indum IV-d",
+                "link": "/system/indum/planet/indum-iv-d"
+            },
+            {
+                "name": "Indum V",
+                "link": "/system/indum/planet/indum-v"
+            },
+            {
+                "name": "Indum V-a",
+                "link": "/system/indum/planet/indum-v-a"
+            }
+        ]
+    },
+    {
+        "name": "Ixyll",
+        "link": "/system/ixyll",
+        "planets": [
+            {
+                "name": "Ixyll I",
+                "link": "/system/ixyll/planet/ixyll-i"
+            },
+            {
+                "name": "Ixyll II",
+                "link": "/system/ixyll/planet/ixyll-ii"
+            },
+            {
+                "name": "Ixyll II-a",
+                "link": "/system/ixyll/planet/ixyll-ii-a"
+            },
+            {
+                "name": "Ixyll III",
+                "link": "/system/ixyll/planet/ixyll-iii"
+            },
+            {
+                "name": "Ixyll III-a",
+                "link": "/system/ixyll/planet/ixyll-iii-a"
+            },
+            {
+                "name": "Ixyll III-b",
+                "link": "/system/ixyll/planet/ixyll-iii-b"
+            },
+            {
+                "name": "Ixyll IV",
+                "link": "/system/ixyll/planet/ixyll-iv"
+            },
+            {
+                "name": "Ixyll IX",
+                "link": "/system/ixyll/planet/ixyll-ix"
+            },
+            {
+                "name": "Ixyll IX-a",
+                "link": "/system/ixyll/planet/ixyll-ix-a"
+            },
+            {
+                "name": "Ixyll IX-b",
+                "link": "/system/ixyll/planet/ixyll-ix-b"
+            },
+            {
+                "name": "Ixyll IX-c",
+                "link": "/system/ixyll/planet/ixyll-ix-c"
+            },
+            {
+                "name": "Ixyll IX-d",
+                "link": "/system/ixyll/planet/ixyll-ix-d"
+            },
+            {
+                "name": "Ixyll V",
+                "link": "/system/ixyll/planet/ixyll-v"
+            },
+            {
+                "name": "Ixyll VI",
+                "link": "/system/ixyll/planet/ixyll-vi"
+            },
+            {
+                "name": "Ixyll VI-a",
+                "link": "/system/ixyll/planet/ixyll-vi-a"
+            },
+            {
+                "name": "Ixyll VI-b",
+                "link": "/system/ixyll/planet/ixyll-vi-b"
+            },
+            {
+                "name": "Ixyll VI-c",
+                "link": "/system/ixyll/planet/ixyll-vi-c"
+            },
+            {
+                "name": "Ixyll VI-d",
+                "link": "/system/ixyll/planet/ixyll-vi-d"
+            },
+            {
+                "name": "Ixyll VI-e",
+                "link": "/system/ixyll/planet/ixyll-vi-e"
+            },
+            {
+                "name": "Ixyll VII",
+                "link": "/system/ixyll/planet/ixyll-vii"
+            },
+            {
+                "name": "Ixyll VII-a",
+                "link": "/system/ixyll/planet/ixyll-vii-a"
+            },
+            {
+                "name": "Ixyll VII-b",
+                "link": "/system/ixyll/planet/ixyll-vii-b"
+            },
+            {
+                "name": "Ixyll VII-c",
+                "link": "/system/ixyll/planet/ixyll-vii-c"
+            },
+            {
+                "name": "Ixyll VIII",
+                "link": "/system/ixyll/planet/ixyll-viii"
+            },
+            {
+                "name": "Ixyll VIII-a",
+                "link": "/system/ixyll/planet/ixyll-viii-a"
+            },
+            {
+                "name": "Ixyll VIII-b",
+                "link": "/system/ixyll/planet/ixyll-viii-b"
+            }
+        ]
+    },
+    {
+        "name": "Jaffa",
+        "link": "/system/jaffa",
+        "planets": [
+            {
+                "name": "Jaffa I",
+                "link": "/system/jaffa/planet/jaffa-i"
+            },
+            {
+                "name": "Jaffa I-a",
+                "link": "/system/jaffa/planet/jaffa-i-a"
+            },
+            {
+                "name": "Jaffa II",
+                "link": "/system/jaffa/planet/jaffa-ii"
+            },
+            {
+                "name": "Jaffa II-a",
+                "link": "/system/jaffa/planet/jaffa-ii-a"
+            },
+            {
+                "name": "Jaffa III",
+                "link": "/system/jaffa/planet/jaffa-iii"
+            },
+            {
+                "name": "Jaffa IV",
+                "link": "/system/jaffa/planet/jaffa-iv"
+            },
+            {
+                "name": "Jaffa IV-a",
+                "link": "/system/jaffa/planet/jaffa-iv-a"
+            },
+            {
+                "name": "Jaffa V",
+                "link": "/system/jaffa/planet/jaffa-v"
+            },
+            {
+                "name": "Jaffa V-a",
+                "link": "/system/jaffa/planet/jaffa-v-a"
+            },
+            {
+                "name": "Jaffa VI",
+                "link": "/system/jaffa/planet/jaffa-vi"
+            },
+            {
+                "name": "Jaffa VI-a",
+                "link": "/system/jaffa/planet/jaffa-vi-a"
+            },
+            {
+                "name": "Jaffa VI-b",
+                "link": "/system/jaffa/planet/jaffa-vi-b"
+            },
+            {
+                "name": "Jaffa VI-c",
+                "link": "/system/jaffa/planet/jaffa-vi-c"
+            },
+            {
+                "name": "Jaffa VII",
+                "link": "/system/jaffa/planet/jaffa-vii"
+            },
+            {
+                "name": "Jaffa VII-a",
+                "link": "/system/jaffa/planet/jaffa-vii-a"
+            },
+            {
+                "name": "Jaffa VII-b",
+                "link": "/system/jaffa/planet/jaffa-vii-b"
+            },
+            {
+                "name": "Jaffa VII-c",
+                "link": "/system/jaffa/planet/jaffa-vii-c"
+            },
+            {
+                "name": "Jaffa VII-d",
+                "link": "/system/jaffa/planet/jaffa-vii-d"
+            },
+            {
+                "name": "Jaffa VII-e",
+                "link": "/system/jaffa/planet/jaffa-vii-e"
+            },
+            {
+                "name": "Jaffa VIII",
+                "link": "/system/jaffa/planet/jaffa-viii"
+            }
+        ]
+    },
+    {
+        "name": "Kapteyn's Star",
+        "link": "/system/kapteyns-star",
+        "planets": [
+            {
+                "name": "Kapteyn I",
+                "link": "/system/kapteyns-star/planet/kapteyn-i"
+            },
+            {
+                "name": "Kapteyn II",
+                "link": "/system/kapteyns-star/planet/kapteyn-ii"
+            }
+        ]
+    },
+    {
+        "name": "Khayyam",
+        "link": "/system/khayyam",
+        "planets": [
+            {
+                "name": "Khayyam I",
+                "link": "/system/khayyam/planet/khayyam-i"
+            },
+            {
+                "name": "Khayyam I-a",
+                "link": "/system/khayyam/planet/khayyam-i-a"
+            },
+            {
+                "name": "Khayyam II",
+                "link": "/system/khayyam/planet/khayyam-ii"
+            },
+            {
+                "name": "Khayyam II-a",
+                "link": "/system/khayyam/planet/khayyam-ii-a"
+            },
+            {
+                "name": "Khayyam III",
+                "link": "/system/khayyam/planet/khayyam-iii"
+            },
+            {
+                "name": "Khayyam III-a",
+                "link": "/system/khayyam/planet/khayyam-iii-a"
+            },
+            {
+                "name": "Khayyam III-b",
+                "link": "/system/khayyam/planet/khayyam-iii-b"
+            },
+            {
+                "name": "Khayyam III-c",
+                "link": "/system/khayyam/planet/khayyam-iii-c"
+            },
+            {
+                "name": "Khayyam IV",
+                "link": "/system/khayyam/planet/khayyam-iv"
+            },
+            {
+                "name": "Khayyam IV-a",
+                "link": "/system/khayyam/planet/khayyam-iv-a"
+            },
+            {
+                "name": "Khayyam V",
+                "link": "/system/khayyam/planet/khayyam-v"
+            },
+            {
+                "name": "Khayyam V-a",
+                "link": "/system/khayyam/planet/khayyam-v-a"
+            },
+            {
+                "name": "Khayyam VI",
+                "link": "/system/khayyam/planet/khayyam-vi"
+            },
+            {
+                "name": "Khayyam VI-a",
+                "link": "/system/khayyam/planet/khayyam-vi-a"
+            },
+            {
+                "name": "Khayyam VI-b",
+                "link": "/system/khayyam/planet/khayyam-vi-b"
+            },
+            {
+                "name": "Khayyam VI-c",
+                "link": "/system/khayyam/planet/khayyam-vi-c"
+            },
+            {
+                "name": "Khayyam VI-d",
+                "link": "/system/khayyam/planet/khayyam-vi-d"
+            },
+            {
+                "name": "Khayyam VI-e",
+                "link": "/system/khayyam/planet/khayyam-vi-e"
+            }
+        ]
+    },
+    {
+        "name": "Kryx",
+        "link": "/system/kryx",
+        "planets": [
+            {
+                "name": "Boron",
+                "link": "/system/kryx/planet/boron"
+            },
+            {
+                "name": "Candore",
+                "link": "/system/kryx/planet/candore"
+            },
+            {
+                "name": "Ice",
+                "link": "/system/kryx/planet/ice"
+            },
+            {
+                "name": "Max",
+                "link": "/system/kryx/planet/max"
+            },
+            {
+                "name": "Neebas",
+                "link": "/system/kryx/planet/neebas"
+            },
+            {
+                "name": "Nox",
+                "link": "/system/kryx/planet/nox"
+            },
+            {
+                "name": "Rocklock",
+                "link": "/system/kryx/planet/rocklock"
+            },
+            {
+                "name": "Suvorov",
+                "link": "/system/kryx/planet/suvorov"
+            }
+        ]
+    },
+    {
+        "name": "Kumasi",
+        "link": "/system/kumasi",
+        "planets": [
+            {
+                "name": "Kumasi I",
+                "link": "/system/kumasi/planet/kumasi-i"
+            },
+            {
+                "name": "Kumasi I-a",
+                "link": "/system/kumasi/planet/kumasi-i-a"
+            },
+            {
+                "name": "Kumasi II",
+                "link": "/system/kumasi/planet/kumasi-ii"
+            },
+            {
+                "name": "Kumasi II-a",
+                "link": "/system/kumasi/planet/kumasi-ii-a"
+            },
+            {
+                "name": "Kumasi III",
+                "link": "/system/kumasi/planet/kumasi-iii"
+            },
+            {
+                "name": "Kumasi III-a",
+                "link": "/system/kumasi/planet/kumasi-iii-a"
+            },
+            {
+                "name": "Kumasi IV",
+                "link": "/system/kumasi/planet/kumasi-iv"
+            },
+            {
+                "name": "Kumasi IV-a",
+                "link": "/system/kumasi/planet/kumasi-iv-a"
+            },
+            {
+                "name": "Kumasi IX",
+                "link": "/system/kumasi/planet/kumasi-ix"
+            },
+            {
+                "name": "Kumasi IX-a",
+                "link": "/system/kumasi/planet/kumasi-ix-a"
+            },
+            {
+                "name": "Kumasi V",
+                "link": "/system/kumasi/planet/kumasi-v"
+            },
+            {
+                "name": "Kumasi V-a",
+                "link": "/system/kumasi/planet/kumasi-v-a"
+            },
+            {
+                "name": "Kumasi V-b",
+                "link": "/system/kumasi/planet/kumasi-v-b"
+            },
+            {
+                "name": "Kumasi V-c",
+                "link": "/system/kumasi/planet/kumasi-v-c"
+            },
+            {
+                "name": "Kumasi V-d",
+                "link": "/system/kumasi/planet/kumasi-v-d"
+            },
+            {
+                "name": "Kumasi V-e",
+                "link": "/system/kumasi/planet/kumasi-v-e"
+            },
+            {
+                "name": "Kumasi VI",
+                "link": "/system/kumasi/planet/kumasi-vi"
+            },
+            {
+                "name": "Kumasi VI-a",
+                "link": "/system/kumasi/planet/kumasi-vi-a"
+            },
+            {
+                "name": "Kumasi VII",
+                "link": "/system/kumasi/planet/kumasi-vii"
+            },
+            {
+                "name": "Kumasi VII-a",
+                "link": "/system/kumasi/planet/kumasi-vii-a"
+            },
+            {
+                "name": "Kumasi VII-b",
+                "link": "/system/kumasi/planet/kumasi-vii-b"
+            },
+            {
+                "name": "Kumasi VII-c",
+                "link": "/system/kumasi/planet/kumasi-vii-c"
+            },
+            {
+                "name": "Kumasi VII-d",
+                "link": "/system/kumasi/planet/kumasi-vii-d"
+            },
+            {
+                "name": "Kumasi VIII",
+                "link": "/system/kumasi/planet/kumasi-viii"
+            },
+            {
+                "name": "Kumasi VIII-a",
+                "link": "/system/kumasi/planet/kumasi-viii-a"
+            },
+            {
+                "name": "Kumasi VIII-b",
+                "link": "/system/kumasi/planet/kumasi-viii-b"
+            },
+            {
+                "name": "Kumasi VIII-c",
+                "link": "/system/kumasi/planet/kumasi-viii-c"
+            },
+            {
+                "name": "Kumasi VIII-d",
+                "link": "/system/kumasi/planet/kumasi-viii-d"
+            }
+        ]
+    },
+    {
+        "name": "Lantana",
+        "link": "/system/lantana",
+        "planets": [
+            {
+                "name": "Lantana I",
+                "link": "/system/lantana/planet/lantana-i"
+            },
+            {
+                "name": "Lantana II",
+                "link": "/system/lantana/planet/lantana-ii"
+            },
+            {
+                "name": "Lantana III",
+                "link": "/system/lantana/planet/lantana-iii"
+            },
+            {
+                "name": "Lantana III-a",
+                "link": "/system/lantana/planet/lantana-iii-a"
+            },
+            {
+                "name": "Lantana IV",
+                "link": "/system/lantana/planet/lantana-iv"
+            },
+            {
+                "name": "Lantana IX",
+                "link": "/system/lantana/planet/lantana-ix"
+            },
+            {
+                "name": "Lantana IX-a",
+                "link": "/system/lantana/planet/lantana-ix-a"
+            },
+            {
+                "name": "Lantana IX-b",
+                "link": "/system/lantana/planet/lantana-ix-b"
+            },
+            {
+                "name": "Lantana IX-c",
+                "link": "/system/lantana/planet/lantana-ix-c"
+            },
+            {
+                "name": "Lantana IX-d",
+                "link": "/system/lantana/planet/lantana-ix-d"
+            },
+            {
+                "name": "Lantana IX-e",
+                "link": "/system/lantana/planet/lantana-ix-e"
+            },
+            {
+                "name": "Lantana V",
+                "link": "/system/lantana/planet/lantana-v"
+            },
+            {
+                "name": "Lantana V-a",
+                "link": "/system/lantana/planet/lantana-v-a"
+            },
+            {
+                "name": "Lantana V-b",
+                "link": "/system/lantana/planet/lantana-v-b"
+            },
+            {
+                "name": "Lantana VI",
+                "link": "/system/lantana/planet/lantana-vi"
+            },
+            {
+                "name": "Lantana VII",
+                "link": "/system/lantana/planet/lantana-vii"
+            },
+            {
+                "name": "Lantana VIII",
+                "link": "/system/lantana/planet/lantana-viii"
+            },
+            {
+                "name": "Lantana VIII-a",
+                "link": "/system/lantana/planet/lantana-viii-a"
+            },
+            {
+                "name": "Lantana VIII-b",
+                "link": "/system/lantana/planet/lantana-viii-b"
+            },
+            {
+                "name": "Lantana VIII-c",
+                "link": "/system/lantana/planet/lantana-viii-c"
+            },
+            {
+                "name": "Lantana VIII-d",
+                "link": "/system/lantana/planet/lantana-viii-d"
+            }
+        ]
+    },
+    {
+        "name": "Linnaeus",
+        "link": "/system/linnaeus",
+        "planets": [
+            {
+                "name": "Linnaeus I",
+                "link": "/system/linnaeus/planet/linnaeus-i"
+            },
+            {
+                "name": "Linnaeus II",
+                "link": "/system/linnaeus/planet/linnaeus-ii"
+            },
+            {
+                "name": "Linnaeus II-a",
+                "link": "/system/linnaeus/planet/linnaeus-ii-a"
+            },
+            {
+                "name": "Linnaeus III",
+                "link": "/system/linnaeus/planet/linnaeus-iii"
+            },
+            {
+                "name": "Linnaeus III-a",
+                "link": "/system/linnaeus/planet/linnaeus-iii-a"
+            },
+            {
+                "name": "Linnaeus IV",
+                "link": "/system/linnaeus/planet/linnaeus-iv"
+            },
+            {
+                "name": "Linnaeus IV-a",
+                "link": "/system/linnaeus/planet/linnaeus-iv-a"
+            },
+            {
+                "name": "Linnaeus IV-b",
+                "link": "/system/linnaeus/planet/linnaeus-iv-b"
+            },
+            {
+                "name": "Linnaeus IV-c",
+                "link": "/system/linnaeus/planet/linnaeus-iv-c"
+            },
+            {
+                "name": "Linnaeus V",
+                "link": "/system/linnaeus/planet/linnaeus-v"
+            },
+            {
+                "name": "Linnaeus VI",
+                "link": "/system/linnaeus/planet/linnaeus-vi"
+            },
+            {
+                "name": "Linnaeus VII",
+                "link": "/system/linnaeus/planet/linnaeus-vii"
+            }
+        ]
+    }
+]

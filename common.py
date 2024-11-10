@@ -35,7 +35,7 @@ def load_system_data(path):
         with open(path, 'r', encoding='utf-8') as file:
             system_data = json.load(file)
     else:
-        system_data = []
+        system_data = {}
     return system_data
 
 def save_system_data(path, data):
@@ -179,7 +179,7 @@ def score_organics(flora, fauna, organic_groups, rarity):
     return organic_score
 
 
-def load_all_data():
+def load_all_data(systems_data_path=SCORED_SYSTEM_DATA_PATH):
     inorganic_rarity = load_resources(INORGANIC_DATA_PATH, shortname=False)
     organic_rarity = load_resources(ORGANIC_DATA_PATH, shortname=False)
     gatherable_only = load_resource_groups(GATHERABLE_ONLY_PATH)
@@ -199,6 +199,6 @@ def load_all_data():
         "gatherable_only": gatherable_only,
     }
 
-    all_systems = load_system_data(SCORED_SYSTEM_DATA_PATH)
+    all_systems = load_system_data(systems_data_path)
 
     return all_systems, rarity, unique, groups

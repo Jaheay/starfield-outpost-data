@@ -1,4 +1,4 @@
-from config import SCORED_SYSTEM_DATA_PATH
+from config import SCORED_SYSTEM_DATA_PATH, RAW_SYSTEMS_DATA_PATH
 from common import get_grouped_inorganics, get_grouped_organics, score_resources_by_rarity, score_organics, score_inorganic, load_all_data, save_system_data
 import json
 
@@ -152,7 +152,7 @@ def score_system(system, rarity):
     }
 
 def score_system_data():
-    all_systems, rarity, unique, groups = load_all_data()
+    all_systems, rarity, unique, groups = load_all_data(RAW_SYSTEMS_DATA_PATH)
 
     for system in all_systems: 
         for planet in system['planets']:

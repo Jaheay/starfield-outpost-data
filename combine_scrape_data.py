@@ -390,7 +390,9 @@ def stitch_planet_data(systems_almanac, systems_inara, resource_groups):
 
             # Search for corresponding planet in Almanac
             for almanac_system in systems_almanac:
-                for almanac_planet in almanac_system["planets"]:
+                # TODO: This is a bit fucked. For some reason, almanac system sometimes looses its planets? 
+                # I'll need to debug this properly when I have time. 
+                for almanac_planet in almanac_system.get("planets", {}):
                     if fixed_planet["name"].lower() == almanac_planet["name"].lower():
                         # Flora and Fauna discrepancy check and fix
                         almanac_flora, almanac_fauna = get_almanac_flora_fauna_set(almanac_planet['biomes'])

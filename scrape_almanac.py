@@ -52,8 +52,6 @@ def initialize_driver():
 # Initialize driver setup
 def scrape_all_systems_page(url, driver):
     driver.get(url)
-    print("Scraping:", driver.title)
-
     all_links = []
     page_count = 1
 
@@ -244,8 +242,8 @@ def scrape_planet_page(base_url, planet_link, driver):
     # Adjust print for optimal use of terminal width
     print(f"Scraping found {len(biomes_data)} biomes.")
     terminal_width = shutil.get_terminal_size().columns - 16
-    print("Planet biomes data:")
-    pprint(biomes_data, compact=True, width=terminal_width)
+    #print("Planet biomes data:")
+    #pprint(biomes_data, compact=True, width=terminal_width)
 
     return biomes_data
 

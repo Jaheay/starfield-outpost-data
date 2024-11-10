@@ -300,7 +300,7 @@ def find_best_systems(system_data, unique_resources, resources_by_rarity, groups
     print("Planet Count Occurrences: ")
     pprint(planet_count_occurrences, width=80)
 
-    if min_planet_count < 23:
+    if min_planet_count < 23 and len(best_combinations) <= 100:
         # For each best combination, print the planet names and detailed results
         for idx, result in enumerate(best_combinations, 1):
             print(f"\nBest Combination {idx}:")
