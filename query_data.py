@@ -3,6 +3,7 @@ import csv
 from itertools import product
 import matplotlib.pyplot as plt
 from scipy.stats import chi2_contingency
+from pprint import pprint
 
 # Local Imports
 from config import *
@@ -440,7 +441,7 @@ def query_flora_fauna(planets):
 def query_biome_group_tendency(systems, planets): 
     # TODO: Fix to use new biome_resources data. 
     resource_biome_data = []
-    inorganic_rarity = load_resources(INORGANIC_DATA_PATH, shortname=False)
+    inorganic_rarity = load_resources(INORGANIC_DATA_PATH)
     gatherable_only = load_resource_groups(GATHERABLE_ONLY_PATH) 
     
     unique = {
@@ -486,10 +487,85 @@ def query_biome_group_tendency(systems, planets):
     print_significance_results(significance_results)
     plot_biome_distribution(significance_results)
 
+def query_planets_with_specific_organics(planets, inorganic_groups):
+    
+    planets_with_organics = {}
+    organics = [
+        'Adhesive', 
+        'Antimicrobial',
+        'Aromatic',
+        'Hypercatalyst',
+        'Ornamental Material',
+        'Pigment',
+        'Polymer',
+        'Structural Material'
+    ]
+
+    for planet in planets:
+        organics_on_planet = planet["resources"]["organic"]
+        inorganics_on_planet = planet["resources"]["inorganic"]
+        
+        # Check if any organic resource is present on the planet
+        if any(organic in organics_on_planet for organic in organics):
+            planet_groups = get_grouped_inorganics(inorganics_on_planet, inorganic_groups)
+            
+            # Ensure there is at least one value of 3 or more and not all values are 1
+            if any(value == 3 for value in planet_groups.values()) and any(value != 1 for value in planet_groups.values()):
+                planets_with_organics[planet] = planet_groups
+
+    print("Output")
+    for planet, planet_groups in planets_with_organics.items():
+        # Print planet name
+        print(planet["name"])
+        
+        # Print resources, skipping those with a value of 1
+        for resource, amount in planet_groups.items():
+            if amount != 1:
+                print(f"\t{resource}: {amount}")
+
+
+def query_planets_with_gas_and_atmo(planets, resource_state, filter_by_resources=[]):
+    candidate_resources = []
+
+    # Validate filter_by_resources if provided
+    if filter_by_resources:
+        for filter_resource in filter_by_resources:
+            if resource_state.get(filter_resource) != 'Gas':
+                raise ValueError("Non-Gas resource selected in filter")
+            else:
+                candidate_resources.append(filter_resource)
+    else:
+        # No filter provided, gather all resources with state 'Gas'
+        for resource, state in resource_state.items():
+            if state == 'Gas':
+                candidate_resources.append(resource)
+
+    # Find planets that meet the criteria
+    candidate_planets = {}
+    for planet in planets:
+        matching_resources = []
+        for resource in candidate_resources:
+            if resource in planet["resources"]["inorganic"] and planet["attributes"]["atmosphere"]["density"] != "None":
+                matching_resources.append(resource)
+
+        # Only add planet if there are matching resources
+        if matching_resources:
+            candidate_planets[planet["name"]] = matching_resources
+
+    print("Planets with Resources:\n")
+    for planet, resources in sorted(candidate_planets.items()):
+        print(f"{planet}:")
+        for resource in resources:
+            print(f"    - {resource}")
+    print()  # For spacing after the list
+
 
 def run_queries(): 
     systems = load_system_data(SCORED_SYSTEM_DATA_PATH)
     planets = [planet for system in systems for planet in system['planets']]
+    
+    
+    
     
     #query_unique_values(planets)
     #query_two_value_histogram(planets)
@@ -497,7 +573,14 @@ def run_queries():
     #query_highs_and_lows(systems, planets)
     #query_top_tens(systems, planets)
     #query_flora_fauna(planets)
-    query_biome_group_tendency(systems, planets)
+    #query_biome_group_tendency(systems, planets)
+
+    #inorganic_groups = load_resource_groups(INORGANIC_GROUPS_PATH)
+    #query_planets_with_specific_organics(planets, inorganic_groups)
+
+    resource_state = load_resources(INORGANIC_DATA_PATH, state=True)
+    query_planets_with_gas_and_atmo(planets, resource_state, filter_by_resources=['Helium-3'])
+
 
 
 if __name__ == '__main__':

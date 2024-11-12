@@ -11,22 +11,26 @@ from config import (
     RARITY_SCORES
 )
 
-def load_resources(filename, shortname=False):
+import csv
+
+def load_resources(filename, shortname=False, state=False):
+    if shortname and state:
+        raise ValueError("Cannot have both state and shortname set to True.")
+    
+    key = 'Short name' if shortname else 'State' if state else 'Rarity'
+    
     resources = {}
     with open(filename, mode='r', newline='', encoding='utf-8') as file:
         reader = csv.DictReader(file)
         
         for row in reader:
             resource_name = row['Resource'].strip()
-            if shortname: 
-                # Use resource name if short name is empty
-                short_name = row['Short name'].strip() if row['Short name'].strip() else resource_name 
-                resources[short_name] = {
-                    'Resource': resource_name,
-                    'Rarity': row['Rarity'].strip()
-                }
-            else: 
-                resources[resource_name] = row['Rarity'].strip()
+            value = row[key].strip()
+            
+            if shortname and not value:  # Use resource name as fallback if short name is empty
+                value = resource_name
+            
+            resources[resource_name] = value
     
     return resources
 
@@ -180,8 +184,8 @@ def score_organics(flora, fauna, organic_groups, rarity):
 
 
 def load_all_data(systems_data_path=SCORED_SYSTEM_DATA_PATH):
-    inorganic_rarity = load_resources(INORGANIC_DATA_PATH, shortname=False)
-    organic_rarity = load_resources(ORGANIC_DATA_PATH, shortname=False)
+    inorganic_rarity = load_resources(INORGANIC_DATA_PATH)
+    organic_rarity = load_resources(ORGANIC_DATA_PATH)
     gatherable_only = load_resource_groups(GATHERABLE_ONLY_PATH)
 
     rarity = {"inorganic": inorganic_rarity, "organic": organic_rarity}

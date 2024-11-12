@@ -1,32 +1,32 @@
-Resource,Short name,Rarity
-Adhesive,,Rare
-Amino Acids,,Rare
-Analgesic,,Rare
-Antimicrobial,,Uncommon
-Aromatic,,Rare
-Biosuppressant,,Exotic
-Cosmetic,,Uncommon
-Fiber,,Common
-Gastronomic Delight,,Unique
-Hallucinogen,,Rare
-High-Tensile Spidroin,,Unique
-Hypercatalyst,,Exotic
-Immunostimulant,,Unique
-Lubricant,,Exotic
-Luxury Textile,,Unique
-Membrane,,Uncommon
-Memory Substrate,,Unique
-Metabolic Agent,,Common
-Neurologic,,Unique
-Nutrient,,Common
-Ornamental Material,,Uncommon
-Pigment,,Uncommon
-Polymer,,Exotic
-Quark-Degenerate Tissues,,Unique
-Sealant,,Common
-Sedative,,Rare
-Solvent,,Exotic
-Spice,,Uncommon
-Stimulant,,Exotic
-Structural Material,,Common
-Toxin,,Common
+Resource,Short name,Rarity,State
+Adhesive,,Rare,Solid
+Amino Acids,,Rare,Solid
+Analgesic,,Rare,Solid
+Antimicrobial,,Uncommon,Solid
+Aromatic,,Rare,Solid
+Biosuppressant,,Exotic,Solid
+Cosmetic,,Uncommon,Solid
+Fiber,,Common,Solid
+Gastronomic Delight,,Unique,Solid
+Hallucinogen,,Rare,Solid
+High-Tensile Spidroin,,Unique,Solid
+Hypercatalyst,,Exotic,Solid
+Immunostimulant,,Unique,Solid
+Lubricant,,Exotic,Solid
+Luxury Textile,,Unique,Solid
+Membrane,,Uncommon,Solid
+Memory Substrate,,Unique,Solid
+Metabolic Agent,,Common,Solid
+Neurologic,,Unique,Solid
+Nutrient,,Common,Solid
+Ornamental Material,,Uncommon,Solid
+Pigment,,Uncommon,Solid
+Polymer,,Exotic,Solid
+Quark-Degenerate Tissues,,Unique,Solid
+Sealant,,Common,Solid
+Sedative,,Rare,Solid
+Solvent,,Exotic,Solid
+Spice,,Uncommon,Solid
+Stimulant,,Exotic,Solid
+Structural Material,,Common,Solid
+Toxin,,Common,Solid

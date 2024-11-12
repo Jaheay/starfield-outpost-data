@@ -1,48 +1,48 @@
-Resource,Short name,Rarity
-Aldumite,Ad,Unique
-Alkanes,HnCn,Uncommon
-Aluminum,Al,Common
-Antimony,Sb,Exotic
-Argon,Ar,Common
-Benzene,C6Hn,Uncommon
-Beryllium,Be,Uncommon
-Caesium,Cs,Exotic
-Carboxylic Acids,R-COOH,Rare
-Chlorine,Cl,Common
-Chlorosilanes,SiH3Cl,Uncommon
-Cobalt,Co,Uncommon
-Copper,Cu,Common
-Dysprosium,Dy,Exotic
-Europium,Eu,Exotic
-Fluorine,F,Uncommon
-Gold,Au,Rare
-Helium-3,He-3,Uncommon
-Indicite,Ie,Unique
-Ionic Liquids,IL,Exotic
-Iridium,Ir,Uncommon
-Iron,Fe,Common
-Lead,Pb,Common
-Lithium,Li,Rare
-Mercury,Hg,Rare
-Neodymium,Nd,Rare
-Neon,Ne,Exotic
-Nickel,Ni,Common
-Palladium,Pd,Exotic
-Platinum,Pt,Rare
-Plutonium,Pu,Exotic
-Rothicite,Rc,Unique
-Silver,Ag,Uncommon
-Tantalum,Ta,Rare
-Tasine,Tsn,Unique
-Tetrafluorides,xF4,Rare
-Titanium,Ti,Rare
-Tungsten,W,Uncommon
-Uranium,U,Common
-Vanadium,V,Rare
-Veryl,Vr,Unique
-Vytinium,Vy,Unique
-Water,H2O,Common
-Xenon,Xe,Exotic
-Ytterbium,Yb,Exotic
-Aqueous Hematite,Aq,Unique
-Caelumite,Ct,Unique
+Resource,Short name,Rarity,State
+Aldumite,Ad,Unique,Solid
+Alkanes,HnCn,Uncommon,Gas
+Aluminum,Al,Common,Solid
+Antimony,Sb,Exotic,Solid
+Argon,Ar,Common,Gas
+Benzene,C6Hn,Uncommon,Gas
+Beryllium,Be,Uncommon,Solid
+Caesium,Cs,Exotic,Liquid
+Carboxylic Acids,R-COOH,Rare,Liquid
+Chlorine,Cl,Common,Gas
+Chlorosilanes,SiH3Cl,Uncommon,Liquid
+Cobalt,Co,Uncommon,Solid
+Copper,Cu,Common,Solid
+Dysprosium,Dy,Exotic,Solid
+Europium,Eu,Exotic,Solid
+Fluorine,F,Uncommon,Gas
+Gold,Au,Rare,Solid
+Helium-3,He-3,Uncommon,Gas
+Indicite,Ie,Unique,Solid
+Ionic Liquids,IL,Exotic,Liquid
+Iridium,Ir,Uncommon,Solid
+Iron,Fe,Common,Solid
+Lead,Pb,Common,Solid
+Lithium,Li,Rare,Solid
+Mercury,Hg,Rare,Liquid
+Neodymium,Nd,Rare,Solid
+Neon,Ne,Exotic,Gas
+Nickel,Ni,Common,Solid
+Palladium,Pd,Exotic,Solid
+Platinum,Pt,Rare,Solid
+Plutonium,Pu,Exotic,Solid
+Rothicite,Rc,Unique,Solid
+Silver,Ag,Uncommon,Solid
+Tantalum,Ta,Rare,Solid
+Tasine,Tsn,Unique,Liquid
+Tetrafluorides,xF4,Rare,Gas
+Titanium,Ti,Rare,Solid
+Tungsten,W,Uncommon,Solid
+Uranium,U,Common,Solid
+Vanadium,V,Rare,Solid
+Veryl,Vr,Unique,Gas
+Vytinium,Vy,Unique,Solid
+Water,H2O,Common,Liquid
+Xenon,Xe,Exotic,Gas
+Ytterbium,Yb,Exotic,Solid
+Aqueous Hematite,Aq,Unique,Solid
+Caelumite,Ct,Unique,Solid

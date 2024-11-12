@@ -1,0 +1,75 @@
+# Planets with He3 Atmospheric Collection: 
+
+- ~~Al-Battani I~~
+- Alchiba VIII - Couldn't Test, Will come back later
+- Algorab III-a (Confirmed by u/belowavg_joe)
+- ~~Alpha Andraste II~~
+- ~~Ananke~~
+- Andromas III (Confirmed by u/brashendeavors)
+- ~~Andromas VI-b~~
+- ~~Aranae I~~
+- Arcturus I (Confirmed by u/belowavg_joe)
+- Beta Andraste I-a (Confirmed by u/belowavg_joe)
+- Beta Ternion III-a (Confirmed by u/belowavg_joe)
+- Cassiopeia II-a (Confirmed by u/belowavg_joe)
+- ~~Delta Vulpes V-c~~
+- Denebola I-b (Confirmed by u/belowavg_joe)
+- ~~Denebola II-a~~
+- ~~Denebola III-a~~
+- Eridani III-b (Confirmed by u/belowavg_joe)
+- ~~Eridani VII-c~~
+- ~~Eridani VIII-b~~
+- Fermi IX-d (Confirmed, by me ;P)
+- ~~Fermi VII-b~~
+- Feynman IV (Confirmed by u/brashendeavors)
+- ~~Feynman VII-b~~
+- ~~Foucault VII-e~~
+- ~~Freya IV~~
+- ~~Freya V~~
+- Frost (Confirmed by u/belowavg_joe)
+- Hardpoint
+- Ixyll VI-c
+- Ixyll VII-a
+- Kang II
+- Kang IV-a
+- Katydid I-a (Confirmed by u/belowavg_joe & u/Arabidaardvark)
+- Khayyam I
+- Kreet (Confirmed, by me ;P)
+- Lantana VII
+- Lantana VIII-c
+- Lantana VIII-d (Confirmed by u/belowavg_joe)
+- Leonis I
+- Leonis I-b
+- Leonis II
+- Leviathan VI-b
+- Linnaeus IV-b
+- Luyten's Rock (Confirmed by u/belowavg_joe)
+- Maal VI-a
+- Maheo II
+- Moloch V-c
+- Moloch VI-b
+- Muphrid V-d
+- Nemeria V-c
+- Porrima II-b
+- Porrima III
+- Pyraas VIII-a
+- Rutherford I
+- Rutherford IV-d
+- Rutherford V-b
+- Rutherford VI-a
+- Serpentis V-d
+- Shoza II-a
+- Shoza VII-a
+- Shoza VII-b
+- Shoza VIII-b
+- Sirius II-a
+- Strix I
+- Strix III-a
+- Syrma III (Confirmed by u/brashendeavors)
+- Tau Ceti I
+- Ternion VII
+- Tirna I
+- Tirna VI-b
+- Xi Ophiuchi VIII-c
+- Zamka
+- Zosma III-a (Confirmed by u/belowavg_joe)

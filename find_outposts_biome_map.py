@@ -24,8 +24,8 @@ def find_outposts_with_biome_resource_map():
     Main function to find and rank biome combinations covering all required inorganic and organic resources.
     """
     # Load resources
-    inorganic_rarity = load_resources(INORGANIC_DATA_PATH, shortname=False)
-    organic_rarity = load_resources(ORGANIC_DATA_PATH, shortname=False)
+    inorganic_rarity = load_resources(INORGANIC_DATA_PATH)
+    organic_rarity = load_resources(ORGANIC_DATA_PATH)
 
     rarity = {"inorganic": inorganic_rarity, "organic": organic_rarity}
 

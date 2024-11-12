@@ -247,11 +247,11 @@ def process_resources(planet, organic_dict, inorganic_dict, gatherable_dict):
     for resource in planet.get("resources", []):
         cleaned_resource = clean_output(resource)
         if cleaned_resource == "Ct":
-            possible.append(inorganic_dict[cleaned_resource]["Resource"])
+            possible.append(cleaned_resource)
         elif cleaned_resource in inorganic_dict:
-            inorganic.append(inorganic_dict[cleaned_resource]["Resource"])
+            inorganic.append(cleaned_resource)
         elif cleaned_resource in organic_dict:
-            organic.append(organic_dict[cleaned_resource]["Resource"])
+            organic.append(cleaned_resource)
         else:
             unknown.append(resource)
 
@@ -269,6 +269,7 @@ def process_resources(planet, organic_dict, inorganic_dict, gatherable_dict):
         resources["unknown"] = unknown
 
     planet["resources"] = resources
+
 
 
 def classify_planet_type(planet_type):
