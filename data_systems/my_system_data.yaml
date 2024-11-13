@@ -79,4 +79,72 @@ Katydid:
       - Water
       - Aluminum
       - Beryllium
+  Katydid I-a:
+      He3Atmo: True
 
+Algorab:
+  Algorab III-a:
+      He3Atmo: True
+
+Andromas:
+  Andromas III:
+      He3Atmo: True
+
+Arcturus:
+  Arcturus I:
+      He3Atmo: True
+
+Beta Andraste:
+  Beta Andraste I-a:
+      He3Atmo: True
+
+Beta Ternion:
+  Beta Ternion III-a:
+      He3Atmo: True
+
+Eta Cassiopeia:
+  Cassiopeia II-a:
+      He3Atmo: True
+
+Denebola:
+  Denebola I-b:
+      He3Atmo: True
+
+Eridani:
+  Eridani III-b:
+      He3Atmo: True
+
+Fermi:
+  Fermi IX-d:
+      He3Atmo: True
+
+Feynman:
+  Feynman IV:
+      He3Atmo: True
+
+Frost:
+  Frost:
+      He3Atmo: True
+
+Narion:
+  Kreet:
+      He3Atmo: True
+
+Lantana:
+  Lantana VII:
+      He3Atmo: True
+
+  Lantana VIII-d:
+      He3Atmo: True
+
+Luyten's Star:
+  Luyten's Rock:
+      He3Atmo: True
+
+Syrma:
+  Syrma III:
+      He3Atmo: True
+
+Zosma:
+  Zosma III-a:
+      He3Atmo: True

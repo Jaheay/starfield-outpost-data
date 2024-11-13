@@ -1,7 +1,7 @@
 # Planets with He3 Atmospheric Collection: 
 
 - ~~Al-Battani I~~
-- Alchiba VIII - Couldn't Test, Will come back later
+- ~~Alchiba VIII~~
 - Algorab III-a (Confirmed by u/belowavg_joe)
 - ~~Alpha Andraste II~~
 - ~~Ananke~~
@@ -27,49 +27,70 @@
 - ~~Freya IV~~
 - ~~Freya V~~
 - Frost (Confirmed by u/belowavg_joe)
-- Hardpoint
-- Ixyll VI-c
-- Ixyll VII-a
-- Kang II
-- Kang IV-a
+- ~~Hardpoint~~
+- ~~Ixyll VI-c~~
+- ~~Ixyll VII-a~~
+- ~~Kang II~~
+- ~~Kang IV-a~~
 - Katydid I-a (Confirmed by u/belowavg_joe & u/Arabidaardvark)
-- Khayyam I
+- ~~Khayyam I~~
 - Kreet (Confirmed, by me ;P)
-- Lantana VII
-- Lantana VIII-c
+- Lantana VII (Confirmed by u/joshinburbank/)
+- ~~Lantana VIII-c~~
 - Lantana VIII-d (Confirmed by u/belowavg_joe)
-- Leonis I
-- Leonis I-b
-- Leonis II
-- Leviathan VI-b
-- Linnaeus IV-b
+- ~~Leonis I~~
+- ~~Leonis I-b~~
+- ~~Leonis II~~
+- ~~Leviathan VI-b~~
+- ~~Linnaeus IV-b~~
 - Luyten's Rock (Confirmed by u/belowavg_joe)
-- Maal VI-a
-- Maheo II
-- Moloch V-c
-- Moloch VI-b
-- Muphrid V-d
-- Nemeria V-c
-- Porrima II-b
-- Porrima III
-- Pyraas VIII-a
-- Rutherford I
-- Rutherford IV-d
-- Rutherford V-b
-- Rutherford VI-a
-- Serpentis V-d
-- Shoza II-a
-- Shoza VII-a
-- Shoza VII-b
-- Shoza VIII-b
-- Sirius II-a
-- Strix I
-- Strix III-a
+- ~~Maal VI-a~~
+- ~~Maheo II~~
+- ~~Moloch V-c~~
+- ~~Moloch VI-b~~
+- ~~Muphrid V-d~~
+- ~~Nemeria V-c~~
+- ~~Porrima II-b~~
+- ~~Porrima III~~
+- ~~Pyraas VIII-a~~
+- ~~Rutherford I~~
+- ~~Rutherford IV-d~~
+- ~~Rutherford V-b~~
+- ~~Rutherford VI-a~~
+- ~~Serpentis V-d~~
+- ~~Shoza II-a~~
+- ~~Shoza VII-a~~
+- ~~Shoza VII-b~~
+- ~~Shoza VIII-bb~~
+- ~~Sirius II-a~~
+- ~~Strix I~~
+- ~~Strix III-a~~
 - Syrma III (Confirmed by u/brashendeavors)
-- Tau Ceti I
-- Ternion VII
-- Tirna I
-- Tirna VI-b
-- Xi Ophiuchi VIII-c
-- Zamka
+- ~~Tau Ceti I~~
+- ~~Ternion VII~~
+- ~~Tirna I~~
+- ~~Tirna VI-b~~
+- ~~Xi Ophiuchi VIII-c~~
+- ~~Zamka~~
 - Zosma III-a (Confirmed by u/belowavg_joe)
+
+# Final List
+
+- Algorab III-a
+- Andromas III
+- Arcturus I
+- Beta Andraste I-a
+- Beta Ternion III-a
+- Cassiopeia II-a
+- Denebola I-b
+- Eridani III-b
+- Fermi IX-d
+- Feynman IV
+- Frost
+- Katydid I-a
+- Kreet
+- Lantana VII
+- Lantana VIII-d
+- Luyten's Rock
+- Syrma III
+- Zosma III-a

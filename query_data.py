@@ -563,10 +563,7 @@ def query_planets_with_gas_and_atmo(planets, resource_state, filter_by_resources
 def run_queries(): 
     systems = load_system_data(SCORED_SYSTEM_DATA_PATH)
     planets = [planet for system in systems for planet in system['planets']]
-    
-    
-    
-    
+      
     #query_unique_values(planets)
     #query_two_value_histogram(planets)
     #query_fun_facts(systems, planets)
@@ -578,10 +575,8 @@ def run_queries():
     #inorganic_groups = load_resource_groups(INORGANIC_GROUPS_PATH)
     #query_planets_with_specific_organics(planets, inorganic_groups)
 
-    resource_state = load_resources(INORGANIC_DATA_PATH, state=True)
-    query_planets_with_gas_and_atmo(planets, resource_state, filter_by_resources=['Helium-3'])
-
-
+    #resource_state = load_resources(INORGANIC_DATA_PATH, state=True)
+    #query_planets_with_gas_and_atmo(planets, resource_state, filter_by_resources=['Helium-3'])
 
 if __name__ == '__main__':
     run_queries()
