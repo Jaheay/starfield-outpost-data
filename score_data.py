@@ -32,9 +32,14 @@ def calculate_habitability(planet):
     if gravity >= 2.0:  # High gravity
         score -= 2  # Not fun
     elif gravity > 1.0:
-        score -= 1  # Personal preference
-    elif gravity <= 0.5:  # Low gravity
-        score += 2  # Weeeeee
+        score -= 1  # Personal preference, I like to flyyyyy
+    elif gravity >= 0.5:
+        score += 3  # Weeeeee
+    elif gravity >= 0.25:
+        score += 1  # Weeeeee .. wait, when am I coming down again?
+    elif gravity < 0.25:  # Super Low gravity can be annoying
+        score -=1
+        
 
     # Temperature assessment
     temperature = attributes['temperature']
@@ -50,20 +55,20 @@ def calculate_habitability(planet):
     # Atmosphere assessment
     atmosphere = attributes['atmosphere']
     if atmosphere['density'] == 'Extreme':
-        score -= 2  # Extreme densities are bad for habitabilitye
+        score -= 1  # Extreme densities are bad for habitability, but dont really affect gameplay
     elif atmosphere['density'] =='High':
-        score -= 1 # A tad high
+        score += 0 # Meh
     elif atmosphere['type'] == 'O2':
         score += 2  # Oxygen is good for life
-    elif atmosphere['type'] == 'None':
-        score += 1  # Neutral, better than toxic or corrosive
+    elif atmosphere['type'] != 'None':
+        score -= 2  # Toxic or corrosive sucks
 
     # Water safety assessment
     water_safety = attributes['water']
     if water_safety == 'Safe':
         score += 3  # Safe water is good for life
     elif water_safety in ['Radioactive', 'Chemical', 'Heavy metal']:
-        score -= 3  # Bad for habitability
+        score -= 3  # Bad for habitability, annoying
 
     # Biome assessment
     desirable_biomes = {'Tropical', 'Wetlands', 'Savanna', 'Deciduous', 'Coniferous'}
@@ -87,11 +92,11 @@ def calculate_habitability(planet):
     elif magnetosphere in ['Powerful']:
         score += 2  # Too strong
     elif magnetosphere in ['Very weak', 'Weak']:
-        score -= 1  # Too weak
+        score += 0  # Too weak
     elif magnetosphere in ['Extreme', 'Massive']:
-        score -= 3  # Gas Giant Powerful, Bad
+        score -= 2  # Gas Giant Powerful, Bad
     elif magnetosphere == 'None':
-        score -= 3  # Lacks protection from solar winds
+        score -= 2  # Lacks protection from solar winds
 
     # Bonus for moons. Because moons are cool. 
     # I'd do moons of gas giants specifically, but that would take too much effort. 
