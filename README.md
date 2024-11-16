@@ -130,7 +130,119 @@ This project was developed out of a passion for exploring the vast universe of *
 
 ## Fun Data
 
-*Placeholder for fun data to be added.*
+Here is some fun data from the query script: 
+
+----- Ranges -----
+Gravity range: (('Phobos', 0.01), ('Groombridge II', 2.18))
+Day length range (in hours): (('Porrima II-a', 0.0), ('Venus', 5832.0))
+
+
+----- System Queries -----
+System with most planets: Cheyenne
+System with most gas giants: ([], 0)
+System with least planets: Sagan
+
+----- Planet Scores -----
+Planet with highest habitability score: Nemeria IV-a (24.0)
+Planet with lowest habitability score: Venus (-13.0)
+Planet with highest organic score: Zelazny III (21.522)
+Planet with lowest organic score: Porrima I (0.0)
+Planet with highest inorganic score: Carinae V-c (45.0)
+Planet with lowest inorganic score: Porrima II-a (0.0)
+
+----- System Scores -----
+System with highest habitability score: Cheyenne (66.5)
+System with lowest habitability score: Aranae (0.0)
+System with highest organic score: Bardeen (40.0)
+System with lowest organic score: Sol (0.0)
+System with highest inorganic score: Kumasi (109.0)
+System with lowest inorganic score: Van Maanen's Star (2.0)
+
+----- Top Habitable Systems -----
+1. Cheyenne: 66.5
+2. Lantana: 61.0
+3. Syrma: 60.0
+4. Ixyll: 58.0
+5. Porrima: 57.0
+6. Schrodinger: 55.5
+7. Serpentis: 53.5
+8. Alpha Tirna: 53.5
+9. Bardeen: 50.0
+10. Nemeria: 50.0
+
+----- Top Habitable Planets -----
+1. Nemeria IV-a: 24.0
+2. Syrma VII-a: 23.5
+3. Codos: 19.5
+4. Katydid I-a: 19.0
+5. Archimedes V-a: 17.5
+6. Montara Luna: 17.0
+7. Zeta Ophiuchi I: 16.5
+8. Huygens VII-b: 16.0
+9. Ixyll II: 16.0
+10. Schrodinger VIII-a: 16.0
+
+----- Top Inorganic Systems -----
+1. Kumasi: 109.0
+2. Hyla: 103.0
+3. Feynman: 101.0
+4. Schrodinger: 101.0
+5. Cheyenne: 99.0
+6. Muphrid: 97.0
+7. Huygens: 95.0
+8. Verne: 93.0
+9. Jaffa: 93.0
+10. Alpha Tirna: 93.0
+
+----- Top Inorganic Planets -----
+1. Carinae V-c: 45.0
+2. Fermi VII-b: 42.0
+3. Nemeria V-c: 40.333
+4. Tirna VIII-a: 39.0
+5. Eridani VII-c: 39.0
+6. Maheo II: 39.0
+7. Rutherford VI-a: 39.0
+8. Mars: 38.0
+9. Al-Battani II: 38.0
+10. Verne I: 38.0
+
+----- Top Organic Systems -----
+1. Bardeen: 40.0
+2. Shoza: 36.0
+3. Cheyenne: 32.0
+4. Zelazny: 30.0
+5. Schrodinger: 29.0
+6. Alpha Tirna: 26.0
+7. Beta Ternion: 24.0
+8. Fermi: 22.0
+9. Ursae Majoris: 22.0
+10. Beta Marae: 21.0
+
+----- Top Organic Systems -----
+1. Zelazny III: 21.522
+2. Bardeen III: 18.0
+3. Fermi VII-a: 16.0
+4. Linnaeus II: 15.222
+5. Masada III: 14.818
+6. Beta Ternion II: 13.667
+7. Ternion III: 12.87
+8. Alpha Andraste III: 12.308
+9. Codos: 12.0
+10. Zeta Ophiuchi I: 11.619
+
+----- Unique Values -----
+Unique values for planet_type: {'Ice giant', 'Rock', 'Asteroid', 'Gas giant', 'Ice', 'Barren', 'Hot gas giant'}
+Unique planet_type: {'Ice giant', 'Rock', 'Asteroid', 'Gas giant', 'Ice', 'Barren', 'Hot gas giant'}
+Unique values for temperature: {'Deep freeze', 'Scorched', 'Hot', 'Cold', 'Frozen', 'Temperate', 'Inferno'}
+Unique temperature: {'Deep freeze', 'Scorched', 'Hot', 'Cold', 'Frozen', 'Temperate', 'Inferno'}
+Unique values for atmosphere: {'Extreme CO2', 'Extreme M', 'High M', 'High CO2', 'Thin M', 'Thin O2', 'Thin N2', 'Thin CO2', 'Standard CO2', 'Extreme N2', 'Extreme O2', 'Standard M', 'High O2', 'Standard N2', 'High N2', 'None None', 'Standard O2'}   
+Unique atmosphere: {'Extreme CO2', 'Extreme M', 'High M', 'High CO2', 'Thin M', 'Thin O2', 'Thin N2', 'Thin CO2', 'Standard CO2', 'Extreme N2', 'Extreme O2', 'Standard M', 'High O2', 'Standard N2', 'High N2', 'None None', 'Standard O2'}
+Unique values for magnetosphere: {'Very weak', 'Massive', 'Powerful', 'Very strong', 'None', 'Weak', 'Strong', 'Extreme', 'Average'}
+Unique magnetosphere: {'Very weak', 'Massive', 'Powerful', 'Very strong', 'None', 'Weak', 'Strong', 'Extreme', 'Average'}
+Unique values for water: {'None', 'Safe', 'Biological', 'Chemical', 'Radioactive', 'Heavy metal'}
+Unique water: {'None', 'Safe', 'Biological', 'Chemical', 'Radioactive', 'Heavy metal'}
+Unique values for biomes: {'Frozen Volcanic', 'Wetlands Frozen', 'Ocean', 'Volcanic', 'Frozen Dunes', 'Rocky Desert', 'Frozen Plains', 'Frozen Crevasses', 'Frozen Mountains', 'Frozen Hills', 'Savanna', 'Swamp', 'Craters', 'Tropical Forest', 'Wetlands', 'Hills', 'Mountains', 'Deciduous Forest', 'Sandy Desert', 'Coniferous Forest', 'Plateau', 'Frozen Craters'}
+Unique biomes: {'Frozen Volcanic', 'Wetlands Frozen', 'Ocean', 'Volcanic', 'Frozen Dunes', 'Rocky Desert', 'Frozen Plains', 'Frozen Crevasses', 'Frozen Mountains', 'Frozen Hills', 'Savanna', 'Swamp', 'Craters', 'Tropical Forest', 'Wetlands', 'Hills', 'Mountains', 'Deciduous Forest', 'Sandy Desert', 'Coniferous Forest', 'Plateau', 'Frozen Craters'}
 
 ## Contributing
 

@@ -133,7 +133,7 @@ def get_min_max(planets, parameter):
     min_planet, max_planet = None, None
 
     for planet in planets:
-        if parameter in planet:
+        if parameter in planet["attributes"]:
             value = planet["attributes"][parameter]
             try:
                 # Convert value to a float (e.g., '0.89g' to 0.89)
@@ -774,8 +774,8 @@ def run_queries():
     query_unique_values(planets)
     #query_two_value_histogram(planets)
     query_fun_facts(systems, planets)
-    query_highs_and_lows(systems, planets)
-    query_top_tens(systems, planets)
+    #query_highs_and_lows(systems, planets)
+    #query_top_tens(systems, planets)
     # query_flora_fauna(planets)
     # query_biome_group_tendency(systems, planets)
 
@@ -787,7 +787,7 @@ def run_queries():
 
     #query_atmohe3_by_habitability(planets)
 
-    #query_resource_from_list(planets, capture_planets, ["Immunostimulant"])
+    #query_resource_from_list(planets, capture_planets, ["Fiber"])
 
 
 if __name__ == "__main__":
