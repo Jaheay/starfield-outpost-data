@@ -72,6 +72,7 @@ def scrape_star_system(url):
         if not find_planet_name:
             raise ValueError("Planet name not found.")
         planet["name"] = clean_output(find_planet_name.text.strip())
+        planet["system_name"] = system_name
 
         # Initialize planet attributes dictionary
         planet["attributes"] = {}

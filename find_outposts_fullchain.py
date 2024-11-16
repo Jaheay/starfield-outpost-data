@@ -1,14 +1,15 @@
 import itertools
 
 # Local Imports
-from config import FINAL_SYSTEM_DATA_PATH
+from config import FINAL_SYSTEM_DATA_PATH, INORGANIC_GROUPS_PATH
 from common import (
     get_grouped_inorganics,
     get_grouped_organics,
     score_inorganic,
     score_organics,
     save_system_data,
-    load_all_data
+    load_all_data,
+    load_resource_groups
 )
 
 
@@ -651,6 +652,234 @@ def clean_up_after_processing(all_systems, final_planets):
 
     return all_systems, final_planets
 
+def verify_final_planets(final_planets, resources_by_rarity, groups):
+    # Step 1: Initialize variables and remove irrelevant resources
+    all_inorganics = set(resources_by_rarity["inorganic"].keys())
+    all_inorganics.discard('Helium-3')
+    all_inorganics.discard('Water')
+    all_inorganics -= set(groups.get("gatherable_only", {}).get("inorganic", []))
+    all_organics = set(resources_by_rarity["organic"].keys())
+    all_organics -= set(groups.get("gatherable_only", {}).get("organic", []))
+    inorganic_groups_with_unique = load_resource_groups(INORGANIC_GROUPS_PATH)
+
+    final_all_resources = all_inorganics | all_organics
+
+    # Initialize 'Captured Resources' for each planet
+    for planet in final_planets:
+        planet.setdefault("outpost_candidacy", {})
+        planet["outpost_candidacy"].setdefault("Captured Resources", [])
+
+    # Step 2: Process full chain planets
+    for planet in final_planets:
+        full_resource_chains = planet.get("outpost_candidacy", {}).get("full_resource_chain", [])
+        if not isinstance(full_resource_chains, list):
+            full_resource_chains = [full_resource_chains]
+        for resource_group in full_resource_chains:
+            resource_group = resource_group.strip()
+            if resource_group in groups.get("inorganic", {}):
+                group_resources = set(inorganic_groups_with_unique[resource_group])
+                # Remove gatherable resources
+                group_resources -= set(groups.get("gatherable_only", {}).get("inorganic", []))
+                # Ensure resources are present on the planet
+                planet_inorganics = set(planet.get("resources", {}).get("inorganic", []))
+                relevant_resources = group_resources & planet_inorganics
+                assigned_resources = relevant_resources & all_inorganics
+                # Capacity check
+                capacity_remaining = 5 - len(planet["outpost_candidacy"]["Captured Resources"])
+                if capacity_remaining > 0:
+                    assigned_resources = set(list(assigned_resources)[:capacity_remaining])
+                    all_inorganics -= assigned_resources
+                    planet["outpost_candidacy"]["Captured Resources"].extend(assigned_resources)
+            else:
+                raise Exception(f"Resource group {resource_group} not found.")
+
+    # Step 3: Process 'other' organics
+    for planet in final_planets:
+        others = planet.get("outpost_candidacy", {}).get("other", [])
+        if not isinstance(others, list):
+            others = [others]
+        for other_resource in others:
+            other_resource = other_resource.strip()
+            # Ignore if 'other' is a gatherable-only resource
+            if other_resource not in groups.get("gatherable_only", {}).get("organic", []):
+                # Ensure resource is present on the planet
+                if other_resource in planet.get("flora", {}).get("domesticable", {}) or \
+                   other_resource in planet.get("fauna", {}).get("domesticable", {}):
+                    assigned_resources = set([other_resource]) & all_organics
+                    # Capacity check
+                    if len(planet["outpost_candidacy"]["Captured Resources"]) < 5:
+                        planet["outpost_candidacy"]["Captured Resources"].extend(assigned_resources)
+                        all_organics -= assigned_resources
+
+    # Step 4: Process partial resource groups
+    for planet in final_planets:
+        partial_groups = planet.get("outpost_candidacy", {}).get("resource_group_partial", [])
+        if not isinstance(partial_groups, list):
+            partial_groups = [partial_groups]
+        for partial_group in partial_groups:
+            resource_group = partial_group.replace(" (partial)", "").strip()
+            if resource_group in groups.get("inorganic", {}):
+                group_resources = set(groups["inorganic"][resource_group])
+                # Remove gatherable resources
+                group_resources -= set(groups.get("gatherable_only", {}).get("inorganic", []))
+                # Ensure resources are present on the planet
+                planet_inorganics = set(planet.get("resources", {}).get("inorganic", []))
+                relevant_resources = group_resources & planet_inorganics
+                assigned_resources = relevant_resources & all_inorganics
+                # Capacity check
+                capacity_remaining = 5 - len(planet["outpost_candidacy"]["Captured Resources"])
+                if capacity_remaining > 0:
+                    assigned_resources = set(list(assigned_resources)[:capacity_remaining])
+                    all_inorganics -= assigned_resources
+                    planet["outpost_candidacy"]["Captured Resources"].extend(assigned_resources)
+            else:
+                raise Exception(f"Partial resource group {resource_group} not found.")
+
+    # Step 5: Process unique resource planets
+    for planet in final_planets:
+        unique_resource_list = planet.get("outpost_candidacy", {}).get("unique", [])
+        if not isinstance(unique_resource_list, list):
+            unique_resource_list = [unique_resource_list]
+        for unique_resource in unique_resource_list:
+            unique_resource = unique_resource.strip()
+            # Ignore if unique_resource is gatherable-only
+            if unique_resource in groups.get("gatherable_only", {}).get("inorganic", []) or \
+               unique_resource in groups.get("gatherable_only", {}).get("organic", []):
+                continue  # Skip gatherable-only uniques
+            # Check if the planet has the unique resource
+            resource_present = False
+            if unique_resource in planet.get("resources", {}).get("inorganic", []):
+                resource_type = "inorganic"
+                resource_present = True
+            elif unique_resource in planet.get("flora", {}).get("domesticable", {}) or \
+                 unique_resource in planet.get("fauna", {}).get("domesticable", {}):
+                resource_type = "organic"
+                resource_present = True
+            if resource_present:
+                # Capacity check
+                if len(planet["outpost_candidacy"]["Captured Resources"]) < 5:
+                    planet["outpost_candidacy"]["Captured Resources"].append(unique_resource)
+                    if resource_type == "inorganic":
+                        all_inorganics.discard(unique_resource)
+                    else:
+                        all_organics.discard(unique_resource)
+            else:
+                # Resource not present on planet, cannot assign
+                pass
+
+    # Step 6: Verify that all inorganic resources have been assigned
+    if all_inorganics:
+        raise Exception(f"Inorganic resources not assigned: {all_inorganics}")
+
+    # Step 7: Assign unassigned organics to planets
+    resources_to_assign = all_organics.copy()
+
+    # Assign resources available on only one planet first
+    while True:
+        resource_planet_mapping = {}
+        for resource in resources_to_assign:
+            preferred_state = None
+            if resource in groups.get("organic", {}).get("flora", []):
+                preferred_state = "flora"
+            elif resource in groups.get("organic", {}).get("fauna", []):
+                preferred_state = "fauna"
+            candidate_planets = []
+            for planet in final_planets:
+                # Ensure planet capacity is not exceeded
+                if len(planet["outpost_candidacy"]["Captured Resources"]) >= 4:
+                    continue
+                if preferred_state:
+                    planet_resources = planet.get(preferred_state, {}).get("domesticable", {}).keys()
+                    if resource in planet_resources:
+                        candidate_planets.append(planet)
+                else:
+                    for state in ["flora", "fauna"]:
+                        planet_resources = planet.get(state, {}).get("domesticable", {}).keys()
+                        if resource in planet_resources:
+                            candidate_planets.append(planet)
+                            break
+            resource_planet_mapping[resource] = candidate_planets
+
+        assigned_in_this_round = False
+        for resource, planets in resource_planet_mapping.items():
+            if len(planets) == 1:
+                planet = planets[0]
+                # Double-check the planet's capacity before assignment
+                if len(planet["outpost_candidacy"]["Captured Resources"]) < 4:
+                    planet["outpost_candidacy"]["Captured Resources"].append(resource)
+                    resources_to_assign.discard(resource)
+                    assigned_in_this_round = True
+        if not assigned_in_this_round:
+            break
+
+    # Assign remaining resources based on planet capacity and resource availability
+    while resources_to_assign:
+        planets_with_open_slots = [planet for planet in final_planets if len(planet["outpost_candidacy"]["Captured Resources"]) < 4]
+        if not planets_with_open_slots:
+            # Allow adding a 5th resource
+            planets_with_open_slots = [planet for planet in final_planets if len(planet["outpost_candidacy"]["Captured Resources"]) < 5]
+            if not planets_with_open_slots:
+                raise Exception("No planets available to assign remaining resources.")
+
+        resources_assigned_this_round = False
+        for resource in list(resources_to_assign):
+            candidate_planets = []
+            for planet in planets_with_open_slots:
+                if len(planet["outpost_candidacy"]["Captured Resources"]) >= 5:
+                    continue
+                for state in ["flora", "fauna"]:
+                    planet_resources = planet.get(state, {}).get("domesticable", {}).keys()
+                    if resource in planet_resources:
+                        candidate_planets.append(planet)
+                        break
+            if not candidate_planets:
+                continue
+
+            # Calculate preference scores
+            planet_scores = []
+            for planet in candidate_planets:
+                open_slots = 5 - len(planet["outpost_candidacy"]["Captured Resources"])
+                # Count how many resources from the same group are already on the planet
+                resource_groups = groups.get("organic", {})
+                resource_group = None
+                for group_name, resources in resource_groups.items():
+                    if resource in resources:
+                        resource_group = group_name
+                        break
+                existing_group_resources = sum(
+                    res in resource_groups.get(resource_group, []) for res in planet["outpost_candidacy"]["Captured Resources"]
+                )
+                # Higher score for planets that already have resources from the same group
+                score = existing_group_resources
+                planet_scores.append((score, planet))
+
+            if planet_scores:
+                # Assign to the planet with the highest score
+                planet_scores.sort(key=lambda x: x[0], reverse=True)
+                for _, best_planet in planet_scores:
+                    if len(best_planet["outpost_candidacy"]["Captured Resources"]) < 5:
+                        best_planet["outpost_candidacy"]["Captured Resources"].append(resource)
+                        resources_to_assign.discard(resource)
+                        resources_assigned_this_round = True
+                        break
+
+
+        if not resources_assigned_this_round:
+            break
+    
+    # Final Check
+    resources = []
+    for planet in final_planets:
+        resources = set(planet.get("outpost_candidacy").get("Captured Resources", {}))
+        if not resources != final_all_resources:
+            missing = final_all_resources.discard(resources)
+            raise ValueError(f"Not all resources captured: {missing}")
+
+    # Return the modified final_planets
+    return final_planets
+
+
+
 
 def find_best_systems(system_data, unique_resources, resources_by_rarity, groups):
     """
@@ -709,11 +938,16 @@ def find_best_systems(system_data, unique_resources, resources_by_rarity, groups
     captured_resources = capture_helium_and_water(final_planets, captured_resources)
     system_data, final_planets = clean_up_after_processing(system_data, final_planets)
 
+
+
+
     # Print final results
     captured_resources = recalculate_captured_resources(final_planets, captured_resources)
     uncaptured_resources = calculate_uncaptured_resources(
         captured_resources, resources_by_rarity, groups["gatherable_only"]
     )
+
+    final_planets = verify_final_planets(final_planets, resources_by_rarity, groups)
 
     save_system_data(FINAL_SYSTEM_DATA_PATH, system_data)
 
@@ -736,6 +970,10 @@ def print_final_results(final_planets, uncaptured_resources):
         outpost_candidacy = planet.get("outpost_candidacy", {})
         system_name = planet.get("system_name", "Unknown System")
         print(f"{planet['name']} ({system_name})")
+        captured_resources = outpost_candidacy.get("Captured Resources", {})
+        print(f"\tCaptured: {captured_resources}")
+
+        """
         # Collect reasons
         if success:
             reasons = []
@@ -748,7 +986,7 @@ def print_final_results(final_planets, uncaptured_resources):
             if outpost_candidacy.get("other"):
                 other_resources = ", ".join(outpost_candidacy["other"])
                 reasons.append(f"- Other: {other_resources}")
-            if outpost_candidacy.get("resource_group_partial"):
+            if outpost_candidacy.get():
                 partial_groups = ", ".join(outpost_candidacy["resource_group_partial"])
                 reasons.append(f"- Partial Resource Group: {partial_groups}")
                 partners = ", ".join(outpost_candidacy.get("partner_planets", []))
@@ -759,6 +997,9 @@ def print_final_results(final_planets, uncaptured_resources):
                 reasons.append("- Has Water")
             for reason in reasons:
                 print(f"\t{reason}")
+        """
+
+        
 
     print(f"\nNumber of Planets: {len(final_planets)}")
 

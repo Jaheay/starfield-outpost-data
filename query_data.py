@@ -752,11 +752,24 @@ def query_atmohe3_by_habitability(planets):
     sorted_scores = sorted(scores_atmohe3.items(), key=lambda item: item[1], reverse=True)
     pprint(sorted_scores)
 
+# query_resource_from_list(planets, capture_planets, ["Fiber", "Water"])
+def query_resource_from_list(all_planets, query_planets, query_resources):
+    
+    for planet in all_planets:
+        planet_resources = []
+        if planet["name"] in query_planets:
+            planet_resources.extend(planet["resources"]["organic"])
+            planet_resources.extend(planet["resources"]["inorganic"])
+
+            if all(resource in planet_resources for resource in query_resources):
+                print(f"Candidate: {planet["name"]}")
 
 
 def run_queries():
     systems = load_system_data(SCORED_SYSTEM_DATA_PATH)
     planets = [planet for system in systems for planet in system["planets"]]
+    capture_planets = ["Katydid I-a", "Decaran VII-b", "Schrodinger II", "Carinae III-a", "Huygens VII-a", "Verne I", "Katydid III", "Fermi VII-a", "Linnaeus II", "Zelazny III", "Bardeen III", "Schrodinger III", "Zeta Ophiuchi I", "Eridani III", "Verne VII-d", "Charybdis II", "Zeta Ophiuchi VI-a", "Procyon III", "Jaffa I", "Sumati", "Codos", "Alpha Andraste III", "Beta Ternion I", "Hyla II", ]
+
 
     # query_unique_values(planets)
     # query_two_value_histogram(planets)
@@ -772,7 +785,10 @@ def run_queries():
     # resource_state = load_resources(INORGANIC_DATA_PATH, state=True)
     # query_planets_with_gas_and_atmo(planets, resource_state, filter_by_resources=['Helium-3'])
 
-    query_atmohe3_by_habitability(planets)
+    #query_atmohe3_by_habitability(planets)
+
+    query_resource_from_list(planets, capture_planets, ["Fiber", "Water"])
+
 
 if __name__ == "__main__":
     run_queries()

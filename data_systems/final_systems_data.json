@@ -3251,7 +3251,10 @@
                     "other": [
                         "Hypercatalyst"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Hypercatalyst"
+                    ]
                 }
             },
             {
@@ -4146,7 +4149,10 @@
                     "unique": [
                         "High-Tensile Spidroin"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "High-Tensile Spidroin"
+                    ]
                 }
             },
             {
@@ -8992,7 +8998,10 @@
                     "other": [
                         "Solvent"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Solvent"
+                    ]
                 }
             },
             {
@@ -17166,7 +17175,13 @@
                     "partner_planets": [
                         "Beta Ternion I"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Chlorine",
+                        "Caesium",
+                        "Immunostimulant",
+                        "Membrane"
+                    ]
                 }
             },
             {
@@ -22387,6 +22402,12 @@
                     ],
                     "partner_planets": [
                         "Bardeen III"
+                    ],
+                    "Captured Resources": [
+                        "Neon",
+                        "Argon",
+                        "Benzene",
+                        "Veryl"
                     ]
                 }
             },
@@ -23239,7 +23260,12 @@
                     "full_resource_chain": [
                         "Lead-Silver"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Mercury",
+                        "Silver",
+                        "Lead"
+                    ]
                 }
             },
             {
@@ -25946,7 +25972,13 @@
                     "partner_planets": [
                         "Beta Ternion I"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Biosuppressant",
+                        "Xenon",
+                        "Chlorosilanes",
+                        "Hallucinogen"
+                    ]
                 }
             },
             {
@@ -27682,7 +27714,13 @@
                     "partner_planets": [
                         "Verne I"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Carboxylic Acids",
+                        "Gastronomic Delight",
+                        "Cosmetic",
+                        "Lubricant"
+                    ]
                 }
             },
             {
@@ -28661,14 +28699,20 @@
                         "Stimulant"
                     ],
                     "resource_group_partial": [
-                        "Chlorine-Caesium (partial)",
-                        "Chlorine-Xenon (partial)"
+                        "Chlorine-Xenon (partial)",
+                        "Chlorine-Caesium (partial)"
                     ],
                     "partner_planets": [
-                        "Alpha Andraste III",
-                        "Zelazny III"
+                        "Zelazny III",
+                        "Alpha Andraste III"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Stimulant",
+                        "Lithium",
+                        "Structural Material",
+                        "Metabolic Agent"
+                    ]
                 }
             },
             {
@@ -30006,6 +30050,11 @@
                 "outpost_candidacy": {
                     "full_resource_chain": [
                         "Lead-Tungsten"
+                    ],
+                    "Captured Resources": [
+                        "Titanium",
+                        "Tungsten",
+                        "Dysprosium"
                     ]
                 }
             },
@@ -38770,7 +38819,10 @@
                     "unique": [
                         "Tasine"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Tasine"
+                    ]
                 }
             },
             {
@@ -53905,7 +53957,10 @@
                     "unique": [
                         "Rothicite"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Rothicite"
+                    ]
                 }
             },
             {
@@ -56864,7 +56919,10 @@
                     "unique": [
                         "Vytinium"
                     ],
-                    "has_helium": true
+                    "has_helium": true,
+                    "Captured Resources": [
+                        "Vytinium"
+                    ]
                 }
             },
             {
@@ -60006,7 +60064,13 @@
                     "full_resource_chain": [
                         "Uranium"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Iridium",
+                        "Uranium",
+                        "Vanadium",
+                        "Plutonium"
+                    ]
                 }
             },
             {
@@ -62961,7 +63025,14 @@
                     "unique": [
                         "Memory Substrate"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Platinum",
+                        "Nickel",
+                        "Cobalt",
+                        "Palladium",
+                        "Memory Substrate"
+                    ]
                 }
             },
             {
@@ -72030,7 +72101,13 @@
                     "other": [
                         "Aromatic"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Aromatic",
+                        "Spice",
+                        "Fiber",
+                        "Sealant"
+                    ]
                 }
             },
             {
@@ -75856,7 +75933,10 @@
                     "unique": [
                         "Indicite"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Indicite"
+                    ]
                 }
             }
         ],
@@ -89167,7 +89247,13 @@
                     "full_resource_chain": [
                         "Copper-Tetrafluorides"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Ionic Liquids",
+                        "Tetrafluorides",
+                        "Ornamental Material",
+                        "Antimicrobial"
+                    ]
                 }
             },
             {
@@ -93767,6 +93853,9 @@
                 "outpost_candidacy": {
                     "unique": [
                         "Aldumite"
+                    ],
+                    "Captured Resources": [
+                        "Aldumite"
                     ]
                 }
             },
@@ -93864,7 +93953,14 @@
                     "unique": [
                         "Luxury Textile"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Luxury Textile",
+                        "Toxin",
+                        "Nutrient",
+                        "Analgesic",
+                        "Sedative"
+                    ]
                 }
             },
             {
@@ -101694,7 +101790,13 @@
                     "unique": [
                         "Neurologic"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Alkanes",
+                        "Ytterbium",
+                        "Tantalum",
+                        "Iron"
+                    ]
                 }
             },
             {
@@ -102426,7 +102528,13 @@
                     "full_resource_chain": [
                         "Copper-Gold"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Copper",
+                        "Fluorine",
+                        "Gold",
+                        "Antimony"
+                    ]
                 }
             },
             {
@@ -102818,7 +102926,13 @@
                     "full_resource_chain": [
                         "Aluminum"
                     ],
-                    "has_water": true
+                    "has_water": true,
+                    "Captured Resources": [
+                        "Neodymium",
+                        "Europium",
+                        "Aluminum",
+                        "Beryllium"
+                    ]
                 }
             },
             {

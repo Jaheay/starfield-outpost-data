@@ -76,21 +76,21 @@
 
 # Final List
 
-- Algorab III-a
-- Andromas III
-- Arcturus I
-- Beta Andraste I-a
-- Beta Ternion III-a
-- Cassiopeia II-a
-- Denebola I-b
-- Eridani III-b
-- Fermi IX-d
-- Feynman IV
-- Frost
-- Katydid I-a
-- Kreet
-- Lantana VII
-- Lantana VIII-d
-- Luyten's Rock
-- Syrma III
-- Zosma III-a
+- Algorab III-a (Confirmed by u/belowavg_joe)
+- Andromas III (Confirmed by u/brashendeavors)
+- Arcturus I (Confirmed by u/belowavg_joe)
+- Beta Andraste I-a (Confirmed by u/belowavg_joe)
+- Beta Ternion III-a (Confirmed by u/belowavg_joe)
+- Cassiopeia II-a (Confirmed by u/belowavg_joe)
+- Denebola I-b (Confirmed by u/belowavg_joe)
+- Eridani III-b (Confirmed by u/belowavg_joe)
+- Fermi IX-d (Confirmed, by me ;P)
+- Feynman IV (Confirmed by u/brashendeavors)
+- Frost (Confirmed by u/belowavg_joe)
+- Katydid I-a (Confirmed by u/belowavg_joe & u/Arabidaardvark)
+- Kreet (Confirmed, by me ;P)
+- Lantana VII (Confirmed by u/joshinburbank/)
+- Lantana VIII-d (Confirmed by u/belowavg_joe)
+- Luyten's Rock (Confirmed by u/belowavg_joe)
+- Syrma III (Confirmed by u/brashendeavors)
+- Zosma III-a (Confirmed by u/belowavg_joe)

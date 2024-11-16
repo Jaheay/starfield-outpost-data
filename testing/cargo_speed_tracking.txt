@@ -1,0 +1,7 @@
+0:00	600 He-3 Delivered
+0:35	Take Off Start
+1:05	Ship Disappeared
+3:05	Ship Appeared
+3:45	600 He-3 Delivered
+
+1.333 He-3 per minute to run
