@@ -415,9 +415,9 @@ def query_two_value_histogram(planets):
 
 def query_fun_facts(systems, planets):
     terrestrial_planets = [
-        planet for planet in planets if planet["planet_type"][0] == "Terrestrial"
+        planet for planet in planets if planet["attributes"]["planet_type"][0] == "Terrestrial"
     ]
-    gas_planets = [planet for planet in planets if planet["planet_type"][0] == "Gas"]
+    gas_planets = [planet for planet in planets if planet["attributes"]["planet_type"][0] == "Gas"]
 
     print("\n----- Ranges -----")
     print("Gravity range:", get_min_max(terrestrial_planets, "gravity"))
@@ -771,11 +771,11 @@ def run_queries():
     capture_planets = ["Katydid I-a", "Decaran VII-b", "Schrodinger II", "Carinae III-a", "Huygens VII-a", "Verne I", "Katydid III", "Fermi VII-a", "Linnaeus II", "Zelazny III", "Bardeen III", "Schrodinger III", "Zeta Ophiuchi I", "Eridani III", "Verne VII-d", "Charybdis II", "Zeta Ophiuchi VI-a", "Procyon III", "Jaffa I", "Sumati", "Codos", "Alpha Andraste III", "Beta Ternion I", "Hyla II", ]
 
 
-    # query_unique_values(planets)
-    # query_two_value_histogram(planets)
-    # query_fun_facts(systems, planets)
-    # query_highs_and_lows(systems, planets)
-    # query_top_tens(systems, planets)
+    query_unique_values(planets)
+    #query_two_value_histogram(planets)
+    query_fun_facts(systems, planets)
+    query_highs_and_lows(systems, planets)
+    query_top_tens(systems, planets)
     # query_flora_fauna(planets)
     # query_biome_group_tendency(systems, planets)
 
@@ -787,7 +787,7 @@ def run_queries():
 
     #query_atmohe3_by_habitability(planets)
 
-    query_resource_from_list(planets, capture_planets, ["Fiber", "Water"])
+    #query_resource_from_list(planets, capture_planets, ["Immunostimulant"])
 
 
 if __name__ == "__main__":
