@@ -250,4 +250,11 @@ Contributions are welcome! Please submit pull requests or open issues to help im
 
 ## License
 
-This project is licensed under the MIT License.
+This project is open-source and available under the [MIT License](LICENSE.txt).
+
+**Disclaimer**: Starfield is a product of ZeniMax Media Inc. All game data, assets, and intellectual property are the property of ZeniMax Media Inc.
+
+The system data used in this project was sourced from [INARA](https://inara.cz/) and the [Starfield Almanac](https://starfieldalmanac.com). All data is the property of its respective owners.
+
+This project is not affiliated with or endorsed by ZeniMax Media Inc., INARA or Starfield Almanac
+

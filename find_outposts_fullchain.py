@@ -667,7 +667,7 @@ def verify_final_planets(final_planets, resources_by_rarity, groups):
     # Initialize 'Captured Resources' for each planet
     for planet in final_planets:
         planet.setdefault("outpost_candidacy", {})
-        planet["outpost_candidacy"].setdefault("Captured Resources", [])
+        planet["outpost_candidacy"].setdefault("captured_resources", [])
 
     # Step 2: Process full chain planets
     for planet in final_planets:
@@ -685,11 +685,11 @@ def verify_final_planets(final_planets, resources_by_rarity, groups):
                 relevant_resources = group_resources & planet_inorganics
                 assigned_resources = relevant_resources & all_inorganics
                 # Capacity check
-                capacity_remaining = 5 - len(planet["outpost_candidacy"]["Captured Resources"])
+                capacity_remaining = 5 - len(planet["outpost_candidacy"]["captured_resources"])
                 if capacity_remaining > 0:
                     assigned_resources = set(list(assigned_resources)[:capacity_remaining])
                     all_inorganics -= assigned_resources
-                    planet["outpost_candidacy"]["Captured Resources"].extend(assigned_resources)
+                    planet["outpost_candidacy"]["captured_resources"].extend(assigned_resources)
             else:
                 raise Exception(f"Resource group {resource_group} not found.")
 
@@ -707,8 +707,8 @@ def verify_final_planets(final_planets, resources_by_rarity, groups):
                    other_resource in planet.get("fauna", {}).get("domesticable", {}):
                     assigned_resources = set([other_resource]) & all_organics
                     # Capacity check
-                    if len(planet["outpost_candidacy"]["Captured Resources"]) < 5:
-                        planet["outpost_candidacy"]["Captured Resources"].extend(assigned_resources)
+                    if len(planet["outpost_candidacy"]["captured_resources"]) < 5:
+                        planet["outpost_candidacy"]["captured_resources"].extend(assigned_resources)
                         all_organics -= assigned_resources
 
     # Step 4: Process partial resource groups
@@ -727,11 +727,11 @@ def verify_final_planets(final_planets, resources_by_rarity, groups):
                 relevant_resources = group_resources & planet_inorganics
                 assigned_resources = relevant_resources & all_inorganics
                 # Capacity check
-                capacity_remaining = 5 - len(planet["outpost_candidacy"]["Captured Resources"])
+                capacity_remaining = 5 - len(planet["outpost_candidacy"]["captured_resources"])
                 if capacity_remaining > 0:
                     assigned_resources = set(list(assigned_resources)[:capacity_remaining])
                     all_inorganics -= assigned_resources
-                    planet["outpost_candidacy"]["Captured Resources"].extend(assigned_resources)
+                    planet["outpost_candidacy"]["captured_resources"].extend(assigned_resources)
             else:
                 raise Exception(f"Partial resource group {resource_group} not found.")
 
@@ -757,8 +757,8 @@ def verify_final_planets(final_planets, resources_by_rarity, groups):
                 resource_present = True
             if resource_present:
                 # Capacity check
-                if len(planet["outpost_candidacy"]["Captured Resources"]) < 5:
-                    planet["outpost_candidacy"]["Captured Resources"].append(unique_resource)
+                if len(planet["outpost_candidacy"]["captured_resources"]) < 5:
+                    planet["outpost_candidacy"]["captured_resources"].append(unique_resource)
                     if resource_type == "inorganic":
                         all_inorganics.discard(unique_resource)
                     else:
@@ -786,7 +786,7 @@ def verify_final_planets(final_planets, resources_by_rarity, groups):
             candidate_planets = []
             for planet in final_planets:
                 # Ensure planet capacity is not exceeded
-                if len(planet["outpost_candidacy"]["Captured Resources"]) >= 4:
+                if len(planet["outpost_candidacy"]["captured_resources"]) >= 4:
                     continue
                 if preferred_state:
                     planet_resources = planet.get(preferred_state, {}).get("domesticable", {}).keys()
@@ -805,8 +805,8 @@ def verify_final_planets(final_planets, resources_by_rarity, groups):
             if len(planets) == 1:
                 planet = planets[0]
                 # Double-check the planet's capacity before assignment
-                if len(planet["outpost_candidacy"]["Captured Resources"]) < 4:
-                    planet["outpost_candidacy"]["Captured Resources"].append(resource)
+                if len(planet["outpost_candidacy"]["captured_resources"]) < 4:
+                    planet["outpost_candidacy"]["captured_resources"].append(resource)
                     resources_to_assign.discard(resource)
                     assigned_in_this_round = True
         if not assigned_in_this_round:
@@ -814,10 +814,10 @@ def verify_final_planets(final_planets, resources_by_rarity, groups):
 
     # Assign remaining resources based on planet capacity and resource availability
     while resources_to_assign:
-        planets_with_open_slots = [planet for planet in final_planets if len(planet["outpost_candidacy"]["Captured Resources"]) < 4]
+        planets_with_open_slots = [planet for planet in final_planets if len(planet["outpost_candidacy"]["captured_resources"]) < 4]
         if not planets_with_open_slots:
             # Allow adding a 5th resource
-            planets_with_open_slots = [planet for planet in final_planets if len(planet["outpost_candidacy"]["Captured Resources"]) < 5]
+            planets_with_open_slots = [planet for planet in final_planets if len(planet["outpost_candidacy"]["captured_resources"]) < 5]
             if not planets_with_open_slots:
                 raise Exception("No planets available to assign remaining resources.")
 
@@ -825,7 +825,7 @@ def verify_final_planets(final_planets, resources_by_rarity, groups):
         for resource in list(resources_to_assign):
             candidate_planets = []
             for planet in planets_with_open_slots:
-                if len(planet["outpost_candidacy"]["Captured Resources"]) >= 5:
+                if len(planet["outpost_candidacy"]["captured_resources"]) >= 5:
                     continue
                 for state in ["flora", "fauna"]:
                     planet_resources = planet.get(state, {}).get("domesticable", {}).keys()
@@ -838,7 +838,7 @@ def verify_final_planets(final_planets, resources_by_rarity, groups):
             # Calculate preference scores
             planet_scores = []
             for planet in candidate_planets:
-                open_slots = 5 - len(planet["outpost_candidacy"]["Captured Resources"])
+                open_slots = 5 - len(planet["outpost_candidacy"]["captured_resources"])
                 # Count how many resources from the same group are already on the planet
                 resource_groups = groups.get("organic", {})
                 resource_group = None
@@ -847,7 +847,7 @@ def verify_final_planets(final_planets, resources_by_rarity, groups):
                         resource_group = group_name
                         break
                 existing_group_resources = sum(
-                    res in resource_groups.get(resource_group, []) for res in planet["outpost_candidacy"]["Captured Resources"]
+                    res in resource_groups.get(resource_group, []) for res in planet["outpost_candidacy"]["captured_resources"]
                 )
                 # Higher score for planets that already have resources from the same group
                 score = existing_group_resources
@@ -857,8 +857,8 @@ def verify_final_planets(final_planets, resources_by_rarity, groups):
                 # Assign to the planet with the highest score
                 planet_scores.sort(key=lambda x: x[0], reverse=True)
                 for _, best_planet in planet_scores:
-                    if len(best_planet["outpost_candidacy"]["Captured Resources"]) < 5:
-                        best_planet["outpost_candidacy"]["Captured Resources"].append(resource)
+                    if len(best_planet["outpost_candidacy"]["captured_resources"]) < 5:
+                        best_planet["outpost_candidacy"]["captured_resources"].append(resource)
                         resources_to_assign.discard(resource)
                         resources_assigned_this_round = True
                         break
@@ -870,7 +870,7 @@ def verify_final_planets(final_planets, resources_by_rarity, groups):
     # Final Check
     resources = []
     for planet in final_planets:
-        resources = set(planet.get("outpost_candidacy").get("Captured Resources", {}))
+        resources = set(planet.get("outpost_candidacy").get("captured_resources", {}))
         if not resources != final_all_resources:
             missing = final_all_resources.discard(resources)
             raise ValueError(f"Not all resources captured: {missing}")
@@ -970,7 +970,7 @@ def print_final_results(final_planets, uncaptured_resources):
         outpost_candidacy = planet.get("outpost_candidacy", {})
         system_name = planet.get("system_name", "Unknown System")
         print(f"{planet['name']} ({system_name})")
-        captured_resources = outpost_candidacy.get("Captured Resources", {})
+        captured_resources = outpost_candidacy.get("captured_resources", {})
         print(f"\tCaptured: {captured_resources}")
 
         """

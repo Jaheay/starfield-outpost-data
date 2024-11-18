@@ -3252,7 +3252,7 @@
                         "Hypercatalyst"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
+                    "captured_resources": [
                         "Hypercatalyst"
                     ]
                 }
@@ -4150,7 +4150,7 @@
                         "High-Tensile Spidroin"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
+                    "captured_resources": [
                         "High-Tensile Spidroin"
                     ]
                 }
@@ -8999,7 +8999,7 @@
                         "Solvent"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
+                    "captured_resources": [
                         "Solvent"
                     ]
                 }
@@ -17176,9 +17176,9 @@
                         "Beta Ternion I"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
-                        "Chlorine",
+                    "captured_resources": [
                         "Caesium",
+                        "Chlorine",
                         "Immunostimulant",
                         "Membrane"
                     ]
@@ -22403,10 +22403,10 @@
                     "partner_planets": [
                         "Bardeen III"
                     ],
-                    "Captured Resources": [
-                        "Neon",
+                    "captured_resources": [
                         "Argon",
                         "Benzene",
+                        "Neon",
                         "Veryl"
                     ]
                 }
@@ -23261,10 +23261,10 @@
                         "Lead-Silver"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
-                        "Mercury",
+                    "captured_resources": [
+                        "Lead",
                         "Silver",
-                        "Lead"
+                        "Mercury"
                     ]
                 }
             },
@@ -25973,10 +25973,10 @@
                         "Beta Ternion I"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
+                    "captured_resources": [
                         "Biosuppressant",
-                        "Xenon",
                         "Chlorosilanes",
+                        "Xenon",
                         "Hallucinogen"
                     ]
                 }
@@ -27715,11 +27715,11 @@
                         "Verne I"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
+                    "captured_resources": [
                         "Carboxylic Acids",
                         "Gastronomic Delight",
-                        "Cosmetic",
-                        "Lubricant"
+                        "Lubricant",
+                        "Cosmetic"
                     ]
                 }
             },
@@ -28699,19 +28699,18 @@
                         "Stimulant"
                     ],
                     "resource_group_partial": [
-                        "Chlorine-Xenon (partial)",
-                        "Chlorine-Caesium (partial)"
+                        "Chlorine-Caesium (partial)",
+                        "Chlorine-Xenon (partial)"
                     ],
                     "partner_planets": [
                         "Zelazny III",
                         "Alpha Andraste III"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
+                    "captured_resources": [
                         "Stimulant",
                         "Lithium",
-                        "Structural Material",
-                        "Metabolic Agent"
+                        "Structural Material"
                     ]
                 }
             },
@@ -30051,7 +30050,7 @@
                     "full_resource_chain": [
                         "Lead-Tungsten"
                     ],
-                    "Captured Resources": [
+                    "captured_resources": [
                         "Titanium",
                         "Tungsten",
                         "Dysprosium"
@@ -38820,7 +38819,7 @@
                         "Tasine"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
+                    "captured_resources": [
                         "Tasine"
                     ]
                 }
@@ -53958,7 +53957,7 @@
                         "Rothicite"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
+                    "captured_resources": [
                         "Rothicite"
                     ]
                 }
@@ -56920,7 +56919,7 @@
                         "Vytinium"
                     ],
                     "has_helium": true,
-                    "Captured Resources": [
+                    "captured_resources": [
                         "Vytinium"
                     ]
                 }
@@ -60065,11 +60064,11 @@
                         "Uranium"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
-                        "Iridium",
-                        "Uranium",
+                    "captured_resources": [
                         "Vanadium",
-                        "Plutonium"
+                        "Uranium",
+                        "Plutonium",
+                        "Iridium"
                     ]
                 }
             },
@@ -63026,10 +63025,10 @@
                         "Memory Substrate"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
-                        "Platinum",
-                        "Nickel",
+                    "captured_resources": [
                         "Cobalt",
+                        "Nickel",
+                        "Platinum",
                         "Palladium",
                         "Memory Substrate"
                     ]
@@ -72102,7 +72101,7 @@
                         "Aromatic"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
+                    "captured_resources": [
                         "Aromatic",
                         "Spice",
                         "Fiber",
@@ -75934,7 +75933,7 @@
                         "Indicite"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
+                    "captured_resources": [
                         "Indicite"
                     ]
                 }
@@ -89248,9 +89247,9 @@
                         "Copper-Tetrafluorides"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
-                        "Ionic Liquids",
+                    "captured_resources": [
                         "Tetrafluorides",
+                        "Ionic Liquids",
                         "Ornamental Material",
                         "Antimicrobial"
                     ]
@@ -93854,7 +93853,7 @@
                     "unique": [
                         "Aldumite"
                     ],
-                    "Captured Resources": [
+                    "captured_resources": [
                         "Aldumite"
                     ]
                 }
@@ -93954,12 +93953,12 @@
                         "Luxury Textile"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
+                    "captured_resources": [
                         "Luxury Textile",
                         "Toxin",
-                        "Nutrient",
                         "Analgesic",
-                        "Sedative"
+                        "Nutrient",
+                        "Metabolic Agent"
                     ]
                 }
             },
@@ -101791,11 +101790,11 @@
                         "Neurologic"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
-                        "Alkanes",
-                        "Ytterbium",
+                    "captured_resources": [
                         "Tantalum",
-                        "Iron"
+                        "Alkanes",
+                        "Iron",
+                        "Ytterbium"
                     ]
                 }
             },
@@ -102529,11 +102528,11 @@
                         "Copper-Gold"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
-                        "Copper",
-                        "Fluorine",
+                    "captured_resources": [
                         "Gold",
-                        "Antimony"
+                        "Fluorine",
+                        "Antimony",
+                        "Copper"
                     ]
                 }
             },
@@ -102927,11 +102926,11 @@
                         "Aluminum"
                     ],
                     "has_water": true,
-                    "Captured Resources": [
-                        "Neodymium",
-                        "Europium",
+                    "captured_resources": [
                         "Aluminum",
-                        "Beryllium"
+                        "Neodymium",
+                        "Beryllium",
+                        "Europium"
                     ]
                 }
             },

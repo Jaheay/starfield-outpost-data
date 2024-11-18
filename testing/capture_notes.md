@@ -83,11 +83,15 @@
 - Partial Resource Group: Argon (Argon, Benzene, Neon)
 - Partner Planets: Verne I
 - Has Water
+- Needs: Fiber 
+    - Getting From: Linnaeus II
+- Settled: COL: GasDel/Cosm/Lube/CA
 
 #### Schrodinger III (Schrodinger)
-- Should Capture: Luxury Textile, Toxin, Nutrient, Analgesic, Sedative
+- Should Capture: Luxury Textile, Toxin, Sedative, Nutrient
 - Unique Resource: Luxury Textile
 - Has Water
+- Settled: COL: LuxTex/Tox/Ana/Seda
 
 ## Full Chain Inorganics
 
@@ -126,15 +130,16 @@
 - Should Capture: Titanium, Tungsten, Dysprosium
 - Full Chain: [Lead-Tungsten]
 
-#### Sumati (Narion)
-- Should Capture: Hypercatalyst
-- Other: Hypercatalyst
-- Has Water
 
 ## Remaining Organics
 
+#### Sumati (Narion)
+- Should Capture: Hypercatalyst,  
+- Other: Hypercatalyst
+- Has Water
+
 #### Codos (Cheyenne)
-- Should Capture: Solvent
+- Should Capture: Solvent, Analgesic
 - Other: Solvent
 - Has Water
 #### Alpha Andraste III (Alpha Andraste)

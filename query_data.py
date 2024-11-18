@@ -762,18 +762,19 @@ def query_resource_from_list(all_planets, query_planets, query_resources):
             planet_resources.extend(planet["resources"]["inorganic"])
 
             if all(resource in planet_resources for resource in query_resources):
-                print(f"Candidate: {planet["name"]}")
+                capacity = 5 - len(planet.get("outpost_candidacy", {}).get("captured_resources", []))
+                print(f"Candidate: {planet["name"]}, (Capacity: {capacity})")
 
 
 def run_queries():
-    systems = load_system_data(SCORED_SYSTEM_DATA_PATH)
+    systems = load_system_data(FINAL_SYSTEM_DATA_PATH)
     planets = [planet for system in systems for planet in system["planets"]]
-    capture_planets = ["Katydid I-a", "Decaran VII-b", "Schrodinger II", "Carinae III-a", "Huygens VII-a", "Verne I", "Katydid III", "Fermi VII-a", "Linnaeus II", "Zelazny III", "Bardeen III", "Schrodinger III", "Zeta Ophiuchi I", "Eridani III", "Verne VII-d", "Charybdis II", "Zeta Ophiuchi VI-a", "Procyon III", "Jaffa I", "Sumati", "Codos", "Alpha Andraste III", "Beta Ternion I", "Hyla II", ]
+    capture_planets = ["Decaran VII-b", "Schrodinger II", "Carinae III-a", "Huygens VII-a", "Verne I", "Katydid III", "Fermi VII-a", "Linnaeus II", "Zelazny III", "Bardeen III", "Schrodinger III", "Zeta Ophiuchi I", "Eridani III", "Verne VII-d", "Charybdis II", "Zeta Ophiuchi VI-a", "Procyon III", "Jaffa I", "Sumati", "Codos", "Alpha Andraste III", "Beta Ternion I", "Hyla II", ]
 
 
-    query_unique_values(planets)
+    #query_unique_values(planets)
     #query_two_value_histogram(planets)
-    query_fun_facts(systems, planets)
+    #query_fun_facts(systems, planets)
     #query_highs_and_lows(systems, planets)
     #query_top_tens(systems, planets)
     # query_flora_fauna(planets)
@@ -789,6 +790,10 @@ def run_queries():
 
     #query_resource_from_list(planets, capture_planets, ["Fiber"])
 
+    check = ['Toxin', 'Nutrient', 'Analgesic', 'Sedative']
+    for item in check:
+         print(item)
+         query_resource_from_list(planets, capture_planets, [item])
 
 if __name__ == "__main__":
     run_queries()
